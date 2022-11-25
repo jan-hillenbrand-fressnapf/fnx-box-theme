@@ -1,0 +1,80 @@
+<script src="{{ 'edition-description.js' | asset_url }}" defer="defer"></script>
+{{ 'edition-detail.css' | asset_url | stylesheet_tag }}
+
+<div class="product-details-container visibility-hidden" data-product="">
+    <div><h3 class="company-name"> </h3>
+          <div class="company-image-wrapper">
+            <img class="company-image" loading="lazy" src="" />
+        </div>
+    </div>
+    <!-- <div class="product-details-picture">
+       <img class="product-picture" loading="lazy" src="" />
+    </div> -->
+
+    
+
+    <h2 class="product-title"></h2>
+    <div class="product-price">
+      <h3>UVP: <span class="uvp-price"></span></h3>
+    </div>
+    <div class="product-tag-list">
+      <!-- <p class="product-tag"> </p> -->
+    </div>
+    
+    {% for collection in collections %}
+      {% if collection.metafields.custom.box == box_type %}
+      {% for product in collection.products %}
+        
+      <div class="{{ forloop.index }} product-reviews-container invisible" data-id="{{ product.id }}" data-carousel-index="1" data-max-Slides="none">
+           <div class="shopify-review-controlls">
+              <div class="shopify-review-left hidden"><a class="review-button-left button-inactive" href="javaScript:void(0);">{% render "review-arrow"%}</a></div>
+              <div class="shopify-review-right hidden"><a class="review-button-right" href="javaScript:void(0);">{% render "review-arrow"%}</a></div>
+            </div>
+          <div id="shopify-product-reviews" data-id="{{ product.id }}"> 
+
+            {{ product.metafields.spr.reviews }} 
+
+          </div>
+        </div>
+      {% endfor %}
+      {% endif %}
+    {% endfor %}
+      <details id="" >
+        <summary id="">
+          <h3 class="accordion__title h4">
+            Produktbeschreibung
+          </h3>
+          {% render 'icon-fn-plus' %}
+        </summary>
+        <div class="accordion__content rte product-description-content" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region"
+          aria-labelledby="">
+          <p class=""></p>
+        </div>
+      </details>
+      <details id="extra-information">
+        <summary>
+          <h3 class="accordion__title h4">
+            Zusätzliche Informationen
+          </h3>
+          {% render 'icon-fn-plus' %}
+        </summary>
+        <div class="accordion__content rte product-description-content" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region"
+          aria-labelledby="">
+          <video controls >
+            <source src="https://cdn.shopify.com/videos/c/o/v/1b9428b6f49e4ae6aaa3983024bfed85.mp4" type="video/mp4">
+          </video>
+        </div>
+      </details>
+      <!-- <a role="link" aria-disabled="false" 
+        href="" class="button button__secondary">    
+        Jetzt Bewerten
+      </a> -->
+      <div style="display: flex; justify-content:center;">
+        <a role="link" aria-disabled="false" 
+        href="" target="_blank" class="button button__primary product-link">    
+       Hier nochmal bestellen
+      </a>
+      </div>
+      
+      
+  </div>

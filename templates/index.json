@@ -1,0 +1,215 @@
+{
+  "wrapper": "#petSelection",
+  "sections": {
+    "1652254166ee7525b5": {
+      "type": "rich-text",
+      "blocks": {
+        "165225416679cdc3d9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fressnapf Überraschungsbox für...",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "165225416679cdc3d9-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "1652254025f9a2b5f0": {
+      "type": "multicolumn",
+      "blocks": {
+        "16522540254b1b6d5d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_1aaa4dbf-fc14-44f9-8115-bc6b9e1d1b5f.png",
+            "title": "Team Hund",
+            "text": "",
+            "link_label": "Zur Waubox",
+            "link": "shopify:\/\/products\/deine-wau-box"
+          }
+        },
+        "16522540254b1b6d5d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat.png",
+            "title": "Team Katze",
+            "text": "",
+            "link_label": "Zur Miaubox",
+            "link": "shopify:\/\/products\/deine-miau-box"
+          }
+        }
+      },
+      "block_order": [
+        "16522540254b1b6d5d-0",
+        "16522540254b1b6d5d-1"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "8dd58aa6-c6a1-4dde-b816-35ed64975f06": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Werde Teil der Fressnapf Waubox | Miaubox Familie",
+            "heading_size": "h1"
+          }
+        },
+        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nutze unserer Hashtags #Waubox #Miaubox<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-0",
+        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "e5404c9e-cd83-4a47-bbf6-c533159d751e": {
+      "type": "content-carousel",
+      "blocks": {
+        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized.jpg"
+          }
+        },
+        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jvossels_miaubox_sized.png"
+          }
+        },
+        "ca2d9705-5251-4d19-98e1-945e3b25c8ac": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ragnar_und_rollo-image-1662041667479_sized.jpg"
+          }
+        },
+        "34d1123f-bae3-4139-9f58-53d7127019c9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/togo-saltandpepperschnauzer-image-1662041536660_sized.jpg"
+          }
+        },
+        "efa9a7e7-0a42-43ae-9e24-730f3417d5e4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emma_the_happy_maltipoo-image-1662041635241_sized.jpg"
+          }
+        },
+        "fa79adda-31c0-4476-b461-1845dc73a054": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fressnapf_regensburg-image-1662041601683_sized.jpg"
+          }
+        },
+        "e6f41cd9-500b-4d07-bcb3-e44f978dfe0d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh-image-1664204317375_sized.jpg"
+          }
+        },
+        "03b4d702-eaeb-4e5c-853e-4858c2155dd4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Lenny.png"
+          }
+        },
+        "39fa040c-cce7-4f37-b11c-39f276ae16da": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Powerdackel.png"
+          }
+        },
+        "2a722f18-3a2f-41a0-aa7e-a4a820c13d83": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-0",
+        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-1",
+        "ca2d9705-5251-4d19-98e1-945e3b25c8ac",
+        "34d1123f-bae3-4139-9f58-53d7127019c9",
+        "efa9a7e7-0a42-43ae-9e24-730f3417d5e4",
+        "fa79adda-31c0-4476-b461-1845dc73a054",
+        "e6f41cd9-500b-4d07-bcb3-e44f978dfe0d",
+        "03b4d702-eaeb-4e5c-853e-4858c2155dd4",
+        "39fa040c-cce7-4f37-b11c-39f276ae16da",
+        "2a722f18-3a2f-41a0-aa7e-a4a820c13d83"
+      ],
+      "settings": {
+      }
+    },
+    "774369a9-4a4f-4fa2-be7d-c9f35cd2d38c": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unser Leckerchen: 10 % Willkommensrabatt"
+          }
+        },
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Registriere dich hier, um einen 10 % Willkommensrabatt zu erhalten und Teil der Box-Community zu werden.<\/strong><\/p><p><em>Ich bin damit einverstanden, dass Fressnapf und seine <\/em><a href=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\" target=\"_blank\" title=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\"><em>Partner<\/em><\/a><em> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <\/em><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\"><em>Datenschutzhinweisen<\/em><\/a><em>.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-0",
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-2",
+        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1652254166ee7525b5",
+    "1652254025f9a2b5f0",
+    "8dd58aa6-c6a1-4dde-b816-35ed64975f06",
+    "e5404c9e-cd83-4a47-bbf6-c533159d751e",
+    "774369a9-4a4f-4fa2-be7d-c9f35cd2d38c"
+  ]
+}

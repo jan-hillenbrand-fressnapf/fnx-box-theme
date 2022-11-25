@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 4
+      }
+    },
+    "1659385420ba2ee94a": {
+      "type": "nav-header",
+      "settings": {
+        "section_logo": "shopify:\/\/shop_images\/logo-fressnapf_1.png",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16593818024dce095a": {
+      "type": "fullpicture_header",
+      "settings": {
+        "section_background_image": "shopify:\/\/shop_images\/stage-teaser-desktop.png",
+        "image": "shopify:\/\/shop_images\/Mockup_Ortung-2.png",
+        "headline": "<p>Sicherheit und Wohlbefinden deines Lieblings stehen bei dir an erster Stelle?<\/p>",
+        "text": "<p><strong>Standort, Aktivität und Gesundheit<\/strong> jederzeit im Blick – für einmalig 49,99 € und ohne laufende Kosten. <\/p>",
+        "color_scheme": "background-1",
+        "background_color": "background-color-2",
+        "heading_size": "medium",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "content-width": 1200
+      }
+    },
+    "165938241815d99dc7": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "151462df-7f62-4305-81ee-89a72f9a1bda": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usp-einfache-bedienung_1.png",
+            "title": "Ohne Abogebühr",
+            "text": "<p>2 Jahre ohne laufende Kosten<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16593824182eb12037-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usp-hundefreundliches-design_1.png",
+            "title": "Hundefreundliches Design",
+            "text": "<p>Leicht und ergonomisch an Geschirr oder Halsband<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16593824182eb12037-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usp-einfache-bedienung_1.png",
+            "title": "Einfache Bedienung",
+            "text": "<p>Automatisches Anschalten und Aktivitätstracking<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16593824182eb12037-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usp-tierarzt-per-video_1.png",
+            "title": "Tierarzt per Video",
+            "text": "<p>Qualifizierte Online-Hilfe für dich und dein Haustier<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "151462df-7f62-4305-81ee-89a72f9a1bda",
+        "16593824182eb12037-0",
+        "16593824182eb12037-1",
+        "16593824182eb12037-2"
+      ],
+      "settings": {
+        "title": "Was einen guten GPS-Tracker vom Rest unterscheidet",
+        "image_width": "third",
+        "image_ratio": "portrait",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "background-1",
+        "padding_top": 76,
+        "padding_bottom": 36
+      }
+    },
+    "1659372010cfcbfa53": {
+      "type": "newsletter-tracker",
+      "blocks": {
+        "1659372010edb8bc85-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir informieren dich, sobald der Tracker erhältlich ist!"
+          }
+        },
+        "1659372010edb8bc85-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "1659372010edb8bc85-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Registriere dich hier, um informiert zu werden, sobald der Tracker  verfügbar ist.<\/strong><\/p><p><em>Ich bin damit einverstanden, dass Fressnapf meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden sowie, dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote von Fressnapf und seinen Partnern bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <\/em><a href=\"https:\/\/fnxbox.de\/policies\/privacy-policy\" title=\"Privacy Policy\"><em>Datenschutzhinweisen<\/em><\/a><em>.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1659372010edb8bc85-0",
+        "1659372010edb8bc85-2",
+        "1659372010edb8bc85-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1659385420ba2ee94a",
+    "16593818024dce095a",
+    "165938241815d99dc7",
+    "1659372010cfcbfa53"
+  ]
+}

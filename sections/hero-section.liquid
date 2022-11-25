@@ -1,0 +1,342 @@
+{{ 'hero-section.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+.section-{{ section.id }}-padding {
+  margin-top: {{ section.settings.margin_top | times: 1 | round: 0 }}px;
+margin-bottom: {{ section.settings.margin_bottom | times: 1 | round: 0 }}px;
+}
+
+.section-{{ section.id }}-width{
+  max-width:{{ section.settings.content-width | round: 0 }};
+  {%- if section.settings.content-width <= 99 -%}
+   margin:auto;
+   {%- endif -%}
+}
+.content{
+  max-width: {{ settings.page_width }}px;
+}
+
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+  }
+}
+{%- endstyle -%}
+
+
+<div class="container-wrapper section-{{ section.id }}-width section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} {{section.settings.background_color }}">
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="content-row">
+          <div class="text-content">
+            {%- for block in section.blocks -%}
+            {%- case block.type -%}
+            {%- when 'heading' -%}
+            <h2 class="banner__heading landing-headline {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{
+              block.shopify_attributes }}>
+              <span>{{ block.settings.heading | escape }}</span>
+            </h2>
+            {%- when 'text' -%}
+            <div class="banner__text {{ block.settings.text_style }} {{ block.settings.text_color }}" {{ block.shopify_attributes }}>
+              <span>{{ block.settings.text | escape }}</span>
+            </div>
+            {%- when 'button' -%}
+            {%- if block.settings.button_label != blank -%}
+            <div class="grid">
+            <a {% if block.settings.button_link==blank %} role="link" aria-disabled="false" {% else %}
+              href="{{ block.settings.button_link }}" {% endif %} class="button hero-button button__{{ block.settings.button-type}}"
+              {{ block.shopify_attributes }}>
+              {{ block.settings.button_label | escape }}
+            </a> 
+            {% if block.settings.secondary_button_label !=blank %} 
+            <a {% if block.settings.secondary_button_link==blank %} role="link" aria-disabled="false" {% else %}
+            href="{{ block.settings.secondary_button_link }}" {% endif %} class="button hero-button button__secondary__white"
+            {{ block.shopify_attributes }}>
+            {{ block.settings.secondary_button_label | escape }}
+          </a>  {%- endif -%}          </div>
+            {%- endif -%}
+
+          </div>
+          {%- endcase -%}
+          {%- endfor -%}
+
+          <div class="img-content">
+            {%- if section.settings.image != blank -%}
+            <img class="hero-image {{ block.shopify_attributes }} " srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+                              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+                              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+                              {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
+                              {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+                              {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+              src="{{ section.settings.image | img_url: '1500x' }}"
+              alt="{{ section.settings.image.alt | escape }}" loading="lazy" width="{{ section.settings.image.width }}"
+              height="" >
+            {%- endif -%}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing-smile">
+    <svg width="100%" height="100%" viewBox="0 0 1681 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 181V66.8176C0 66.8176 275.272 173.885 646.031 173.885C919.206 173.885 1208.56 64.7201 1329.02 38.4526C1504.61 4.95911e-05 1680.2 0 1680.2 0V181H0Z" fill="white"/>
+    </svg>      
+  </div>
+</div>
+
+{% schema %}
+
+{
+  "name": "Landing Sektion",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+  {
+    "type": "image_picker",
+    "id": "image",
+    "label": "t:sections.image-with-text.settings.image.label"
+  }, 
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "background-color-1",
+          "label": "Dunkles Grün"
+        },
+        {
+          "value": "background-color-2",
+          "label": "Pastell Grün"
+        },
+        {
+          "value": "background-color-3",
+          "label": "Pastell Rosa"
+        }
+        
+      ],
+      "default": "background-color-2",
+      "label": "Hintergrundfarbe"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "medium",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__2.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-banner.blocks.heading.settings.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "content-width",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "label": "Maximale Breite",
+      "default":1200
+    }
+  ],
+  "blocks": [
+  {
+    "type": "heading",
+    "name": "t:sections.image-banner.blocks.heading.name",
+    "limit": 1,
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+                {
+                    "value": "medium",
+                    "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__1.label"
+                },
+                {
+                    "value": "large",
+                    "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__2.label"
+                }
+            ],
+            "default": "medium",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading_size.label"
+        }
+    ]
+},
+{
+    "type": "text",
+    "name": "t:sections.image-banner.blocks.text.name",
+    "limit": 2,
+    "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "default": "Give customers details about the banner image(s) or content on the template.",
+            "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+                {
+                    "value": "body",
+                    "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+                },
+                {
+                    "value": "subtitle",
+                    "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+                },
+                {
+                    "value": "caption-with-letter-spacing",
+                    "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+                }
+            ],
+            "default": "body",
+            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        }, {
+          "type": "select",
+          "id": "text_color",
+          "options": [
+            {
+              "value": "text-color-1",
+              "label": "Textfarbe 1"
+            },
+            {
+              "value": "text-color-2",
+              "label": "Textfarbe 2"
+            },
+            {
+              "value": "text-color-3",
+              "label": "Textfarbe 3"
+            }
+          ],
+          "default": "text-color-1",
+          "label": "Textfarbe"
+        }
+    ]
+},
+{
+    "type": "button",
+    "name": "t:sections.image-with-text.blocks.button.name",
+    "limit": 1,
+    "settings": [
+        {
+            "type": "text",
+            "id": "button_label",
+            "default": "Button label",
+            "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+            "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        {
+            "type": "select",
+            "id": "button-type",
+            "options": [
+                {
+                    "value": "primary",
+                    "label": "Primär"
+                },
+                {
+                    "value": "secondary",
+                    "label": "Sekundär"
+                }
+            ],
+            "default": "primary",
+            "label": "Button Typ"
+        },
+        {
+          "type": "text",
+          "id": "secondary_button_label",
+          "default": "Button label",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+      },
+      {
+          "type": "url",
+          "id": "secondary_button_link",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+      }
+    ]
+}
+  ],
+ "presets": [
+   {
+     "category": "text",
+     "name":"LandingSektion"
+   }
+ ]
+}
+
+{% endschema %}

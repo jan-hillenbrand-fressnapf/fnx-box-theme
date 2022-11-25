@@ -1,0 +1,252 @@
+{
+  "wrapper": "#product-page",
+  "sections": {
+    "main": {
+      "type": "item-product",
+      "disabled": true,
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "347ff3ee-3ac0-4187-b540-b21d8b62a2a6": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "f91cc708-bcc0-4021-a67f-c4523773c66d": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "button-type": "primary"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Teilen"
+          }
+        },
+        "21a5e6ff-3d05-41ca-8d9f-c281aee8e6a1": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "347ff3ee-3ac0-4187-b540-b21d8b62a2a6",
+        "caption",
+        "price",
+        "description",
+        "f91cc708-bcc0-4021-a67f-c4523773c66d",
+        "share",
+        "21a5e6ff-3d05-41ca-8d9f-c281aee8e6a1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "8795fedd-b8c9-49aa-9995-b72a42331cb1": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-0",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-1",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-2",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-3",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-4",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-5",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-6",
+        "template--16175627436296__8795fedd-b8c9-49aa-9995-b72a42331cb1-1666338364e9534ea7-7"
+      ],
+      "settings": {
+        "product": "der-grosse-premium-adventskalender-hund",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "081a7524-0b78-410a-bd88-7f62283185f6": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-0",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-1",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-2",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-3",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-4",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-5",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-6",
+        "template--16175627436296__081a7524-0b78-410a-bd88-7f62283185f6-166633826812cf5ba8-7"
+      ],
+      "settings": {
+        "product": "der-grosse-premium-adventskalender-katze",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8795fedd-b8c9-49aa-9995-b72a42331cb1",
+    "081a7524-0b78-410a-bd88-7f62283185f6",
+    "product-recommendations"
+  ]
+}

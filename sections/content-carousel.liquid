@@ -1,0 +1,340 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+
+
+{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
+  {%- style -%}
+  @media screen and (max-width: 749px) {
+    #Slider-{{ section.id }}::before,
+    #Slider-{{ section.id }} .media::before,
+    #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+      padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
+      content: '';
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #Slider-{{ section.id }}::before,
+    #Slider-{{ section.id }} .media::before {
+      padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
+      content: '';
+      display: block;
+    }
+  }
+  {%- endstyle -%}
+{%- endif -%}
+<style>
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+
+.carousel {
+  position: relative;
+  /* width: 50%; */
+  height: 440px; 
+  width: calc( 100% - 50px);
+  margin: 0 auto;
+}
+@media screen and (max-width:500) {
+  .carousel{
+    height: 200px;
+  }
+}
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1; 
+  display: flex;
+  align-items: center;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+}
+.slide .content-slider{
+  padding: 1em;
+  
+}
+.slide .content-wrapper-slider img{
+  border-radius: 1em;
+  width:100%
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+}
+
+.nav-left {
+  left: -25px;
+}
+
+.nav-right {
+  right: -25px;
+}
+
+.carousel-arrow-icon-left {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.carousel-arrow-icon-right {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+</style>
+
+<div class="container page-width">
+
+  <div class="carousel">
+        <div class="nav nav-left">
+          <div class="ion-chevron-left carousel-arrow-icon-left"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#819F17"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5865 9.56586C18.8265 9.33736 19.2063 9.34666 19.4348 9.58665C19.6379 9.79997 19.6531 10.1237 19.4855 10.3536L19.414 10.4349L13.6191 15.9524C13.6065 15.965 13.5994 15.9821 13.5994 16.0004L13.6032 16.0253L13.6086 16.0381L19.414 21.5659C19.654 21.7944 19.6633 22.1742 19.4348 22.4141C19.2317 22.6275 18.909 22.6585 18.6713 22.5023L18.5865 22.4349L12.7706 16.8969C12.5328 16.6592 12.3994 16.3368 12.3994 16.0004C12.3994 15.712 12.4974 15.434 12.6818 15.2042L12.7811 15.0936L18.5865 9.56586Z" fill="white"/>
+            </svg>
+            </div>
+        </div>
+  
+          <div class="carousel-content">
+            
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+              {%- when 'slide' -%}
+            <div class="slide slide-{{forloop.index}}">
+              <div class="content-wrapper-slider content-slider"><img src="{{ block.settings.image  | img_url: '550x' }}"/></div>
+            </div>
+              
+              {%- endcase -%}
+            {%- endfor -%}            
+          </div>
+  
+        <div class="nav nav-right">
+          <div class="ion-chevron-right carousel-arrow-icon-right"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#819F17"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4135 9.56586C13.1735 9.33736 12.7937 9.34666 12.5652 9.58665C12.3621 9.79997 12.3469 10.1237 12.5145 10.3536L12.586 10.4349L18.3809 15.9524C18.3935 15.965 18.4006 15.9821 18.4006 16.0004L18.3968 16.0253L18.3914 16.0381L12.586 21.5659C12.346 21.7944 12.3367 22.1742 12.5652 22.4141C12.7683 22.6275 13.091 22.6585 13.3287 22.5023L13.4135 22.4349L19.2294 16.8969C19.4672 16.6592 19.6006 16.3368 19.6006 16.0004C19.6006 15.712 19.5026 15.434 19.3182 15.2042L19.2189 15.0936L13.4135 9.56586Z" fill="white"/>
+            </svg>
+            </div>
+        </div>
+      </div>
+      
+  </div>
+
+  <script>
+
+      var carousel = document.querySelector('.carousel');
+      var carouselContent = document.querySelector('.carousel-content');
+      var slides = document.querySelectorAll('.slide');
+      var arrayOfSlides = Array.prototype.slice.call(slides);
+      var displayingSlideCount;
+      var screenSize;
+      // console.log(document.querySelector('.carousel'))
+      setScreenSize();
+      
+      var lengthOfSlide;
+      
+      function addClone() {
+         var lastSlide = carouselContent.lastElementChild.cloneNode(true);
+         lastSlide.style.left = (-lengthOfSlide) + "px";
+         carouselContent.insertBefore(lastSlide, carouselContent.firstChild);
+      }
+      // addClone();
+      
+      function removeClone() {
+        var firstSlide = carouselContent.firstElementChild;
+        firstSlide.parentNode.removeChild(firstSlide);
+      }
+      
+      function moveSlidesRight() {
+        var slides = document.querySelectorAll('.slide');
+        var slidesArray = Array.prototype.slice.call(slides);
+        var width = 0;
+      
+        slidesArray.forEach(function(elem, i){
+          elem.style.left = width + "px";
+          width += lengthOfSlide;
+        });
+        addClone();
+      }
+      moveSlidesRight();
+      
+      function moveSlidesLeft() {
+        var slides = document.querySelectorAll('.slide');
+        var slidesArray = Array.prototype.slice.call(slides);
+        slidesArray = slidesArray.reverse();
+        var maxWidth = (slidesArray.length - 1) * lengthOfSlide;
+      
+        slidesArray.forEach(function(elem, i){
+          maxWidth -= lengthOfSlide;
+          elem.style.left = maxWidth + "px";
+        });
+      }
+      
+      window.addEventListener('resize', setScreenSize);
+      
+      function setScreenSize() {
+        if ( window.innerWidth >= 785 ) {
+          displayingSlideCount = 3;
+          
+        } else if ( window.innerWidth >= 500 && window.innerWidth <= 785) {
+          displayingSlideCount = 2;
+        } else {
+          displayingSlideCount = 1;
+        }
+        console.log(displayingSlideCount)
+        getScreenSize();
+        setHeight(displayingSlideCount);
+      }
+      function setHeight(SlideCount){
+        let singleSlides = slides[0].querySelector(".content-wrapper-slider ");
+        let slideWidth = carousel.clientWidth / displayingSlideCount ;
+        let pictureRatio= 4/3
+        let slideHeight= slideWidth * pictureRatio
+        carousel.style.height =slideHeight  + "px"
+        //  elem.style.height = elem.querySelector("img").height + "px";
+        //  console.log(elem.querySelector("img").height)
+        //  document.querySelector(".carousel").style.height=
+    
+      }
+      function getScreenSize() {
+        var slides = document.querySelectorAll('.slide');
+        var slidesArray = Array.prototype.slice.call(slides);
+        lengthOfSlide = ( carousel.offsetWidth  / displayingSlideCount );
+        var initialWidth = -lengthOfSlide;
+        slidesArray.forEach(function(elem) {
+          elem.style.width = lengthOfSlide + "px";
+          elem.style.left = initialWidth + "px";
+          initialWidth += lengthOfSlide;
+        });
+      }
+      
+      
+      var rightNav = document.querySelector('.nav-right');
+      rightNav.addEventListener('click', moveLeft);
+      
+      var moving = true;
+      function moveRight() {
+        if ( moving ) {
+          moving = false;
+          var lastSlide = carouselContent.lastElementChild;
+          lastSlide.parentNode.removeChild(lastSlide);
+          carouselContent.insertBefore(lastSlide, carouselContent.firstChild);
+          removeClone();
+          var firstSlide = carouselContent.firstElementChild;
+          firstSlide.addEventListener('transitionend', activateAgain);
+          moveSlidesRight();
+        }
+      }
+      
+      function activateAgain() {
+        var firstSlide = carouselContent.firstElementChild;
+        moving = true;
+        firstSlide.removeEventListener('transitionend', activateAgain);
+      }
+      
+      var leftNav = document.querySelector('.nav-left');
+      leftNav.addEventListener('click', moveRight);
+      
+
+      
+      function moveLeft() {
+        if ( moving ) {
+          moving = false;
+          removeClone();
+          var firstSlide = carouselContent.firstElementChild;
+          firstSlide.addEventListener('transitionend', replaceToEnd);
+          moveSlidesLeft();
+        }
+      }
+      
+      function replaceToEnd() {
+        var firstSlide = carouselContent.firstElementChild;
+        firstSlide.parentNode.removeChild(firstSlide);
+        carouselContent.appendChild(firstSlide);
+        firstSlide.style.left = ( (arrayOfSlides.length -1) * lengthOfSlide) + "px";
+        addClone();
+        moving = true;
+        firstSlide.removeEventListener('transitionend', replaceToEnd);
+      }    
+      
+      carouselContent.addEventListener('mousedown', seeMovement);
+      
+      var initialX;
+      var initialPos;
+      function seeMovement(e) {
+        initialX = e.clientX;
+        getInitialPos();
+        // carouselContent.addEventListener('mousemove', slightMove);
+        // document.addEventListener('mouseup', moveBasedOnMouse);
+      }
+      
+      
+      function getInitialPos() {
+        var slides = document.querySelectorAll('.slide');
+        var slidesArray = Array.prototype.slice.call(slides);
+        initialPos = [];
+        slidesArray.forEach(function(elem){
+          var left = Math.floor( parseInt( elem.style.left.slice(0, -2 ) ) ); 
+          initialPos.push( left );
+        });
+      }
+      </script>
+<!-- {%- if request.design_mode -%}
+  <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+{%- endif -%} -->
+
+{% schema %}
+{
+  "name": "t:sections.slideshow.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "t:sections.slideshow.blocks.slide.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Karussell",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

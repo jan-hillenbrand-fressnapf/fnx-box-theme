@@ -1,0 +1,236 @@
+{{ 'hero-section.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+.section-{{ section.id }}-padding {
+  margin-top: {{ section.settings.margin_top | times: 1 | round: 0 }}px;
+margin-bottom: {{ section.settings.margin_bottom | times: 1 | round: 0 }}px;
+}
+
+.section-{{ section.id }}-width{
+  max-width:{{ section.settings.content-width | round: 0 }};
+  {%- if section.settings.content-width <= 99 -%}
+   margin:auto;
+   {%- endif -%}
+}
+.content{
+  max-width: {{ settings.page_width }}px;
+}
+
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+  }
+}
+{%- endstyle -%}
+<style>
+  .tracker-header.header-section{
+    /* min-height:80vh; */
+
+    overflow:hidden;
+  }
+  .tracker-header img{
+    width:100%;
+    height:auto;
+  }
+  .tracker-header .page-width{
+    padding:0;
+  }
+  .tracker-header .content{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top:-35%;
+  }
+  .tracker-header .content .text-content{
+    width:65%;
+    padding-bottom:10rem;
+  }
+  .tracker-header .content .image-content{
+    width:35%;
+  }
+  .relative{
+    position: relative;
+  }
+
+  @media screen and (max-width:1000px) {
+    .tracker-header .content{
+      display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: -24%;
+  }
+  .tracker-header .content .text-content{
+    width:100%;
+  }
+  }
+  .video-smile{
+    position: absolute;
+    left: 0;
+    bottom: -41%;
+  }
+
+  </style>
+
+<section class="tracker-header header-section section-{{ section.id }}-padding section-background-image">
+<!-- <img class="img" height="100" width="1920" src="{{ section.settings.section_background_image | img_url: "master" }}"> -->
+<div class="relative">
+<video  width="100%" height="100%" autoplay loop>
+  <source src="https://cdn.shopify.com/videos/c/o/v/51fa10b8b88e484999cca79d995b1839.mp4" type="video/mp4"/>
+</video>
+<svg class="video-smile" width="100%" height="100%" viewBox="0 0 1920 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M1919.76 240.5V198.208C1919.76 198.208 1719.1 198.208 1518.44 154.474C1380.79 124.463 1050.24 0 738.103 0C314.497 0 0 122.08 0 122.08V240.5H1919.76Z" fill="#fff"></path>
+  </svg></div>
+<!-- <div class="page-width"> -->
+<!-- <div class="content">
+ 
+  <div class="text-content"><h2 class="h1">{{ section.settings.headline }}</h2>
+  <p class="h4">{{ section.settings.text }} </p></div>
+  <div class="image-content"> <img  height="600" width="720" src="{{ section.settings.image | img_url: "master" }}"/></div>
+</div> -->
+<!-- </div> -->
+</section>
+
+
+{% schema %}
+
+{
+  "name": "Tracker Header",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+  {
+    "type": "image_picker",
+    "id": "section_background_image",
+    "label": "Sektionsimage"
+  }, 
+  {
+    "type": "image_picker",
+    "id": "image",
+    "label": "ContentImage"
+  }, 
+  {
+    "type": "richtext",
+    "id": "headline",
+    "label": "Überschrift"
+  },
+  {
+    "type": "richtext",
+    "id": "text",
+    "label": "Überschrift"
+  },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "options": [
+        {
+          "value": "background-color-1",
+          "label": "Dunkles Grün"
+        },
+        {
+          "value": "background-color-2",
+          "label": "Pastell Grün"
+        },
+        {
+          "value": "background-color-3",
+          "label": "Pastell Rosa"
+        }
+        
+      ],
+      "default": "background-color-2",
+      "label": "Hintergrundfarbe"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "medium",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__2.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-banner.blocks.heading.settings.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "content-width",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "label": "Maximale Breite",
+      "default":1200
+    }
+  ],
+  "blocks": [],
+ "presets": [
+   {
+     "category": "text",
+     "name":"TrackerHeader"
+   }
+ ]
+}
+
+{% endschema %}

@@ -1,0 +1,431 @@
+{
+  "wrapper": "#product-page",
+  "sections": {
+    "1655889727a96577ae": {
+      "type": "hero-section",
+      "blocks": {
+        "73374715-7e73-4efe-8ddf-bc866d579f08": {
+          "type": "text",
+          "settings": {
+            "text": "Überraschungen im Wert von mehr als 150€",
+            "text_style": "body",
+            "text_color": "text-color-1"
+          }
+        },
+        "bd2e0be5-1b8a-47cf-ac8c-8c7f30a6f70a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Der Premium Adventskalender für Katzen",
+            "heading_size": "large"
+          }
+        },
+        "c899f8dc-22a0-40b8-bdae-1605fac71c7b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt Kalender bestellen",
+            "button_link": "https:\/\/fnxbox.de\/products\/der-grosse-premium-adventskalender-katze#product_section",
+            "button-type": "primary",
+            "secondary_button_label": "",
+            "secondary_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "73374715-7e73-4efe-8ddf-bc866d579f08",
+        "bd2e0be5-1b8a-47cf-ac8c-8c7f30a6f70a",
+        "c899f8dc-22a0-40b8-bdae-1605fac71c7b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Kal_Main.png",
+        "color_scheme": "background-2",
+        "background_color": "background-color-3",
+        "heading_size": "large",
+        "margin_top": 0,
+        "margin_bottom": 36,
+        "content-width": 1200
+      }
+    },
+    "bbe4a923-bb25-44f3-aed0-f1f5317ef5a1": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Warum Premium?",
+            "heading_size": "h1"
+          }
+        },
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir haben euch und euren Stubentigern richtige Produkte in der Originalgröße zusammengestellt. Kleine Produktproben kommen uns nicht in die Schachtel.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Fröhliche Miaunachten",
+            "button_link": "https:\/\/fnxbox.de\/products\/der-grosse-premium-adventskalender-katze#product_section",
+            "button-type": "primary",
+            "button_label_secondary": "",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-0",
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-1",
+        "template--16154606108936__bbe4a923-bb25-44f3-aed0-f1f5317ef5a1-16649628700bac1e01-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Kalender_Banner_Shopify.png",
+        "height": "adapt",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "box-width": "main-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1645694934aafcf6ed": {
+      "type": "image-with-text",
+      "blocks": {
+        "16456949343362a567-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was erwartet dich im Adventskalender?",
+            "heading_size": "h1"
+          }
+        },
+        "16456949343362a567-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir haben euch großartige Produkte und Services aus den Kategorien Snacks, Spielzeug und Pflege zusammengestellt.<\/p><p>Besonderen Fokus legen wir dieses Jahr auf das Thema Gesundheit und Wohlfühlen.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "16456949343362a567-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt bestellen",
+            "button_link": "https:\/\/fnxbox.de\/products\/der-grosse-premium-adventskalender-katze#product_section",
+            "button-type": "primary",
+            "button_label_secondary": "",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "16456949343362a567-0",
+        "16456949343362a567-1",
+        "16456949343362a567-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Katze_second.png",
+        "height": "small",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "box-width": "full-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "usp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/innovative-product_bb79f5cf-4537-4af2-a23b-253a4288b111.png",
+            "title": "Einzigartige Produkte",
+            "text": "<p>Jeden Tag im Advent neue Überraschungen für euch.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charity_739c6b21-c53a-4c77-8109-b190ed5627eb.png",
+            "title": "1 EUR Spende",
+            "text": "<p>Mit jedem Kalender spendest du zur Weihnachtszeit 1€ dem Tierschutz.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unboxing-experience_a87bc115-aed1-4acd-99eb-4f61f064f327.png",
+            "title": "Mehr als 150 € Warenwert enthalten",
+            "text": "<p>Der Premium Kalender für Katzen enthält einen Warenwert von mehr als 150 €.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column3",
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "main": {
+      "type": "waubox-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "cbc5a1f6-bf9b-49cd-828d-9592834ae3c0": {
+          "type": "text",
+          "settings": {
+            "text": "Der Große Premium Adventskalender mit einem Warenwert von mehr als 150€.",
+            "text_style": "subtitle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "68ac56fe-fef0-4a74-87cc-8ac7033a1c5c": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "button-type": "primary"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Lieferung",
+            "icon": "none",
+            "content": "<p>Der Versand erfolgt im November, passend zu Weihnachten.<\/p>",
+            "page": ""
+          }
+        },
+        "2c631373-5196-4181-9e7f-77994024a66c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Produkthinweise",
+            "icon": "none",
+            "content": "<p><a href=\"https:\/\/media.os.fressnapf.com\/products-v2\/6\/4\/b\/f\/64bf79a56b29f54dce331719afbcf6b9522fe667_1399736__de_DE__fressnapf_Inhaltsstoffe_Adventskalender_Katze.pdf\" target=\"_blank\" title=\"https:\/\/media.os.fressnapf.com\/products-v2\/6\/4\/b\/f\/64bf79a56b29f54dce331719afbcf6b9522fe667_1399736__de_DE__fressnapf_Inhaltsstoffe_Adventskalender_Katze.pdf\">Inhaltsstoffe<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Teilen"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "variant_picker",
+        "price",
+        "caption",
+        "cbc5a1f6-bf9b-49cd-828d-9592834ae3c0",
+        "quantity_selector",
+        "68ac56fe-fef0-4a74-87cc-8ac7033a1c5c",
+        "description",
+        "collapsible-row-1",
+        "2c631373-5196-4181-9e7f-77994024a66c",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "1647873865597a6ba8": {
+      "type": "newsletter",
+      "blocks": {
+        "1647873865ef7c7f6b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lust auf monatliche Überraschungen für dich und deinen Liebling? Hier gehts zum Miaubox Newsletter."
+          }
+        },
+        "1647873865ef7c7f6b-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "1647873865ef7c7f6b-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Registriere dich hier, um informiert zu werden, sobald die nächste Box wieder verfügbar ist oder um Teil der Box-Community zu werden.<\/strong><\/p><p><em>Ich bin damit einverstanden, dass Fressnapf und seine <\/em><a href=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\" target=\"_blank\" title=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\"><em>Partner<\/em><\/a><em> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <\/em><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\"><em>Datenschutzhinweisen<\/em><\/a><em>.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647873865ef7c7f6b-0",
+        "1647873865ef7c7f6b-2",
+        "1647873865ef7c7f6b-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 68
+      }
+    },
+    "1650470749b39fd6dc": {
+      "type": "slideshow",
+      "blocks": {
+        "165047074922d3c054-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dario_Kuscheldecke_Fotor_2.jpg",
+            "heading": "Haustierhilfe Lübeck e.V.",
+            "heading_size": "small",
+            "subheading": "Der Tierschutzverein unterstützt bedürftige Haustierbesitzer bei medizinischen Notfällen und sorgt u.a. dafür, dass die Tiere bei ihren geliebten Menschen bleiben können.",
+            "button_label": "Projekt ansehen",
+            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/57534",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "165047074922d3c054-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1Y3A6888-web.jpg",
+            "heading": "HundeDoc - Stiftung SPI",
+            "heading_size": "small",
+            "subheading": "Der HundedDoc ist eine von Tierärzten ins Leben gerufene Initiative zur mobilen Bereitstellung von tiermedizinischer Beratung und Grundversorgung, welche sich an bedürftige Menschen richtet.",
+            "button_label": "Projekt ansehen",
+            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/83014",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "74384cfa-e155-4653-8ab7-d6ba495c5572": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Karli_Baum_Fotor.jpg",
+            "heading": "Gnadenhof Katzentraum e.V.",
+            "heading_size": "small",
+            "subheading": "Der Gnadenhof Katzentraum ist für viele Katzen die letzte Chance auf Futter, medizinische Versorgung und Zuwendung. Gemeinsam mit dir unterstützen wir den Umzug des Gnadenhofs in eine größere Einrichtung, da eine Vielzahl an Katzen versorgt werden muss.",
+            "button_label": "Projekt ansehen",
+            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/33288",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "165047074922d3c054-0",
+        "165047074922d3c054-1",
+        "74384cfa-e155-4653-8ab7-d6ba495c5572"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "1655889727a96577ae",
+    "bbe4a923-bb25-44f3-aed0-f1f5317ef5a1",
+    "1645694934aafcf6ed",
+    "usp",
+    "main",
+    "1647873865597a6ba8",
+    "1650470749b39fd6dc",
+    "product-recommendations"
+  ]
+}

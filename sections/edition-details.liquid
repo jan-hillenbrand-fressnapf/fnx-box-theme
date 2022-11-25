@@ -1,0 +1,399 @@
+{{ 'edition-detail.css' | asset_url | stylesheet_tag }}
+<!--  -->
+
+<!--  -->
+<script src="{{ 'edition-product.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign header = content_for_header
+  assign page_url = header | split: '"pageurl":"' | last | split: '"' | first | split: request.host | last | replace: '\/', '/' | replace: '%20', ' ' | replace: '\u0026','&'
+  assign box_product = page_url | split: '?' | first | split: '/' | last | split: '-' | first
+-%}
+
+
+{% assign today = "now" | date: "%Y-%m-%d"%}
+  {% assign currentNewestDate =  "2021-01-01" | date: "%Y-%m-%d"%}
+  {% assign today = "now" | date: "%Y-%m-%d"%}
+    {% for collection in collections %}
+      {% assign boxtype = collection.metafields.custom.box | downcase %}
+      {%if boxtype == box_product%}
+        {%- assign delivery_date = collection.metafields.custom.delivery_date | date: "%Y-%m-%d" -%}
+        {% if collection.metafields.custom.edition == true %}
+          {%if delivery_date >= currentNewestDate %}
+            {%if delivery_date <= today %}
+              {%assign currentNewestDate = delivery_date %}
+              {%assign collection_handle = collection.handle %}
+            {%endif %}
+          {%endif %}
+        {% endif %}
+      {%endif %}
+    {% endfor %}
+
+  {% assign edition = collections[collection_handle] %}
+  {% assign redirec_url = page.url %}
+  <script>console.log("Edition:{{ collection_handle }}");</script>
+  {% if collection_handle != "0" %}
+  {% assign boxtype = edition.metafields.custom.box %}
+  {%- comment -%} gets Boxtyp{%- endcomment -%}
+  <script>console.log("Test:{{ boxtype }}");</script>
+  {% endif %}
+
+{%- style -%}
+
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.margin_top | times: 1 | round: 0 }}px;
+  padding-bottom: {{ section.settings.margin_bottom | times: 1 | round: 0 }}px;
+}
+
+.section-{{ section.id }}-width{
+max-width:{{ section.settings.content-width | round: 0 }};
+{%- if section.settings.content-width <= 99 -%} margin:auto; {%- endif -%} } .content{ max-width: {{ settings.page_width
+  }}px; } @media screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top: {{
+  section.settings.margin_top }}px; padding-bottom: {{ section.settings.margin_bottom }}px; } }
+{%- endstyle -%} 
+
+
+
+
+<section class="light-color-bg section-{{ section.id }}-padding">
+
+<div class="page-width edition-section ">
+{% if section.settings.headline %}
+<h2 class="h0"> Erlebe die <span data-current-active-month="{%- render "get_month" getMonthText:edition.metafields.custom.delivery_date | date: "%m", language:"de" -%}">{%- render "get_month" getMonthText:edition.metafields.custom.delivery_date | date: "%m", language:"de" -%}</span>-{{ box_product | capitalize }} nochmal digital!</h2>
+{%- comment -%} <h2 class="" >{{ box_product | capitalize }}-Edition: <span class="" data-current-active-collection="{{ collection_handle }}">{{ collection_handle | capitalize }}</span> </h2> {%- endcomment -%}
+{% endif %}
+{% if section.settings.text %}
+<p class="">{{ section.settings.text }}</p>
+{% endif %}
+  <div id="{{ section.id }}" class="page-width edition-section detail-section">
+    <div class="product-grid-wrapper">
+{%- comment -%} GridMenu {%- endcomment -%}
+<div class="filter-grid">
+  <!-- ### -->
+    <!-- sort array newest box -->
+    <!-- the maximum number of boxes to be displayed -->
+    {% assign boxCountToRender = 12 %}
+    <!-- orders dates in the right order -->
+    {%- assign dates = '' -%}
+    {%- assign datesHandles = '' -%}
+    {%- for collection in collections -%}
+      {% assign boxtype = boxtype | capitalize %} 
+      {%if boxtype == collection.metafields.custom.box %}
+        <!-- checks if box is released -->
+        {% assign thisDate = collection.metafields.custom.delivery_date | date:"%Y-%m-%d" %}
+        {% if thisDate <= today %}
+          {%- assign selectDeliveryDate = collection.metafields.custom.delivery_date | date: '%s' -%}
+          
+          {%- assign dates = dates | append: selectDeliveryDate | append: ',' -%}
+          {%- assign datesHandles = datesHandles | append: collection.handle | append: '_' | append: selectDeliveryDate | append: ',' -%}
+        {% endif %}  
+      {% endif %}
+    {%- endfor -%}
+    <!-- split for arrays -->
+    {%- assign dates = dates | split: ',' | sort  -%}
+    {%- assign datesHandles = datesHandles | split: ',' -%}
+    {% assign indexDatePrint = 1%}
+
+    <!-- Button Wrapper -->
+    <div class="collection-selection-wrapper">
+    <!-- Prints the dates -->
+
+
+
+
+
+    {%- comment -%} loops array to get the current active collection to display as selected {%- endcomment -%}
+  <div class="collection-dropdown">
+    {%- assign tempIndexDateCurrentDate = indexDatePrint -%}
+    {%- for collectionDate in dates -%}
+      {%- for dateHandle in datesHandles -%}
+          {%- assign dateHandleArray = dateHandle | split: '_' -%}
+          {%- if collectionDate == dateHandleArray[1] -%}
+            {% if indexDatePrint <= boxCountToRender %}         
+            <!-- buttons -->
+                <!-- Content of buttons to show --> 
+                {%- assign currentCollection = dateHandle | split: "_" | first -%}
+                {%- comment -%} current active collection/ newest releaseDate {%- endcomment -%}
+              {% if currentCollection == collection_handle %}
+                <div class="collection-selected-display collection-selection-button-wrapper active {{currentCollection}}" data-current-collection="{{ currenctCollection }}"  data-current-month=" {% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}" >
+                  <span class="collection-selection-button"  data-collection-name="{{currentCollection}}"  data-collection-month=" {% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}">
+                    {% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %} {{ collectionDate | date: "%Y"}}
+                  </span>
+                </div>
+               {% endif %}
+              {% assign tempIndexDateCurrentDate = currentIndexDateCurrentDate | plus: 1 %}
+              {% break %}
+              <!-- buttons end -->
+            {% endif %}  
+          {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+      <ul class="collection-select-options">
+        {%- comment -%} prints for Collections sorted by releaseDate {%- endcomment -%}
+        {%- for collectionDate in dates -%}
+          {%- for dateHandle in datesHandles -%}
+              {%- assign dateHandleArray = dateHandle | split: '_' -%}
+              {%- if collectionDate == dateHandleArray[1] -%}
+                {% if indexDatePrint <= boxCountToRender %}
+                 {%- comment -%} checks if more than 1 product {%- endcomment -%}
+                  {% assign productCount = dateHandle | split:"_" | first %}
+                  {% if collections[productCount].products_count > 0 %}      
+                  <!-- buttons -->
+                      <!-- Content of buttons to show --> 
+                      {%- assign currentCollection = dateHandle | split: "_" | first -%}
+                      {%- comment -%} current active collections/ newest releaseDate orderd by date {%- endcomment -%}
+                    <li class="collection-selection-button collection-selection-button-option {% if currentCollection == collection_handle %}active {% endif %}" data-collection-month="{% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}"  data-collection-name="{{ dateHandle | split:"_" | first }}" >{% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}{{ collectionDate |date: '%Y'}} </li>
+                      {%- comment -%} <div class="collection-selection-button-wrapper {{currentCollection}} {% if currentCollection == collection_handle %}active {% endif %}">
+                          <a class="collection-selection-button"
+                          href="JavaScript:void(0);" data-collection-month="{% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}" data-collection-name="{{ dateHandle | split:"_" | first }}">
+                            <div>{% render "get_month" getMonthText: collectionDate | date: "%m", language:"de" %}Edition: {{ currentCollection | capitalize }}</div>
+                        </a>
+                      </div> {%- endcomment -%}
+                    {% assign indexDatePrint = indexDatePrint | plus: 1 %}
+                    {% break %}
+                    <!-- buttons end -->
+                  {% endif %}      
+                {% endif %}  
+              {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+
+      </ul>
+    </div>
+
+ 
+
+  </div>
+  {% if box_product == 'waubox' %}
+  <div class="filter-field">
+		<input type="radio" id="radio-1" name="switch-two"data-filter-tag="kleine Hunde"value="yes" checked/>
+		<label class="button" for="radio-1" style="margin-right:1rem;">Kleine Hunde</label>
+		<input type="radio" id="radio-2" name="switch-two" value="maybe" data-filter-tag="große Hunde" />
+		<label class="button" for="radio-2" >Große/ Mittlere Hunde</label>
+	</div>
+  {% endif %}
+  <!--  -->
+</div>
+{%- comment -%} GridMenu End {%- endcomment -%}
+        <div class="edition-grid">
+          {% for collection in collections %}
+            {% if collection.metafields.custom.edition == true %} 
+              {% assign boxtype = boxtype | capitalize %} 
+              {%if boxtype == collection.metafields.custom.box %}
+                  {% assign thisDate = collection.metafields.custom.delivery_date | date:"%Y-%m-%d" %}
+                  {% if thisDate <= today  %}  
+                    {% for product in collection.products %}
+                      <div class="card hidden"
+                        data-product-collection = "{{ collection.handle }}"
+                        data-product-id="{{ product.id }}" 
+                        data-product-tags="{% for tag in product.tags %}
+                          {%- if box_product == "waubox" -%}
+                          {{ tag }}, 
+                          {%- endif -%}
+                          {%- if box_product == "miaubox" %}{%- if tag contains "Hund" -%}
+                            {%- break -%}
+                            {%- else -%}
+                            {{ tag }}
+                            {%- endif -%},
+                          {%- endif -%}
+                          {% endfor %}" 
+                        data-product-handle="{{ product.handle }}"
+                        data-product-logo="{{ product.media[1] | img_url: 'medium'}}"
+                        data-product-price="{{ product.price | money }}"
+                        
+                        data-product-description="{{ product.description | split: 'URL:' | first | strip_html }}" 
+                        data-product-shoplink="{{ product.metafields.custom.external_product_page }}"
+                        data-product-video="{% if product.media[2] contains 'no-image' %}{% else %}{{ product.media[2] | img_url: 'medium'}}" {% endif %}
+                        data-product-title="{{ product.title }}"
+                        data-product-vendor="{{ product.vendor }}">
+
+                        <div class="relative">
+                          <img class="product-picture" src="{{ product.media[0] | img_url: 'compact' }}"/>
+                          <h3>{{ product.title }}</h3>
+                          <div style="
+                            display: flex;
+                            justify-content: center;
+                            color:black;
+                        ">
+                          <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                          {{ product.metafields.spr.review }}
+                          {% if product.metafields.reviews.rating_count %}
+                             ({{ product.metafields.reviews.rating_count }})
+                            {%- else -%}
+                              (0)
+                          {% endif %}
+                         
+                        </div>
+                          <a href="#" class="button__review" onclick="SPR.toggleForm({{ product.id }});return false">Produkt bewerten</a>
+                        </div>
+                      </div>
+                    {% endfor %}
+                {% endif %}
+              {% endif %} 
+            {% endif %}
+          {% endfor %}
+          <!-- <div class=" card active" data-product-id="{{ product.id }}">
+            <div class="relative">
+            </div>
+            {{ product.title }}
+            {{ collection.products_count }}
+            {{ product.featured_image | img_url: width: 300 | image_tag }} 
+          </div> -->      
+        </div>
+  </div>
+  
+  <div class="product-details-wrapper">
+    <div class="product-details" data-product-id="">
+        {% render "edition-description" box_type: boxtype %}
+    <!-- each end -->
+    </div>
+    
+    {%- comment -%} {% for product in edition.products %}
+      
+        <div class="{{ forloop.index }} product-reviews-container invisible" data-id="{{ product.id }}" data-carousel-index="1" data-max-Slides="none">
+           <div class="shopify-review-controlls">
+              <div class="shopify-review-left hidden"><a class="review-button-left button-inactive" href="javaScript:void(0);">{% render "review-arrow"%}</a></div>
+              <div class="shopify-review-right hidden"><a class="review-button-right" href="javaScript:void(0);">{% render "review-arrow"%}</a></div>
+            </div>
+          <div id="shopify-product-reviews" data-id="{{ product.id }}">
+
+            {{ product.metafields.spr.reviews }} 
+
+          </div>
+        </div>
+    {% endfor %} {%- endcomment -%}
+{%- comment -%}
+      <!-- loginpage for a b testing -->
+      <!-- {%- assign page_redirect = page_url | append: '#' | append: section.id -%}-->
+      <!-- {% render "login" page_url:page_redirect %}  -->
+  
+      <!-- <span>Melde dich an, um eine Bewertung abzugeben.</span> -->
+      <!-- <a href="{{ shop.url }}/account/login" class="btn" target="_blank">Anmelden</a> -->
+    {%- endcomment -%}
+      
+  </div>
+</div>
+
+</section>
+
+
+
+{% schema %}
+
+
+{
+  "name": "Edition Sektion",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+  {
+    "type": "richtext",
+    "id": "headline",
+    "default": "<p>Boxinhalt</p>",
+    "label": "Überschrift"
+  },
+  {
+    "type": "richtext",
+    "id": "text",
+    "default": "<p>Boxinhalt</p>",
+    "label": "Text"
+  },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Oberer Abstand",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Unterer Abstand",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "content-width",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "label": "Maximale Breite",
+      "default":1200
+    }
+  ],
+  "blocks": [
+  {
+    "type": "heading",
+    "name": "t:sections.image-banner.blocks.heading.name",
+    "limit": 1,
+    "settings": []},
+{
+    "type": "text",
+    "name": "t:sections.image-banner.blocks.text.name",
+    "limit": 2,
+    "settings": []
+},
+{
+    "type": "button",
+    "name": "t:sections.image-with-text.blocks.button.name",
+    "limit": 1,
+    "settings": [
+        {
+            "type": "text",
+            "id": "filter_label",
+            "default": "Button label",
+            "label": "Filterlabel"
+        },
+        {
+            "type": "text",
+            "id": "filter_tag",
+            "label": "Filter-Tag"
+        }       
+    ]
+}
+  ],
+ "presets": [
+   {
+     "category": "text",
+     "name":"Edition- Details"
+   }
+ ]
+}
+
+{% endschema %}

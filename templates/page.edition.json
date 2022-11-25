@@ -1,0 +1,371 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 4
+      }
+    },
+    "165908529872372cca": {
+      "type": "hero-section",
+      "blocks": {
+        "f6b84924-5d76-4c2a-be49-b2964d520875": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welche Produkte verstecken sich in deiner Box?",
+            "heading_size": "large"
+          }
+        },
+        "bd455b50-8723-4d50-b751-e0d884e69df3": {
+          "type": "text",
+          "settings": {
+            "text": "Wir geben dir einen exklusiven Einblick, welche tollen Produkte sich in der Box versteckt haben.",
+            "text_style": "body",
+            "text_color": "text-color-2"
+          }
+        },
+        "9c7fd63f-1596-42b4-8d6f-87e352b2e84f": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "#shopify-section-template--16116359758088__165848984689ca3481",
+            "button-type": "primary",
+            "secondary_button_label": "",
+            "secondary_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f6b84924-5d76-4c2a-be49-b2964d520875",
+        "bd455b50-8723-4d50-b751-e0d884e69df3",
+        "9c7fd63f-1596-42b4-8d6f-87e352b2e84f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Intersect2.png",
+        "color_scheme": "background-1",
+        "background_color": "background-color-3",
+        "heading_size": "medium",
+        "margin_top": 0,
+        "margin_bottom": 36,
+        "content-width": 1200
+      }
+    },
+    "usp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/innovative-product_bb79f5cf-4537-4af2-a23b-253a4288b111.png",
+            "title": "Neue Produkte",
+            "text": "<p>Jede Box bietet euch die Möglichkeit neue und innovative Produkte kennenzulernen, welche darauf warten, von dir und deinem Liebling ausgepackt zu werden.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unboxing-experience_a87bc115-aed1-4acd-99eb-4f61f064f327.png",
+            "title": "Lass dich überraschen",
+            "text": "<p>Jede Box wird mit dem Gedanken eines besonderen Überraschungseffekts von unserem Team zusammengestellt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charity_739c6b21-c53a-4c77-8109-b190ed5627eb.png",
+            "title": "Gutes tun",
+            "text": "<p>Mit dem Kauf deiner Box unterstützt du Tierschutzprojekte in ganz Deutschland und spendest an einen guten Zweck. Gemeinsam helfen wir Tieren in Not.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/refresh.png",
+            "title": "Flexibles Abonnement",
+            "text": "<p>Die Box ist als Abo erhältlich, welches du jederzeit pausieren kannst. So kannst du deinen Hund alle zwei Monate mit einer einzigartigen Box überraschen. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "165848984689ca3481": {
+      "type": "edition-details",
+      "settings": {
+        "headline": "<p>Erlebe deine Box nochmal digital!<\/p>",
+        "text": "",
+        "color_scheme": "background-1",
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "content-width": 1200
+      }
+    },
+    "1658490196c85d8cb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "1658490196f49be46b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bewerte jetzt deine Box",
+            "heading_size": "h1"
+          }
+        },
+        "1658490196f49be46b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unterstütze uns dabei unsere Produkte stehts zu optimieren. Damit wir dir und deinen Liebsten die beste Qualität bieten können.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1658490196f49be46b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt Bewerten!",
+            "button_link": "https:\/\/fressnapf.fra1.qualtrics.com\/jfe\/form\/SV_eCFamgzISjPio4e?box=boris",
+            "button-type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1658490196f49be46b-0",
+        "1658490196f49be46b-1",
+        "1658490196f49be46b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Intersect1_komprimiert.png",
+        "height": "adapt",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "box-width": "main-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "1658490493e428577c": {
+      "type": "rich-text",
+      "blocks": {
+        "165849049306bee86d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Teile jetzt deine Fnxbox Momente",
+            "heading_size": "h1"
+          }
+        },
+        "165849049306bee86d-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Lorem Ipsum<\/p>"
+          }
+        },
+        "9ba10913-4539-4722-865e-688871167a45": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Jetzt Bestellen!",
+            "button_link": "shopify:\/\/products\/deine-wau-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "165849049306bee86d-0",
+        "165849049306bee86d-1",
+        "9ba10913-4539-4722-865e-688871167a45"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 20
+      }
+    },
+    "16593493298b6550f5": {
+      "type": "content-carousel",
+      "blocks": {
+        "1659349329e4c9328a-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Anna_Sancho_1.jpg"
+          }
+        },
+        "1659349329e4c9328a-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Boris_Sven_2.jpg"
+          }
+        },
+        "905c0f6a-4015-4518-a8d4-ac4e737ec208": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Katharina_Esch_1.jpg"
+          }
+        },
+        "b2384e62-7fca-4c68-ab14-45db93c9f712": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Anna_Sancho_1.jpg"
+          }
+        },
+        "025ffea5-8918-41cd-be68-79cb85b42420": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Boris_Sven_2.jpg"
+          }
+        },
+        "c73a4047-9c0b-44d9-8a82-3382fd4b0281": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waubox_Katharina_Esch_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1659349329e4c9328a-0",
+        "1659349329e4c9328a-1",
+        "905c0f6a-4015-4518-a8d4-ac4e737ec208",
+        "b2384e62-7fca-4c68-ab14-45db93c9f712",
+        "025ffea5-8918-41cd-be68-79cb85b42420",
+        "c73a4047-9c0b-44d9-8a82-3382fd4b0281"
+      ],
+      "settings": {
+      }
+    },
+    "16593499135ccbc41f": {
+      "type": "rich-text",
+      "blocks": {
+        "16593499131bd92229-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lass dich überraschen und lerne neue Produkte kennen",
+            "heading_size": "h1"
+          }
+        },
+        "16593499131bd92229-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16593499131bd92229-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16593499131bd92229-0",
+        "16593499131bd92229-1",
+        "16593499131bd92229-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 20
+      }
+    },
+    "1659349603bfd4983d": {
+      "type": "multicolumn",
+      "blocks": {
+        "16593496030e5c4505-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step_01x2_e17432e0-b961-4aed-9b5f-4df7a95da057.png",
+            "title": "1.",
+            "text": "<p>Bestelle deine Box und unterstütze gleichzeitig Tiere in Not.<\/p>",
+            "link_label": "Jetzt bestellen",
+            "link": "shopify:\/\/products\/deine-wau-box"
+          }
+        },
+        "16593496030e5c4505-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miau-Box_step_02x2_dfcb1e5a-bd7c-4d5a-8c38-e02f120529e6.png",
+            "title": "2.",
+            "text": "<p>Deine Box wird von uns mit viel Liebe gepackt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16593496030e5c4505-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step_03x2_9d4ae681-249d-4d30-a1a2-4cc509e96c64.png",
+            "title": "3.",
+            "text": "<p>Erwarte tolle Überraschungen für deinen Liebling und dich.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16593496030e5c4505-0",
+        "16593496030e5c4505-1",
+        "16593496030e5c4505-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165908529872372cca",
+    "usp",
+    "165848984689ca3481",
+    "1658490196c85d8cb7",
+    "1658490493e428577c",
+    "16593493298b6550f5",
+    "16593499135ccbc41f",
+    "1659349603bfd4983d"
+  ]
+}

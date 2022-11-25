@@ -1,0 +1,363 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 4
+      }
+    },
+    "165908529872372cca": {
+      "type": "hero-section",
+      "blocks": {
+        "f6b84924-5d76-4c2a-be49-b2964d520875": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welche Produkte verstecken sich in deiner Miaubox?",
+            "heading_size": "large"
+          }
+        },
+        "bd455b50-8723-4d50-b751-e0d884e69df3": {
+          "type": "text",
+          "settings": {
+            "text": "Wir geben dir einen exklusiven Einblick, welche tollen Produkte sich in der Miaubox aus dem September versteckt haben.",
+            "text_style": "body",
+            "text_color": "text-color-2"
+          }
+        },
+        "9c7fd63f-1596-42b4-8d6f-87e352b2e84f": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "#shopify-section-template--16140694159624__165848984689ca3481",
+            "button-type": "primary",
+            "secondary_button_label": "Jetzt Miaubox bestellen",
+            "secondary_button_link": "shopify:\/\/products\/deine-miau-box"
+          }
+        }
+      },
+      "block_order": [
+        "f6b84924-5d76-4c2a-be49-b2964d520875",
+        "bd455b50-8723-4d50-b751-e0d884e69df3",
+        "9c7fd63f-1596-42b4-8d6f-87e352b2e84f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Intersect.png",
+        "color_scheme": "background-1",
+        "background_color": "background-color-3",
+        "heading_size": "medium",
+        "margin_top": 0,
+        "margin_bottom": 36,
+        "content-width": 1200
+      }
+    },
+    "usp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/innovative-product_bb79f5cf-4537-4af2-a23b-253a4288b111.png",
+            "title": "Neue Produkte",
+            "text": "<p>Jede Miaubox bietet dir die Möglichkeit neue und innovative Produkte kennenzulernen.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charity_739c6b21-c53a-4c77-8109-b190ed5627eb.png",
+            "title": "1 EUR Spende",
+            "text": "<p>Mit jeder Waubox tust du etwas Gutes und spendest an Tierschutzprojekte in ganz Deutschland.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/refresh.png",
+            "title": "Alle 2 Monate eine Miaubox",
+            "text": "<p>Du hast die volle Kontrolle und kannst dein flexibles Abo jederzeit pausieren oder kündigen.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column3",
+        "05f589fb-62d8-4f94-89cd-b4161e1966e4"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "165848984689ca3481": {
+      "type": "edition-details",
+      "settings": {
+        "headline": "<p>Erlebe deine Box nochmal digital!<\/p>",
+        "text": "",
+        "color_scheme": "background-1",
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "content-width": 1200
+      }
+    },
+    "1658490196c85d8cb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "1658490196f49be46b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bewerte jetzt deine Box",
+            "heading_size": "h1"
+          }
+        },
+        "1658490196f49be46b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unterstütze uns dabei, unsere Produkte stets zu optimieren. Damit wir dir und deinen Liebsten die beste Qualität bieten können. Mit jedem Feedback lernen wir mehr über deine Vorlieben kennen. Versprochen, es dauert auch nicht lange! 🚀<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1658490196f49be46b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt Bewerten!",
+            "button_link": "https:\/\/fnxbox.de\/pages\/kundenbewertungen",
+            "button-type": "primary",
+            "button_label_secondary": "Button label",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "1658490196f49be46b-0",
+        "1658490196f49be46b-1",
+        "1658490196f49be46b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Intersect-1.png",
+        "height": "adapt",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "box-width": "main-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "1667143253ba8cab61": {
+      "type": "apps",
+      "blocks": {
+        "90dcdf12-3e18-42d6-92a2-a71bd57972d9": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "90dcdf12-3e18-42d6-92a2-a71bd57972d9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1658490493e428577c": {
+      "type": "rich-text",
+      "blocks": {
+        "165849049306bee86d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Teile jetzt deine Miaubox Momente",
+            "heading_size": "h1"
+          }
+        },
+        "165849049306bee86d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Teilt eure gemeinsamen Momente gerne über deine Social Media Profile. Nutzt dafür am besten #miaubox und markiert Fressnapf Deutschland. Wir sind schon ganz gespannt auf eure Bilder 🐱<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165849049306bee86d-0",
+        "165849049306bee86d-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 20
+      }
+    },
+    "16593493298b6550f5": {
+      "type": "content-carousel",
+      "blocks": {
+        "708c4e3a-ab18-43d7-9e37-f4710c940bec": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg"
+          }
+        },
+        "1659349329e4c9328a-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh-image-1664204317375_sized.jpg"
+          }
+        },
+        "1659349329e4c9328a-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ragnar_und_rollo-image-1662041667479_sized.jpg"
+          }
+        },
+        "905c0f6a-4015-4518-a8d4-ac4e737ec208": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jvossels_miaubox_sized.png"
+          }
+        },
+        "b2384e62-7fca-4c68-ab14-45db93c9f712": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ladydaisypaws-image_sized.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "708c4e3a-ab18-43d7-9e37-f4710c940bec",
+        "1659349329e4c9328a-0",
+        "1659349329e4c9328a-1",
+        "905c0f6a-4015-4518-a8d4-ac4e737ec208",
+        "b2384e62-7fca-4c68-ab14-45db93c9f712"
+      ],
+      "settings": {
+      }
+    },
+    "16593499135ccbc41f": {
+      "type": "rich-text",
+      "blocks": {
+        "16593499131bd92229-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lass dich überraschen und lerne neue Produkte kennen",
+            "heading_size": "h1"
+          }
+        },
+        "16593499131bd92229-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16593499131bd92229-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16593499131bd92229-0",
+        "16593499131bd92229-1",
+        "16593499131bd92229-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 20
+      }
+    },
+    "1659349603bfd4983d": {
+      "type": "multicolumn",
+      "blocks": {
+        "16593496030e5c4505-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miau-Box_step_01x2_b7215b17-07d6-4a2a-906c-49f35b987d29.png",
+            "title": "1.",
+            "text": "<p>Bestelle deine Miaubox und unterstütze gleichzeitig Tiere in Not.<\/p>",
+            "link_label": "Jetzt bestellen",
+            "link": "shopify:\/\/products\/deine-miau-box"
+          }
+        },
+        "16593496030e5c4505-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miau-Box_step_02x2_dfcb1e5a-bd7c-4d5a-8c38-e02f120529e6.png",
+            "title": "2.",
+            "text": "<p>Deine Miaubox wird von uns mit viel Liebe gepackt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16593496030e5c4505-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miau-Box_step_03x2_5000092c-f5d6-4f10-bcb6-f0d9b252bf50.png",
+            "title": "3.",
+            "text": "<p>Erwarte tolle Überraschungen für deinen Liebling und dich.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16593496030e5c4505-0",
+        "16593496030e5c4505-1",
+        "16593496030e5c4505-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165908529872372cca",
+    "usp",
+    "165848984689ca3481",
+    "1658490196c85d8cb7",
+    "1667143253ba8cab61",
+    "1658490493e428577c",
+    "16593493298b6550f5",
+    "16593499135ccbc41f",
+    "1659349603bfd4983d"
+  ]
+}
