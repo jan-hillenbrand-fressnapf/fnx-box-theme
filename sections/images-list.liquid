@@ -1,0 +1,123 @@
+{{ 'section-images-list.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="section-images-list color-{{ section.settings.color_scheme }} section-padding">
+  <div class="page-width">
+      <h2 class="h1 center">{{ section.settings.headline }}</h2>
+      <ul id="Slider-{{ section.id }}" class="section-images-list__images grid grid--1-col grid--4-col-tablet slider slider--mobile grid--peek" role="list">
+        {%- for block in section.blocks -%}
+          <li class="grid__item center slider__slide" {{ block.shopify_attributes }}>
+            <a href="{{ block.settings.url }}">
+              {% render 'image', image: block.settings.image %}
+              {% if section.settings.show_overlay %}<div class="overlay"></div>{% endif %}
+              {% if block.settings.instagram_name != blank %}
+                <div class="section-images-list__image__instagram">
+                  {% render 'icon-instagram-user' %}
+                  {{ block.settings.instagram_name }}
+                </div>
+              {% endif %}
+              {% if block.settings.title != blank or block.settings.subtitle != blank %}
+                <div class="section-images-list__image__text">
+                  <span class="h2">{{ block.settings.title }}</span>
+                  <span class="h3">{{ block.settings.subtitle }}</span>
+                </div>
+              {% endif %}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Images List",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.rich-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.rich-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.rich-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.rich-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "background-3",
+          "label": "t:sections.rich-text.settings.color_scheme.options__6.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.rich-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.rich-text.settings.color_scheme.label"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay over images",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "instagram_name",
+          "label": "Instagram name (optional)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+   {
+     "name": "Images List"
+   }
+ ]
+}
+
+{% endschema %}

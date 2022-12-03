@@ -12,12 +12,6 @@
 
 }
 
-.collapsible-content summary:hover .accordion__title {
-  text-decoration: none !important;
-}
-.collapsible-content summary .accordion__title {
-  color: #196428 !important;
-}
 .crotch {
   transition: box-shadow var(--duration-short) ease;
   cursor: pointer;
@@ -255,9 +249,6 @@ background-color: #3333331a;
 .button__secondary__white:hover{ 
   background-color: #D6D6D6;
 }
-.button-wrapper .button{
-  margin:1rem 1rem ;
-}
 .inverted_button:hover{
   --shadow-horizontal-offset: none;
     --shadow-vertical-offset:none;
@@ -285,11 +276,6 @@ background-color: #60843e!important;
 transition: background-color .2s ease-in-out,color .2s ease-in-out;
 }
 
-@media screen and (max-width:550px) {
-  .h1 {
-    text-align: center!important;
-  }
-}
 #product-page .collapsible-content-wrapper-narrow
 {
   padding:0 20px;

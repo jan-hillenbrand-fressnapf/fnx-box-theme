@@ -2,10 +2,10 @@
 
 <div class="section-intro page-width">
   <div class="intro__text-container">
-    <h1>{{ section.settings.headline }}</h1>
+    <h1 class="h0">{{ section.settings.headline }}</h1>
     <div class="intro__rating-container">
       <div class="intro__rating">
-        {{ section.settings.rating }}
+        <span class="h2 intro-rating__rating">{{ section.settings.rating }}</span>
         {% for i in (1..4) %}
           <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9578 1.89197C13.575 0.408405 15.6798 0.408405 16.2969 1.89197L19.1649 8.78912L26.6089 9.38557C28.2123 9.51368 28.8625 11.5138 27.6406 12.5607L21.9694 17.4192L23.701 24.6827C24.0743 26.2475 22.3731 27.4832 21.0011 26.6456L14.6274 22.7528L8.25368 26.6456C6.88169 27.4832 5.18048 26.2462 5.55378 24.6827L7.2853 17.4192L1.61413 12.5607C0.392288 11.5138 1.04247 9.51368 2.64588 9.38557L10.0899 8.78912L12.9578 1.89335V1.89197Z" fill="#FFB300"/>
@@ -27,7 +27,7 @@
     {%- if section.settings.box1_image != blank -%}
       {% render 'image', image: section.settings.box1_image %}
     {%- endif -%}
-    <h2>{{ section.settings.box1_heading }}</h2>
+    <span class="h1">{{ section.settings.box1_heading }}</span>
     <a class="button" href="{{ section.settings.box1_button_url }}">
       {{ section.settings.box1_button_text }}
     </a>
@@ -46,7 +46,7 @@
     {%- if section.settings.box2_image != blank -%}
       {% render 'image', image: section.settings.box2_image %}
     {%- endif -%}
-    <h2>{{ section.settings.box2_heading }}</h2>
+    <span class="h1">{{ section.settings.box2_heading }}</span>
     <a class="button" href="{{ section.settings.box2_button_url }}">
       {{ section.settings.box2_button_text }}
     </a>
@@ -88,6 +88,10 @@
       "label": "Review URL"
     },
     {
+      "type": "header",
+      "content": "Box 1"
+    },
+    {
       "type": "text",
       "id": "box1_heading",
       "label": "Heading Box 1"
@@ -111,6 +115,10 @@
       "type": "url",
       "id": "box1_button_url",
       "label": "Button URL Box 1"
+    },
+    {
+      "type": "header",
+      "content": "Box 2"
     },
     {
       "type": "text",

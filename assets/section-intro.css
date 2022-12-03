@@ -1,14 +1,22 @@
+.section-intro {
+  padding: 0 !important;
+}
+
 .intro__text-container {
   text-align: center;
 }
 
 .intro__rating {
   border: 1px solid #DCDBDB;
-  font-weight: 700;
-  font-size: 1.6rem;
   border-radius: 30px;
   display: inline-block;
   padding: 8px 16px;
+}
+
+.intro__rating .intro-rating__rating,
+.intro__rating-count a,
+.intro__rating-count a:visited {
+  color: var(--color-base-text);
 }
 
 .intro__rating-count {
@@ -99,8 +107,7 @@
 
   .intro__rating {
     border: 0;
-    font-size: 3.2rem;
-    line-height: 40px;
+    color: var(--color-base-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,9 +117,4 @@
   .intro__rating svg {
     margin-left: 9px;
   }
-}
-
-/* TODO: REMOVE!!! */
-.jdgm-revs-tab-btn {
-  display: none !important;
 }

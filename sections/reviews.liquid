@@ -1,19 +1,27 @@
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'section-reviews.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn section-padding color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="section-padding color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width isolate">
     {% unless section.settings.title == blank %}
       <div class="title-wrapper--self-padded-mobile title-wrapper--no-top-margin{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
         <h2 class="h1 title center">
           {{ section.settings.title | escape }}
+          <div class="text-body">Powered by <a class="link" href="/pages/kundenbewertungen">Judge.me</a></div>
         </h2>
-        {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
-          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
-        {%- endif -%}
+        
       </div>
     {% endunless %}
+
+    {% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}
+
+    <div class="section-reviews__cta">
+      <button class="button button__primary" onclick="jdgm.showReviewsTab()">Bewertung abgeben</button>
+      <a class="link" href="/pages/kundenbewertungen">Alle Bewertungen ansehen</a>
+    </div>
+    
+    {% comment %}
     <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
@@ -81,13 +89,14 @@
         </a>
       {%- endif-%}
     </div>
+    {% endcomment %}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.multicolumn.name",
-  "class": "section",
+  "name": "Reviews Section",
+  "class": "section section-reviews",
   "tag": "section",
   "settings": [
     {
@@ -265,7 +274,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Reviews Section",
       "blocks": [
         {
           "type": "column"

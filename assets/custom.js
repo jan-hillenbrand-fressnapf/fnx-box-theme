@@ -32,19 +32,6 @@ if (window.location.href.includes('/products/')){
     multicol[1].classList.add("new-products");
   }
   
-  /* crotch */ 
-if (window.document.location.pathname == '/') {
-  let crotchs = document.getElementsByClassName('multicolumn-list__item');
-  if (crotchs.length && crotchs.length > 0) {
-      Array.from(crotchs).forEach((crotch) => {
-      let link = crotch.getElementsByClassName('link')[0].getAttribute('href');
-      crotch.addEventListener('click', () => {
-          window.document.location.replace(link);
-      });
-      crotch.classList.add('crotch');
-      });
-  } 
-}
 // add classes for css
 if (
   window.document.location.pathname == "/" ||

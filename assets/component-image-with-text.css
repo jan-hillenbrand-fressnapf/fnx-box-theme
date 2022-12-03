@@ -73,11 +73,21 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
-  align-self: center;
-  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
   position: relative;
   z-index: 1;
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text__content {
+    justify-content: center;
+    align-self: center;
+    padding-left: 10rem;
+  }
+
+  .image-with-text__grid--reverse .image-with-text__content {
+    padding-right: 10rem;
+    padding-left: 0;
+  }
 }
 
 .image-with-text .grid__item::after {
@@ -96,14 +106,6 @@
     var(--media-shadow-vertical-offset)
     var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
-}
-
-.image-with-text:not(.image-with-text--overlap) .image-with-text__text-item:after {
-  border-radius: var(--text-boxes-radius);
-  box-shadow: var(--text-boxes-shadow-horizontal-offset)
-    var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
 .image-with-text .image-with-text__media-item > * {
@@ -276,12 +278,6 @@
     rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
-@media screen and (min-width: 990px) {
-  .image-with-text__content {
-    padding: 6rem 7rem 7rem;
-  }
-}
-
 .image-with-text__content > * + * {
   margin-top: 2rem;
 }
@@ -299,6 +295,18 @@
 .image-with-text__content :last-child:is(.image-with-text__heading),
 .image-with-text__text--caption {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .image-with-text__content .button-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-with-text__content .button {
+    width: 100%;
+  }
 }
 
 .image-with-text__content .button + .image-with-text__text {
@@ -327,29 +335,12 @@
   }
 }
 
-.full-width{
-  width: 100%;
-  margin: 0;
-  max-width: 100% !important;
-  background: #ecf3dd;
-
-  padding: 0px !important;
-  border-radius: 0px;
-}
-.full-width img{
-  object-fit: contain;
-}
-
 .full-width .image-with-text__grid {
   max-width: var(--page-width);
   margin: auto;
 }
-.full-width  img {
-  padding: 1vw;
-}
-.full-width
-  .image-with-text
-  .grid__item {
+
+.full-width .image-with-text .grid__item {
   position: relative;
   min-height: 400px;
 }

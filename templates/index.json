@@ -1,215 +1,520 @@
 {
-  "wrapper": "#petSelection",
   "sections": {
-    "1652254166ee7525b5": {
-      "type": "rich-text",
-      "blocks": {
-        "165225416679cdc3d9-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Fressnapf Überraschungsbox für...",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "165225416679cdc3d9-0"
-      ],
+    "110cd995-3643-4561-91bb-e88dfdc02785": {
+      "type": "intro-section",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 32
+        "headline": "Tierliebe vom Feinsten",
+        "rating": "4,56",
+        "ratings_count": 36,
+        "reviews_url": "shopify:\/\/pages\/kundenbewertungen",
+        "box1_heading": "Für Hunde",
+        "box1_image": "shopify:\/\/shop_images\/Snip20221201_70.png",
+        "box1_product": "deine-wau-box",
+        "box1_button_text": "Waubox entdecken",
+        "box1_button_url": "shopify:\/\/products\/deine-wau-box",
+        "box2_heading": "Für Katzen",
+        "box2_image": "shopify:\/\/shop_images\/Snip20221201_71.png",
+        "box2_product": "deine-miau-box",
+        "box2_button_text": "Miaubox entdecken",
+        "box2_button_url": "shopify:\/\/products\/deine-miau-box"
       }
     },
-    "1652254025f9a2b5f0": {
-      "type": "multicolumn",
+    "512621d5-9221-4d18-b907-87f8ee689e6b": {
+      "type": "multicolumn-with-icons",
       "blocks": {
-        "16522540254b1b6d5d-0": {
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dog_1aaa4dbf-fc14-44f9-8115-bc6b9e1d1b5f.png",
-            "title": "Team Hund",
-            "text": "",
-            "link_label": "Zur Waubox",
-            "link": "shopify:\/\/products\/deine-wau-box"
+            "icon": "surprise",
+            "title": "Überraschung garantiert",
+            "text": "<p>Jede Box enthält tolle und hochwertige Produktneuheiten mit einem Warenwert von 50 €, für nur 24,90 €.<\/p>",
+            "link_label": "Welche Produkte sind in der Box?",
+            "link": ""
           }
         },
-        "16522540254b1b6d5d-1": {
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat.png",
-            "title": "Team Katze",
-            "text": "",
-            "link_label": "Zur Miaubox",
-            "link": "shopify:\/\/products\/deine-miau-box"
+            "icon": "calendar",
+            "title": "Du entscheidest",
+            "text": "<p>Du hast die volle Kontrolle und kannst den Lieferrhythmus jederzeit ganz einfach pausieren oder kündigen.<\/p>",
+            "link_label": "Wie funktioniert’s?",
+            "link": ""
+          }
+        },
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-2": {
+          "type": "column",
+          "settings": {
+            "icon": "savings",
+            "title": "Spar dir die Versandkosten",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.<\/p>",
+            "link_label": "Nächster Boxversandt?",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "16522540254b1b6d5d-0",
-        "16522540254b1b6d5d-1"
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-0",
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-1",
+        "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-2"
       ],
       "settings": {
-        "title": "",
-        "image_width": "third",
-        "image_ratio": "adapt",
+        "title": "Das besondere an der Happy Box",
         "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "swipe_on_mobile": false
       }
     },
-    "8dd58aa6-c6a1-4dde-b816-35ed64975f06": {
-      "type": "rich-text",
+    "50aab3e2-fea3-4cbd-87ca-49585b88d8d4": {
+      "type": "images-list",
       "blocks": {
-        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-0": {
+        "4de5a92d-fe94-4be3-91d4-1068089d2abc": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
+            "instagram_name": "",
+            "title": "Waubox",
+            "subtitle": "Oktober 2022"
+          }
+        },
+        "5cd106ef-e16f-471f-9612-a65811f840d3": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-17908204928655342.jpg",
+            "instagram_name": "",
+            "title": "Miaubox",
+            "subtitle": "September 2022"
+          }
+        },
+        "588b9e79-9640-467b-8971-8c3487a3e4e5": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1_521451a1-04fa-44b7-91f8-cf3a158dc2bc.jpg",
+            "instagram_name": "",
+            "title": "Waubox",
+            "subtitle": "August 2022"
+          }
+        },
+        "05d7f18c-4dda-4279-8b32-f16babbc5306": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/snips-the-doge-image-1668153771115.jpg",
+            "instagram_name": "",
+            "title": "Waubox",
+            "subtitle": "Januar 2020"
+          }
+        }
+      },
+      "block_order": [
+        "4de5a92d-fe94-4be3-91d4-1068089d2abc",
+        "5cd106ef-e16f-471f-9612-a65811f840d3",
+        "588b9e79-9640-467b-8971-8c3487a3e4e5",
+        "05d7f18c-4dda-4279-8b32-f16babbc5306"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "headline": "Was war in den letzten Boxen?",
+        "show_overlay": true
+      }
+    },
+    "e413e2dc-45fd-46b8-9c24-f7590d46cf5d": {
+      "type": "image-with-text",
+      "blocks": {
+        "da01f6fd-5909-43d1-b1cd-809d236a1e17": {
+          "type": "rating",
+          "settings": {
+            "product": "deine-wau-box"
+          }
+        },
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil der Fressnapf Waubox | Miaubox Familie",
+            "heading": "Die Überraschungsbox für deinen Hund",
             "heading_size": "h1"
           }
         },
-        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-1": {
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Nutze unserer Hashtags #Waubox #Miaubox<\/p>"
+            "text": "<p>Spiel, Spaß, Pflege und ganz viel Belohnung - Mit eurer Waubox entdecket ihr immer neue Produkte rund um den Hund.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Waubox entdecken",
+            "button_link": "shopify:\/\/policies\/subscription-policy",
+            "button-type": "primary",
+            "button_label_secondary": "",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
           }
         }
       },
       "block_order": [
-        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-0",
-        "template--15957816705276__8dd58aa6-c6a1-4dde-b816-35ed64975f06-166818713221f8be99-1"
+        "da01f6fd-5909-43d1-b1cd-809d236a1e17",
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-0",
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-1",
+        "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "height": "adapt",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "box-width": "full-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "mobile_content_alignment": "left"
       }
     },
-    "e5404c9e-cd83-4a47-bbf6-c533159d751e": {
-      "type": "content-carousel",
+    "7af1e66d-a02c-4900-9de4-6e1ef3aec960": {
+      "type": "image-with-text",
       "blocks": {
-        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-0": {
-          "type": "slide",
+        "3f386805-4f60-438c-9c28-bb8e691bd7d0": {
+          "type": "rating",
           "settings": {
-            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized.jpg"
+            "product": "deine-miau-box"
           }
         },
-        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/jvossels_miaubox_sized.png"
-          }
-        },
-        "ca2d9705-5251-4d19-98e1-945e3b25c8ac": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ragnar_und_rollo-image-1662041667479_sized.jpg"
-          }
-        },
-        "34d1123f-bae3-4139-9f58-53d7127019c9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/togo-saltandpepperschnauzer-image-1662041536660_sized.jpg"
-          }
-        },
-        "efa9a7e7-0a42-43ae-9e24-730f3417d5e4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/emma_the_happy_maltipoo-image-1662041635241_sized.jpg"
-          }
-        },
-        "fa79adda-31c0-4476-b461-1845dc73a054": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fressnapf_regensburg-image-1662041601683_sized.jpg"
-          }
-        },
-        "e6f41cd9-500b-4d07-bcb3-e44f978dfe0d": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/liorandkelly_bsh-image-1664204317375_sized.jpg"
-          }
-        },
-        "03b4d702-eaeb-4e5c-853e-4858c2155dd4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Lenny.png"
-          }
-        },
-        "39fa040c-cce7-4f37-b11c-39f276ae16da": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Powerdackel.png"
-          }
-        },
-        "2a722f18-3a2f-41a0-aa7e-a4a820c13d83": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-0",
-        "template--15957816705276__e5404c9e-cd83-4a47-bbf6-c533159d751e-1665752639ff926deb-1",
-        "ca2d9705-5251-4d19-98e1-945e3b25c8ac",
-        "34d1123f-bae3-4139-9f58-53d7127019c9",
-        "efa9a7e7-0a42-43ae-9e24-730f3417d5e4",
-        "fa79adda-31c0-4476-b461-1845dc73a054",
-        "e6f41cd9-500b-4d07-bcb3-e44f978dfe0d",
-        "03b4d702-eaeb-4e5c-853e-4858c2155dd4",
-        "39fa040c-cce7-4f37-b11c-39f276ae16da",
-        "2a722f18-3a2f-41a0-aa7e-a4a820c13d83"
-      ],
-      "settings": {
-      }
-    },
-    "774369a9-4a4f-4fa2-be7d-c9f35cd2d38c": {
-      "type": "newsletter",
-      "blocks": {
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-0": {
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Unser Leckerchen: 10 % Willkommensrabatt"
+            "heading": "Die Überaschungsbox für deine Katze",
+            "heading_size": "h1"
           }
         },
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-2": {
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alles für die Katz! Mit eurer Miaubox entdecket ihr immer neue Produkte rund um Spiel, Spaß und Pflege.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Miaubox entdecken",
+            "button_link": "shopify:\/\/products\/deine-miau-box",
+            "button-type": "primary",
+            "button_label_secondary": "Button label",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "3f386805-4f60-438c-9c28-bb8e691bd7d0",
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-0",
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-1",
+        "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "height": "adapt",
+        "image_mode": "image-mode-cover",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "box-width": "full-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-3",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "2fd18355-a825-4f92-aba1-d13a467a6ff5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Bestelle deine Box in wenigen Klicks",
+            "text": "<p>Jede Box enthält Spielzeug, Leckerlis und Pflegeprodukte im Wert von mehr als 50 €.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Freu dich auf den Versand",
+            "text": "<p>Du erhälts alle Zwei Monate eine individuell gepackte Box mit neuen Produkten.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Überraschung mit Happy-Faktor",
+            "text": "<p>Teile unvergessliche Happy-Momente mit deiner Fellnase. Jeden Monat auf’s Neue.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-0",
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-1",
+        "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-2"
+      ],
+      "settings": {
+        "title": "So funktioniert's",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "show_in_boxes": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "114cc600-b178-47a8-86a1-dee0d9ffe78c": {
+      "type": "reviews",
+      "blocks": {
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-0",
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-1",
+        "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-2"
+      ],
+      "settings": {
+        "title": "Mehr als 8000 zufriedene Fellnasen",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "show_in_boxes": true,
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-2"
+      }
+    },
+    "c560d97b-94e3-4b69-93ff-870dbed59a45": {
+      "type": "images-list",
+      "blocks": {
+        "a18dd23a-4214-4c98-a446-8babdd7e8beb": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "a914d729-fa72-48e2-b77e-212385945c03": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-17908204928655342.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "b97c7ddd-fed4-42b0-b108-a51cf214da1c": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "bb403335-24fb-429c-9a2f-e858c3191eae": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "a18dd23a-4214-4c98-a446-8babdd7e8beb",
+        "a914d729-fa72-48e2-b77e-212385945c03",
+        "b97c7ddd-fed4-42b0-b108-a51cf214da1c",
+        "bb403335-24fb-429c-9a2f-e858c3191eae"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "headline": "",
+        "show_overlay": true
+      }
+    },
+    "b659fae3-f3a0-4ae8-be2a-713e8eddfa73": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>15 % Rabatt auf deine erste Box<\/p>"
+          }
+        },
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Werde Teil unserer Box Familie"
+          }
+        },
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-2": {
           "type": "email_form",
           "settings": {
           }
-        },
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-1": {
-          "type": "paragraph",
+        }
+      },
+      "block_order": [
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-1",
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-0",
+        "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-2"
+      ],
+      "settings": {
+        "small_text": "<p>Ich bin damit einverstanden, dass Fressnapf und seine <a href=\"#\" target=\"_blank\" title=\"#\">Partner<\/a> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Datenschutzhinweisen<\/a>.<\/p>"
+      }
+    },
+    "0504c5d4-3ba5-45cb-8b57-28a5c2b2f134": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0": {
+          "type": "collapsible_row",
           "settings": {
-            "text": "<p><strong>Registriere dich hier, um einen 10 % Willkommensrabatt zu erhalten und Teil der Box-Community zu werden.<\/strong><\/p><p><em>Ich bin damit einverstanden, dass Fressnapf und seine <\/em><a href=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\" target=\"_blank\" title=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\"><em>Partner<\/em><\/a><em> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <\/em><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\"><em>Datenschutzhinweisen<\/em><\/a><em>.<\/em><\/p>"
+            "heading": "Welche Produkte sind in der Miaubox?",
+            "row_content": "<p>Der genaue Inhalt unserer Überraschungsbox für Hunde bleibt natürlich geheim. Ein kleiner Tipp: Du kannst dich unter anderem auf tolle Produkte, Services und Snacks für deinen Hund freuen. Der Warenwert der Box liegt bei über 50€. Was bisher enthalten war erfährst du hier.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warum werden die Boxen alle 2 Monate versendet?",
+            "row_content": "<p>asdasd<\/p>",
+            "page": ""
+          }
+        },
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>asdasd<\/p>",
+            "page": ""
+          }
+        },
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>qweqwe<\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-0",
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-2",
-        "template--15957816705276__774369a9-4a4f-4fa2-be7d-c9f35cd2d38c-1668187102c07d4871-1"
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0",
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-1",
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-2",
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3"
       ],
       "settings": {
+        "caption": "",
+        "heading": "Noch Fragen?",
+        "heading_alignment": "left",
+        "layout": "none",
+        "open_first_collapsible_row": false
+      }
+    },
+    "e5ecc905-03cc-424f-8940-56b9a5b461f3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tierisch Engagiert für Fellnasen in Not",
+            "heading_size": "h1"
+          }
+        },
+        "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unter der Initiative “Tierisch Engagiert” unterstützt Fressnapf Tierschutzeinrichtungen in ganz Deutschland mit Geld- und Sachspenden. So konnten wir allein im letzten Jahr mit insgesamt über 1.800 Spendenpaletten und 1.5 Mio. Euro Tierschutzvereine bei ihrer wichtigen Arbeit unterstützen und dazu beitragen, dass viele Tiere in Not einen warmen und schützenden Schlafplatz haben. Erfahre mehr über unser tierisches Engagement.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-0",
+        "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Snip20221203_88.png",
+        "height": "adapt",
+        "image_mode": "image-mode-contain",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "box-width": "main-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "mobile_content_alignment": "left"
       }
     }
   },
   "order": [
-    "1652254166ee7525b5",
-    "1652254025f9a2b5f0",
-    "8dd58aa6-c6a1-4dde-b816-35ed64975f06",
-    "e5404c9e-cd83-4a47-bbf6-c533159d751e",
-    "774369a9-4a4f-4fa2-be7d-c9f35cd2d38c"
+    "110cd995-3643-4561-91bb-e88dfdc02785",
+    "512621d5-9221-4d18-b907-87f8ee689e6b",
+    "50aab3e2-fea3-4cbd-87ca-49585b88d8d4",
+    "e413e2dc-45fd-46b8-9c24-f7590d46cf5d",
+    "7af1e66d-a02c-4900-9de4-6e1ef3aec960",
+    "2fd18355-a825-4f92-aba1-d13a467a6ff5",
+    "114cc600-b178-47a8-86a1-dee0d9ffe78c",
+    "c560d97b-94e3-4b69-93ff-870dbed59a45",
+    "b659fae3-f3a0-4ae8-be2a-713e8eddfa73",
+    "0504c5d4-3ba5-45cb-8b57-28a5c2b2f134",
+    "e5ecc905-03cc-424f-8940-56b9a5b461f3"
   ]
 }

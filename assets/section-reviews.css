@@ -1,0 +1,14 @@
+.section-reviews .jdgm-revs-tab-btn {
+  display: block;
+  position: relative;
+}
+
+.section-reviews__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-reviews__cta .button {
+  margin-bottom: 2.8rem;
+}

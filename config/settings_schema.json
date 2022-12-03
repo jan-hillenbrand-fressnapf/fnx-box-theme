@@ -83,6 +83,17 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_3",
+        "default": "#F4E7F3",
+        "label": "t:settings_schema.colors.settings.colors_background_3.label"
+      },
+      {
+        "id": "gradient_background_3",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_background_3.label"
       }
     ]
   },
@@ -638,10 +649,10 @@
         "id": "text_boxes_shadow_opacity",
         "min": 0,
         "max": 100,
-        "step": 5,
+        "step": 2,
         "unit": "%",
         "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 0
+        "default": 8
       },
       {
         "type": "range",
@@ -661,7 +672,7 @@
         "step": 2,
         "unit": "px",
         "label": "t:settings_schema.global.settings.vertical_offset.label",
-        "default": 0
+        "default": 10
       },
       {
         "type": "range",
@@ -671,7 +682,7 @@
         "step": 5,
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
-        "default": 0
+        "default": 30
       }
     ]
   },
