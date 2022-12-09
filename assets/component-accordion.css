@@ -56,3 +56,55 @@ details[open] .icon-minus {
 .accordion__content img {
   max-width: 100%;
 }
+
+.collapsible-content input[type="radio"] {
+  display: none;
+}
+
+.collapsible-content__nav {
+  display: flex;
+  margin-bottom: 2.1rem;
+  overflow-x: scroll;
+}
+
+.collapsible-content__nav label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.15rem 1.6rem;
+  white-space: nowrap;
+  
+  border-radius: 1.6rem;
+
+  color: #464646;
+  font-weight: 700;
+
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+
+  cursor: pointer;
+}
+
+.collapsible-content__nav label.active {
+  background: #ECF3DD;
+}
+
+.collapsible-content__nav label:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .collapsible-content__nav {
+    overflow-x: hidden;
+  }
+
+  .collapsible-content__nav label {
+    padding: 1.2rem 8.6rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .collapsible-content__nav label:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}

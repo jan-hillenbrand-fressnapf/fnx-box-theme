@@ -83,3 +83,25 @@ if (copyCouponBtns.length && copyCouponBtns.length > 0) {
   });
   });
 }
+
+// Accordion Tabs
+function updateTabs() {
+  const activeTab = this.querySelector('input[type="radio"]:checked');
+  if(activeTab) {
+    const labels = this.querySelectorAll('label');
+    Array.prototype.forEach.call(labels, function(label) {
+      label.classList.remove('active');
+    })
+
+    const activeLabel = this.querySelector(`label[for="${activeTab.id}"]`);
+    if(activeLabel) {
+      activeLabel.classList.add('active');
+    }
+  }
+}
+
+const collapsibles = document.querySelectorAll('.collapsible-content');
+Array.prototype.forEach.call(collapsibles, function(c) {
+  c.addEventListener('change', updateTabs.bind(c));
+  updateTabs.call(c);
+})
