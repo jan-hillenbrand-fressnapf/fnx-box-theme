@@ -1,7 +1,3 @@
-.section-intro {
-  padding: 0 !important;
-}
-
 .intro__text-container {
   text-align: center;
 }
@@ -66,8 +62,15 @@
     margin-left: -50vw;
     margin-right: -50vw;
     max-width: 100vw;
-    padding: 0;
     display: flex;
+    background: linear-gradient(90deg, #ECF3DD 50%, #F4E7F3 50%);
+  }
+
+  .section-intro .page-width {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
   }
 
   .intro__box {

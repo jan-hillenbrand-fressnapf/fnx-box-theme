@@ -1,6 +1,6 @@
 {{ 'section-intro.css' | asset_url | stylesheet_tag }}
 
-<div class="section-intro page-width">
+<div class="page-width">
   <div class="intro__text-container">
     <h1 class="h0">{{ section.settings.headline }}</h1>
     <div class="intro__rating-container">
@@ -65,7 +65,7 @@
 {% schema %}
 {
   "name": "Intro Section",
-  "class": "section",
+  "class": "section section-intro",
   "settings": [
     {
       "type": "text",
