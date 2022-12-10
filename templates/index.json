@@ -420,6 +420,12 @@
     "0504c5d4-3ba5-45cb-8b57-28a5c2b2f134": {
       "type": "collapsible-content",
       "blocks": {
+        "9140619a-fe41-4318-80f0-443ecb8c6fab": {
+          "type": "tab",
+          "settings": {
+            "heading": "Allgemeines zum Abo"
+          }
+        },
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0": {
           "type": "collapsible_row",
           "settings": {
@@ -451,13 +457,64 @@
             "row_content": "<p>qweqwe<\/p>",
             "page": ""
           }
+        },
+        "40cdb9cc-2072-484c-b7e9-2f8710bdfa72": {
+          "type": "tab",
+          "settings": {
+            "heading": "Lieferung"
+          }
+        },
+        "07f94e4a-d12a-41c2-b5b4-55ecb24b7e11": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>asdasd<\/p>",
+            "page": ""
+          }
+        },
+        "af237209-7ce2-4c80-960c-f39a108caa86": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>asdasd<\/p>",
+            "page": ""
+          }
+        },
+        "41e8779c-3221-4085-914c-d08a7c65bed5": {
+          "type": "tab",
+          "settings": {
+            "heading": "Bezahlung"
+          }
+        },
+        "9e1c161e-8290-4eab-87ac-b01cd4aede23": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>asdasd<\/p>",
+            "page": ""
+          }
+        },
+        "a01efae2-35df-4e1c-86e9-7debac91fa50": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>qweqwe<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
+        "9140619a-fe41-4318-80f0-443ecb8c6fab",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-1",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-2",
-        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3"
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3",
+        "40cdb9cc-2072-484c-b7e9-2f8710bdfa72",
+        "07f94e4a-d12a-41c2-b5b4-55ecb24b7e11",
+        "af237209-7ce2-4c80-960c-f39a108caa86",
+        "41e8779c-3221-4085-914c-d08a7c65bed5",
+        "9e1c161e-8290-4eab-87ac-b01cd4aede23",
+        "a01efae2-35df-4e1c-86e9-7debac91fa50"
       ],
       "settings": {
         "caption": "",

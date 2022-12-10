@@ -1,0 +1,170 @@
+<div class="section-{{ section.id }}-padding  color-{{ section.settings.color_scheme }} gradient">
+  <div class="footer__content-top page-width">
+    <div class="flex-grid">
+      
+      {% for index in range %}
+        <div class=" {{index}} grid-column{% if index== 2%} mobile-row-grid{% endif %}">
+          {% assign blockHeaderId = section.blocks[index].settings.heading_col | plus: 0 %}
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'heading' -%} 
+                  {% assign headerId =  block.settings.heading_col | plus: 0 %}
+                  {%if  headerId == index %}
+                  <div>
+                    <h2 class="footer-block__heading" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+                  </div>
+                  {%- endif -%}
+
+                {%- when "text" -%}
+                  {% assign textId =  block.settings.text_col | plus: 0 %}
+                    {%if  textId  == index %}
+                    {% style %} 
+                      .footer-text p{
+                      font-size:{{ block.settings.text_size }}rem;
+                    }
+                    {% endstyle %}
+                      <div class="footer-text" {{ block.shopify_attributes }} style="">{{ block.settings.text_content  }}</div>
+                    {%- endif -%}
+
+                {%- when "social" -%}
+                  {% assign socialId =  block.settings.social_col | plus: 0 %}
+                    {%- if socialId == index -%}
+                    <ul class="footer__list-social list-unstyled list-social" role="list" style="margin-top:{{ block.settings.social_margin_top}}px; margin-bottom:{{ block.settings.social_margin_bottom}}px;">
+                        
+                      {%- if settings.social_twitter_link != blank and block.settings.twitter_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_twitter_link }}" class="link list-social__link" style="width: {{ block.settings.icon_size }}rem; height: {{ block.settings.icon_size }}rem;">
+                            {%- render 'icon-twitter' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_facebook_link != blank and block.settings.facebook_checkbox -%}
+                      {% style %}
+                        .list-social__item .icon{
+                          height:{{ block.settings.icon_size }}rem;
+                          width:{{ block.settings.icon_size }}rem;
+                        }
+                      {% endstyle %}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+                            {%- render 'icon-facebook' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_pinterest_link != blank and block.settings.pinterest_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                            {%- render 'icon-pinterest' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_instagram_link  != blank  and block.settings.instagram_checkbox-%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                            {%- render 'icon-instagram' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_tiktok_link != blank and block.settings.tiktok_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                            {%- render 'icon-tiktok' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_tumblr_link != blank and block.settings.tumblr_checkbox-%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                            {%- render 'icon-tumblr' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_snapchat_link != blank and  block.settings.snapchat_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                            {%- render 'icon-snapchat' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_youtube_link != blank and block.settings.youtube_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                            {%- render 'icon-youtube' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_vimeo_link != blank and  block.settings.vimeo_checkbox -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                            {%- render 'icon-vimeo' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                    </ul>
+                    {%- endif -%}
+                {%- when 'image' -%}
+                  {% assign imageId =  block.settings.image_col | plus: 0 %}
+                    {%- if imageId == index -%}
+                      <div class="
+                      {% if block.settings.hide_on_mobile %}
+                      mobile-hidden 
+                      {% endif %}
+                      {% if block.settings.hide_on_desktop %}
+                      desktop-hidden 
+                      {% endif %}
+                        footer-block__details-content footer-block-image {{ block.settings.alignment }}" style="margin-top:{{ block.settings.image_margin_top}}px; margin-bottom:{{ block.settings.image_margin_bottom}}px;">
+                        {%- if block.settings.image != blank -%}
+                          {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                          <img
+                            srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2 x"
+                            src="{{ block.settings.image | img_url: 'master' }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                            style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          >
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                    {%- when 'link_list' -%}
+                    {% assign link_listId =  block.settings.link_list_col | plus: 0 %}
+                    {%- if link_listId == index -%}
+                    {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                      <ul class="footer-block__details-content list-unstyled">
+                        {%- for link in block.settings.menu.links -%}
+                          <li>
+                            <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                              {% render "menu-icons"%}{{ link.title }}
+                            </a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                
+                {%- endif -%}
+              {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      
+      {% endfor %}
+    </div>
+    {% if section.settings.legalnotice %}
+      <div class="legalnotice">
+        {{ section.settings.legalnotice }}
+      </div>
+    {% endif %}
+    <div></div>
+  </div>
+</div>

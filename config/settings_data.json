@@ -67,147 +67,13 @@
         "type": "header",
         "settings": {
           "color_scheme": "accent-2",
-          "logo": "shopify:\/\/shop_images\/Logo_Newsletter_Box_9ce150c4-3a78-4c06-bc3b-967b4746e359.png",
+          "logo": "shopify:\/\/shop_images\/Snip20221209_136.png",
           "logo_width": 250,
-          "logo_position": "middle-left",
           "menu": "main-menu",
-          "show_line_separator": true,
-          "enable_sticky_header": true,
-          "margin_bottom": 0
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "377728ca-0495-40ed-97f5-deb7a6ec0f82": {
-            "type": "heading",
-            "settings": {
-              "heading": "Kontakt",
-              "heading_col": "0"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "text_col": "0",
-              "text_content": "<p>2022 Fressnapf Tiernahrungs GmbH<\/p><p>Westpreußenstraße 32-38<br\/>47809 Krefeld<\/p><p><\/p>",
-              "text_size": 1.6
-            }
-          },
-          "96b85f86-84e5-4c6a-93da-c436942d7104": {
-            "type": "image",
-            "settings": {
-              "image_col": "0",
-              "image": "shopify:\/\/shop_images\/FN-Logo_ReBranding_Color_sRGB.png",
-              "hide_on_desktop": false,
-              "hide_on_mobile": false,
-              "image_width": 100,
-              "alignment": "",
-              "image_margin_top": 20,
-              "image_margin_bottom": 8
-            }
-          },
-          "adc1ee17-bb16-4785-b131-6fd4bf2f5cf9": {
-            "type": "divider",
-            "settings": {
-            }
-          },
-          "62838dc0-136d-4aa2-9b70-1f0c0664ce53": {
-            "type": "heading",
-            "settings": {
-              "heading": "Seiten",
-              "heading_col": "1"
-            }
-          },
-          "20a5d62d-ccb4-4fc9-b1f0-aee4cfd0f01c": {
-            "type": "link_list",
-            "settings": {
-              "link_list_col": "1",
-              "heading": "Quick links",
-              "menu": "main-menu"
-            }
-          },
-          "7ced8708-107e-451c-a92d-f649603e7d5e": {
-            "type": "divider",
-            "settings": {
-            }
-          },
-          "46e37a14-45b6-47e9-9c33-4d2d6c8eeaf8": {
-            "type": "heading",
-            "settings": {
-              "heading": "Folge uns",
-              "heading_col": "2"
-            }
-          },
-          "47a58225-4c19-40be-97f3-62ebde22ed13": {
-            "type": "social",
-            "settings": {
-              "social_col": "2",
-              "instagram_checkbox": true,
-              "facebook_checkbox": true,
-              "youtube_checkbox": false,
-              "Twitter_checkbox": false,
-              "Tumblr_checkbox": false,
-              "tiktok_checkbox": false,
-              "pinterest_checkbox": false,
-              "vimeo_checkbox": false,
-              "icon_size": 3.5,
-              "social_margin_top": 8,
-              "social_margin_bottom": 8
-            }
-          },
-          "8a259a7c-6273-400c-986d-a7af8c2ad2f1": {
-            "type": "heading",
-            "settings": {
-              "heading": "Rechtliches",
-              "heading_col": "2"
-            }
-          },
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "link_list_col": "2",
-              "heading": "Seiten",
-              "menu": "rechtliches-menu"
-            }
-          },
-          "c7e4ec7d-dad8-48d4-b9ca-0aaa71163661": {
-            "type": "divider",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "377728ca-0495-40ed-97f5-deb7a6ec0f82",
-          "footer-2",
-          "96b85f86-84e5-4c6a-93da-c436942d7104",
-          "adc1ee17-bb16-4785-b131-6fd4bf2f5cf9",
-          "62838dc0-136d-4aa2-9b70-1f0c0664ce53",
-          "20a5d62d-ccb4-4fc9-b1f0-aee4cfd0f01c",
-          "7ced8708-107e-451c-a92d-f649603e7d5e",
-          "46e37a14-45b6-47e9-9c33-4d2d6c8eeaf8",
-          "47a58225-4c19-40be-97f3-62ebde22ed13",
-          "8a259a7c-6273-400c-986d-a7af8c2ad2f1",
-          "footer-0",
-          "c7e4ec7d-dad8-48d4-b9ca-0aaa71163661"
-        ],
-        "settings": {
-          "grid_cols": 4,
-          "grid_cols_desktop": 3,
-          "grid_cols_tablet": 3,
-          "grid_cols_mobile": 1,
-          "gap_x": 16,
-          "color_scheme": "accent-2",
-          "legalnotice": "<p>* Das ist eine Werbung der Fressnapf Tiernahrungs GmbH, Westpreußenstraße 32-38, 47809 Krefeld, für die Fressnapf-Märkte der mit ihr verbundenen Unternehmen sowie für die von selbständigen Fressnapf-Partnern betriebenen Fressnapf-Märkten, soweit sie an der Werbung teilnehmen. Soweit sie nicht an der Werbung teilnehmen, handelt es sich bei den angegebenen Preisen nur um unverbindliche Preisempfehlungen. Die Teilnahme der selbständigen Fressnapf-Partner an der Werbung kann bei ihnen erfragt werden. Namen, Anschriften und sonstige Kontaktdaten aller Fressnapf-Märkte sowie weitere Hinweise zur Fressnapf Tiernahrungs GmbH erhalten Sie unter fressnapf.de\/marktfinder oder unter 02151 411 57 60 (Mo – Sa 8 – 20 Uhr).<\/p>",
-          "newsletter_enable": false,
-          "newsletter_heading": "Interesse an der nächsten Waubox?",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": true,
-          "margin_top": 0,
-          "padding_top": 60,
-          "padding_bottom": 60
+          "mobile_menu": "main-menu",
+          "enable_sticky_header": false,
+          "margin_bottom": 0,
+          "search_enabled": false
         }
       },
       "main-password-header": {
@@ -217,6 +83,47 @@
       },
       "main-password-footer": {
         "type": "main-password-footer",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "7fb1d651-90b6-4708-a4e7-cdc50eebb76e": {
+            "type": "text-image",
+            "settings": {
+              "heading": "Kontakt",
+              "position_mobile": 4
+            }
+          },
+          "a95f0c05-3391-4de2-b18d-783717daf970": {
+            "type": "menu",
+            "settings": {
+              "heading": "Seiten",
+              "position_mobile": 2
+            }
+          },
+          "69c5c0bb-d6f7-4cb3-a450-f0dd9499a301": {
+            "type": "menu",
+            "settings": {
+              "heading": "Rechtliches",
+              "position_mobile": 3
+            }
+          },
+          "afb8f3e8-3e11-4a9b-93f9-5f9db29bb533": {
+            "type": "payment-social",
+            "settings": {
+              "heading": "Zahlarten",
+              "position_mobile": 1
+            }
+          }
+        },
+        "block_order": [
+          "7fb1d651-90b6-4708-a4e7-cdc50eebb76e",
+          "a95f0c05-3391-4de2-b18d-783717daf970",
+          "69c5c0bb-d6f7-4cb3-a450-f0dd9499a301",
+          "afb8f3e8-3e11-4a9b-93f9-5f9db29bb533"
+        ],
         "settings": {
         }
       }
@@ -257,38 +164,6 @@
           "type": "header",
           "settings": {
             "logo_width": 90
-          }
-        },
-        "footer": {
-          "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Info"
-              }
-            },
-            "footer-2": {
-              "type": "text",
-              "settings": {
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
-          "settings": {
-            "show_social": true,
-            "enable_country_selector": false,
-            "enable_language_selector": false,
-            "margin_top": 48
           }
         },
         "main-password-header": {

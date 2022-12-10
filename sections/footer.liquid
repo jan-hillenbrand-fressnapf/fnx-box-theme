@@ -1,923 +1,127 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-payment.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-social.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-{% assign colCount = section.settings.grid_cols | minus:1 %} 
-{% assign grid_cols_desktop = section.settings.grid_cols_desktop | plus: 0 %}
-{% assign grid_cols_tablet = section.settings.grid_cols_tablet | plus: 0 %}
-{% assign grid_cols_mobile = section.settings.grid_cols_mobile | plus: 0 %}
-{% assign range = (0..colCount) %}
-
-{%- style -%}
-  .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-  }
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-  .flex-grid{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .grid-column{
-    width:calc( {{ 100 | divided_by: grid_cols_desktop }}% - {{ section.settings.gap_x | times: 2 }}px);
-    margin-right:{{ section.settings.gap_x }}px;
-    margin-left:{{ section.settings.gap_x }}px;
-  }
-  @media screen and (max-width:768px){
-    .grid-column{
-      width:calc( {{ 100 | divided_by: grid_cols_mobile  }}% - {{ section.settings.gap_x }}px);
-      margin-right:{{ section.settings.gap_x }}px;
-      margin-left:{{ section.settings.gap_x }}px;
-    }
-    .flex-grid{
-      flex-wrap: wrap;
-    }
-  }
-  @media screen and (min-width:768px) and (max-width:1100px ){
-    .grid-column{
-      width: calc( {{ 100 | divided_by: grid_cols_tablet }}% - {{ section.settings.gap_x }}px);
-      margin-right:{{ section.settings.grid_cols_tablet | times: 0.5 }}px;
-      margin-left:{{ section.settings.gap_x | times: 0.5 }}px;
-    }
-    .flex-grid{
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-  .grid-column:first-child{
-    margin-right:{{ section.settings.gap_x | times: 0.5 }}px;
-  }
-  .grid-column:last-child{
-    margin-left:{{ section.settings.gap_x | times: 0.5 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top  }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-  @media screen and (max-width:768px){
-    .mobile-row-grid{display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    grid-template-rows: 70px 1fr;
-    grid-row-gap: 0px;
-    grid-auto-rows: minmax(min-content, max-content);
-    }
-  }
-  @media screen and (max-width:767px){
-    .mobile-hidden{
-      display:none;
-    }
-    .desktop-hidden{
-      display:inherit;
-    }
-  }
-
-  @media screen and (min-width:768px){
-    .mobile-hidden{
-      display:inherit;
-    }
-    .desktop-hidden{
-      display:none;
-    }
-  }
-{%- endstyle -%}
-
-<footer class="footer ">
+<footer class="footer">
   <div class="footer-smile">
-    <svg width="100%" height="100%" viewBox="0 0 1920 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M1919.76 240.5V198.208C1919.76 198.208 1719.1 198.208 1518.44 154.474C1380.79 124.463 1050.24 0 738.103 0C314.497 0 0 122.08 0 122.08V240.5H1919.76Z" fill="#196428"/>
+    <svg width="100%" height="100%" viewBox="0 0 1679 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.999512 174.896C-0.999512 174.896 174.599 174.896 350.197 136.506C470.656 110.159 759.925 0.895508 1033.08 0.895508C1403.78 0.895508 1679 108.065 1679 108.065V174.896H-0.999512Z" fill="#196428"/>
     </svg>
   </div>
-    <div class="section-{{ section.id }}-padding  color-{{ section.settings.color_scheme }} gradient">
-      <div class="footer__content-top page-width">
-        <div class="flex-grid">
-          
-          {% for index in range %}
-            <div class=" {{index}} grid-column{% if index== 2%} mobile-row-grid{% endif %}">
-              {% assign blockHeaderId = section.blocks[index].settings.heading_col | plus: 0 %}
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                    {%- when 'heading' -%} 
-                      {% assign headerId =  block.settings.heading_col | plus: 0 %}
-                      {%if  headerId == index %}
-                      <div>
-                        <h2 class="footer-block__heading" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-                      </div>
-                      {%- endif -%}
-
-                    {%- when "text" -%}
-                      {% assign textId =  block.settings.text_col | plus: 0 %}
-                        {%if  textId  == index %}
-                        {% style %} 
-                          .footer-text p{
-                          font-size:{{ block.settings.text_size }}rem;
-                        }
-                        {% endstyle %}
-                          <div class="footer-text" {{ block.shopify_attributes }} style="">{{ block.settings.text_content  }}</div>
-                        {%- endif -%}
-
-                    {%- when "social" -%}
-                     {% assign socialId =  block.settings.social_col | plus: 0 %}
-                        {%- if socialId == index -%}
-                        <ul class="footer__list-social list-unstyled list-social" role="list" style="margin-top:{{ block.settings.social_margin_top}}px; margin-bottom:{{ block.settings.social_margin_bottom}}px;">
-                            
-                          {%- if settings.social_twitter_link != blank and block.settings.twitter_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_twitter_link }}" class="link list-social__link" style="width: {{ block.settings.icon_size }}rem; height: {{ block.settings.icon_size }}rem;">
-                                {%- render 'icon-twitter' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_facebook_link != blank and block.settings.facebook_checkbox -%}
-                          {% style %}
-                            .list-social__item .icon{
-                              height:{{ block.settings.icon_size }}rem;
-                              width:{{ block.settings.icon_size }}rem;
-                            }
-                          {% endstyle %}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
-                                {%- render 'icon-facebook' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_pinterest_link != blank and block.settings.pinterest_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
-                                {%- render 'icon-pinterest' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_instagram_link  != blank  and block.settings.instagram_checkbox-%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                                {%- render 'icon-instagram' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_tiktok_link != blank and block.settings.tiktok_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
-                                {%- render 'icon-tiktok' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_tumblr_link != blank and block.settings.tumblr_checkbox-%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
-                                {%- render 'icon-tumblr' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_snapchat_link != blank and  block.settings.snapchat_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
-                                {%- render 'icon-snapchat' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_youtube_link != blank and block.settings.youtube_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
-                                {%- render 'icon-youtube' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                          {%- if settings.social_vimeo_link != blank and  block.settings.vimeo_checkbox -%}
-                            <li class="list-social__item">
-                              <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
-                                {%- render 'icon-vimeo' -%}
-                                <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
-                              </a>
-                            </li>
-                          {%- endif -%}
-                        </ul>
-                        {%- endif -%}
-                    {%- when 'image' -%}
-                      {% assign imageId =  block.settings.image_col | plus: 0 %}
-                        {%- if imageId == index -%}
-                          <div class="
-                          {% if block.settings.hide_on_mobile %}
-                          mobile-hidden 
-                          {% endif %}
-                          {% if block.settings.hide_on_desktop %}
-                          desktop-hidden 
-                          {% endif %}
-                           footer-block__details-content footer-block-image {{ block.settings.alignment }}" style="margin-top:{{ block.settings.image_margin_top}}px; margin-bottom:{{ block.settings.image_margin_bottom}}px;">
-                            {%- if block.settings.image != blank -%}
-                              {%- assign image_size = block.settings.image_width | append: 'x' -%}
-                              <img
-                                srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2 x"
-                                src="{{ block.settings.image | img_url: 'master' }}"
-                                alt="{{ block.settings.image.alt | escape }}"
-                                loading="lazy"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                              >
-                            {%- else -%}
-                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                            {%- endif -%}
-                          </div>
-                        {%- endif -%}
-                        {%- when 'link_list' -%}
-                        {% assign link_listId =  block.settings.link_list_col | plus: 0 %}
-                        {%- if link_listId == index -%}
-                        {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                          <ul class="footer-block__details-content list-unstyled">
-                            {%- for link in block.settings.menu.links -%}
-                              <li>
-                                <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                                 {% render "menu-icons"%}{{ link.title }}
-                                </a>
-                              </li>
-                            {%- endfor -%}
-                          </ul>
-                        {%- endif -%}
-                    
-                    {%- endif -%}
-                  {%- endcase -%}
-              {%- endfor -%}
-            </div>
-          
+  <div class="footer__content">
+    <div class="page-width">
+      <div class="grid grid--1-col large-up-hide">
+        {% for idx in (1..10) %}
+          {% for block in section.blocks %}
+            {% if block.settings.position_mobile != idx %}{% continue %}{% endif %}
+            {% render 'footer-block', block: block %}
           {% endfor %}
-        </div>
-        {% if section.settings.legalnotice %}
-          <div class="legalnotice">
-            {{ section.settings.legalnotice }}
-          </div>
-        {% endif %}
-        <div></div>
+        {% endfor %}
+      </div>
+
+      <div class="grid grid--1-col grid--4-col-tablet small-hide medium-hide">
+        {% for block in section.blocks %}
+          {% render 'footer-block', block: block %}
+        {% endfor %}
       </div>
     </div>
+  </div>
 </footer>
 
-{% javascript %}
-  class LocalizationForm extends HTMLElement {
-    constructor() {
-      super();
-      this.elements = {
-        input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
-        button: this.querySelector('button'),
-        panel: this.querySelector('ul'),
-      };
-      this.elements.button.addEventListener('click', this.openSelector.bind(this));
-      this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
-      this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
-
-      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
-    }
-
-    hidePanel() {
-      this.elements.button.setAttribute('aria-expanded', 'false');
-      this.elements.panel.setAttribute('hidden', true);
-    }
-
-    onContainerKeyUp(event) {
-      if (event.code.toUpperCase() !== 'ESCAPE') return;
-
-      this.hidePanel();
-      this.elements.button.focus();
-    }
-
-    onItemClick(event) {
-      event.preventDefault();
-      const form = this.querySelector('form');
-      this.elements.input.value = event.currentTarget.dataset.value;
-      if (form) form.submit();
-    }
-
-    openSelector() {
-      this.elements.button.focus();
-      this.elements.panel.toggleAttribute('hidden');
-      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
-    }
-
-    closeSelector(event) {
-      const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
-      if (event.relatedTarget === null || shouldClose) {
-        this.hidePanel();
-      }
-    }
-  }
-
-  customElements.define('localization-form', LocalizationForm);
-{% endjavascript %}
 {% schema %}
 {
   "name": "t:sections.footer.name",
   "blocks": [
-  {
-    "type": "link_list",
-    "name": "t:sections.footer.blocks.link_list.name",
-    "settings": [
     {
-      "type": "select",
-      "id": "link_list_col",
-      "options": [
-        {
-          "value": "0",
-          "label": "Spalte-1"
-        },
-        {
-          "value": "1",
-          "label": "Spalte-2"
-        },
-        {
-          "value": "2",
-          "label": "Spalte-3"
-        },
-        {
-          "value": "3",
-          "label": "Spalte-4"
-        },
-        {
-          "value": "4",
-          "label": "Spalte-5"
-        },
-        {
-          "value": "5",
-          "label": "Spalte-6"
-        }
-      ],
-      "default": "0",
-      "label": "Spaltenzugehörigkeit"
-    },
-      {
-        "type": "text",
-        "id": "heading",
-        "default": "Quick links",
-        "label": "t:sections.footer.blocks.link_list.settings.heading.label",
-        "info": "t:sections.footer.blocks.link_list.settings.heading.info"
-      },
-      {
-        "type": "link_list",
-        "id": "menu",
-        "default": "footer",
-        "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-        "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-      }
-    ]
-  },{
-    "type": "divider",
-    "name": "_______________________",
-    "settings":[]
-  },
-   {
-      "type": "heading",
-      "name": "t:sections.rich-text.blocks.heading.name",
-
+      "type": "payment-social",
+      "name": "Payment Methods & Social",
       "settings": [
         {
           "type": "text",
           "id": "heading",
-          "default": "Talk about your brand",
-          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+          "label": "Heading"
         },
         {
-          "type": "select",
-          "id": "heading_col",
-          "options": [
-            {
-              "value": "0",
-              "label": "Spalte-1"
-            },
-            {
-              "value": "1",
-              "label": "Spalte-2"
-            },
-            {
-              "value": "2",
-              "label": "Spalte-3"
-            },
-            {
-              "value": "3",
-              "label": "Spalte-4"
-            },
-            {
-              "value": "4",
-              "label": "Spalte-5"
-            },
-            {
-              "value": "5",
-              "label": "Spalte-6"
-            }
-          ],
-          "default": "0",
-          "label": "Spaltenzugehörigkeit"
+          "type": "number",
+          "id": "position_mobile",
+          "label": "Position mobile",
+          "default": 1
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "label": "Show social icons",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "social_heading",
+          "label": "Social Heading",
+          "default": "Folge uns"
         }
       ]
     },
-
     {
-      "type": "social",
-      "name": "Soziale Medien",
-
-      "settings": [{
-          "type": "select",
-          "id": "social_col",
-          "options": [
-            { 
-              "value": "0",
-              "label": "Spalte-1"
-            },
-            {
-              "value": "1",
-              "label": "Spalte-2"
-            },
-            {
-              "value": "2",
-              "label": "Spalte-3"
-            },
-            {
-              "value": "3",
-              "label": "Spalte-4"
-            },
-            {
-              "value": "4",
-              "label": "Spalte-5"
-            },
-            {
-              "value": "5",
-              "label": "Spalte-6"
-            }
-          ],
-          "default": "0",
-          "label": "Spaltenzugehörigkeit"
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
         },
-      {
-        "type": "checkbox",
-        "id": "instagram_checkbox",
-        "default": false,
-        "label": "Instagram aktivieren"
-      },
-      {
-        "type": "checkbox",
-        "id": "facebook_checkbox",
-        "default": false,
-        "label": "Facebook aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "youtube_checkbox",
-        "default": false,
-        "label": "Youtube aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "Twitter_checkbox",
-        "default": false,
-        "label": "Twitter aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "Tumblr_checkbox",
-        "default": false,
-        "label": "Tumblr aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "tiktok_checkbox",
-        "default": false,
-        "label": "Tiktok aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "pinterest_checkbox",
-        "default": false,
-        "label": "Pinterest aktivieren"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "vimeo_checkbox",
-        "default": false,
-        "label": "Vimeo aktivieren"
-      }, 
-  
-       {
-        "type": "range",
-        "id": "icon_size",
-        "min": 1,
-        "max": 20,
-        "step": 0.5,
-        "unit": "rem",
-        "label": "Icon Größe",
-        "default": 2.5
-      },
-      {
-        "type": "range",
-        "id": "social_margin_top",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_top",
-        "default": 8
-      },
-      {
-        "type": "range",
-        "id": "social_margin_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_bottom",
-        "default": 8
-      }        
+        {
+          "type": "number",
+          "id": "position_mobile",
+          "label": "Position mobile",
+          "default": 1
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menü"
+        }
       ]
     },
-
-
     {
-      "type": "text",
-      "name": "t:sections.rich-text.blocks.text.name",
+      "type": "text-image",
+      "name": "Text with Image",
       "settings": [
-
-      {
-        "type": "select",
-        "id": "text_col",
-        "options": [
-            {
-              "value": "0",
-              "label": "Spalte-1"
-            },
-            {
-              "value": "1",
-              "label": "Spalte-2"
-            },
-            {
-              "value": "2",
-              "label": "Spalte-3"
-            },
-            {
-              "value": "3",
-              "label": "Spalte-4"
-            },
-            {
-              "value": "4",
-              "label": "Spalte-5"
-            },
-            {
-              "value": "5",
-              "label": "Spalte-6"
-            }
-          ],
-        "default": "0",
-        "label": "Spaltenzugehörigkeit"
-      },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "number",
+          "id": "position_mobile",
+          "label": "Position mobile",
+          "default": 1
+        },
         {
           "type": "richtext",
-          "id": "text_content",
-          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
         },
         {
-          "type": "range",
-          "id": "text_size",
-          "min": 0,
-          "max": 10,
-          "step": 0.2,
-          "unit": "rem",
-          "label": "Textgröße",
-          "default": 1.4
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image / Logo"
         }
-    ]
-   },
-   {
-    "type": "image",
-    "name": "Image",
-    "settings": [
-    {
-      "type": "select",
-      "id": "image_col",
-      "options": [
-          {
-            "value": "0",
-            "label": "Spalte-1"
-          },
-          {
-            "value": "1",
-            "label": "Spalte-2"
-          },
-          {
-            "value": "2",
-            "label": "Spalte-3"
-          },
-          {
-            "value": "3",
-            "label": "Spalte-4"
-          },
-          {
-            "value": "4",
-            "label": "Spalte-5"
-          },
-          {
-            "value": "5",
-            "label": "Spalte-6"
-          }
-        ],
-      "default": "0",
-      "label": "Spaltenzugehörigkeit"
-    },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "checkbox",
-        "id": "hide_on_desktop",
-        "default": false,
-        "label": "Desktop ausblenden"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "hide_on_mobile",
-        "default": false,
-        "label": "Mobile ausblenden"
-      }, 
-      
-      {
-        "type": "range",
-        "id": "image_width",
-        "min": 50,
-        "max": 200,
-        "step": 5,
-        "unit": "px",
-        "label": "Image width",
-        "default": 100
-      },
-      {
-        "type": "select",
-        "id": "alignment",
-        "label": "Image alignment on large screen",
-        "options": [
-          {
-            "value": "",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ],
-        "default": "center"
-      },
-      {
-        "type": "range",
-        "id": "image_margin_top",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_top",
-        "default": 8
-      },
-      {
-        "type": "range",
-        "id": "image_margin_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_bottom",
-        "default": 8
-      }
-    ]
-  }
-  ],
-  "settings": [
-  
-  {
-    "type": "range",
-    "id": "grid_cols",
-    "min": 1,
-    "max": 6,
-    "step": 1,
-    "unit": "col",
-    "label": "Gesamt: Spaltenanzahl",
-    "default": 2
-  },
-  {
-    "type": "range",
-    "id": "grid_cols_desktop",
-    "min": 1,
-    "max": 6,
-    "step": 1,
-    "unit": "col",
-    "label": "Desktop: Spaltenanzahl",
-    "default": 2
-  },
-  {
-    "type": "range",
-    "id": "grid_cols_tablet",
-    "min": 1,
-    "max": 6,
-    "step": 1,
-    "unit": "col",
-    "label": "Tablet: Spaltenanzahl",
-    "default": 2
-  },
-  {
-    "type": "range",
-    "id": "grid_cols_mobile",
-    "min": 1,
-    "max": 6,
-    "step": 1,
-    "unit": "col",
-    "label": "Mobile: Spaltenanzahl",
-    "default": 2
-  },
-
-  {
-    "type": "range",
-    "id": "gap_x",
-    "min": 0,
-    "max": 50,
-    "step": 1,
-    "unit": "px",
-    "label": "Spaltenabstand X",
-    "default": 0
-  },
-
-
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.footer.settings.color_scheme.options__1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.footer.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.footer.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.footer.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.footer.settings.color_scheme.options__5.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.footer.settings.color_scheme.label"
-    },
-    {
-      "type": "richtext",
-      "id": "legalnotice",
-      "default": "<p>* Das ist eine Werbung der Fressnapf Tiernahrungs GmbH, Westpreußenstraße 32-38, 47809 Krefeld, für die Fressnapf-Märkte der mit ihr verbundenen Unternehmen sowie für die von selbständigen Fressnapf-Partnern betriebenen Fressnapf-Märkten, soweit sie an der Werbung teilnehmen. Soweit sie nicht an der Werbung teilnehmen, handelt es sich bei den angegebenen Preisen nur um unverbindliche Preisempfehlungen. Die Teilnahme der selbständigen Fressnapf-Partner an der Werbung kann bei ihnen erfragt werden. Namen, Anschriften und sonstige Kontaktdaten aller Fressnapf-Märkte sowie weitere Hinweise zur Fressnapf Tiernahrungs GmbH erhalten Sie unter fressnapf.de/marktfinder oder unter 02151 411 57 60 (Mo – Sa 8 – 20 Uhr).</p>",
-      "label": "t:sections.email-signup-banner.blocks.paragraph.settings.paragraph.label"
-    },    
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__1.content",
-      "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
-      "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__2.content",
-      "info": "t:sections.footer.settings.header__2.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_social",
-      "default": false,
-      "label": "t:sections.footer.settings.show_social.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__3.content",
-      "info": "t:sections.footer.settings.header__4.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_country_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_country_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__5.content",
-      "info": "t:sections.footer.settings.header__6.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_language_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_language_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__7.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "payment_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.payment_enable.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.spacing"
-    },
-    {
-      "type": "range",
-      "id": "margin_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.footer.settings.margin_top.label",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      ]
     }
   ],
-  "default": {
-    "blocks": [
-      {
-        "type": "link_list"
-      },
-      {
-        "type": "text"
-      }
-    ]
-  }
+  "settings": []
 }
 {% endschema %}
