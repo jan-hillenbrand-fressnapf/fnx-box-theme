@@ -1,0 +1,51 @@
+{{ 'product-navigation.css' | asset_url | stylesheet_tag }}
+{{ 'product-navigation.js' | asset_url | script_tag }}
+
+
+<div class="product-navigation">
+  <div class="page-width">
+    <ul class="product-navigation__list">
+      {% for block in section.blocks %}
+        <li>
+          <a href="{{ block.settings.anchor_link }}" data-target="{{ block.settings.anchor_link }}">
+            {{ block.settings.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<product-navigation></product-navigation>
+
+{% schema %}
+{
+  "name": "Product Navigation",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Navigation Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "anchor_link",
+          "label": "Anchor Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Navigation"
+    }
+  ]
+}
+  {% endschema %}

@@ -335,6 +335,12 @@
   }
 }
 
+.image-with-text__grid.image-with-text__grid--container {
+  padding: 5.6rem 4.8rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 40px;
+}
+
 .full-width .image-with-text__grid {
   max-width: var(--page-width);
   margin: auto;

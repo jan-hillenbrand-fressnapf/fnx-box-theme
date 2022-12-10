@@ -1,0 +1,27 @@
+{{ 'product-video-section.css' | asset_url | stylesheet_tag }}
+
+{% if template contains 'product.' and product.metafields.custom.product_video != blank %}
+  <div class="product-video small-hide">
+    {{ product.metafields.custom.product_video.value | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+  </div>
+{% endif %}
+
+{% if template contains 'product.' and product.metafields.custom.product_video_mobile != blank %}
+  <div class="product-video medium-hide large-up-hide">
+    {{ product.metafields.custom.product_video_mobile.value | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Video",
+  "tag": "section",
+  "class": "section section-product-video",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Product Video"
+    }
+  ]
+}
+  {% endschema %}

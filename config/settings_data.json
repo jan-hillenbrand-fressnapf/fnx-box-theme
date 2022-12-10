@@ -47,19 +47,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "10 % Rabatt bei Newsletter-Anmeldung | Nächste Lieferung Anfang",
-              "color_scheme": "background-2",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {
         }
       },
@@ -93,28 +80,34 @@
             "type": "text-image",
             "settings": {
               "heading": "Kontakt",
-              "position_mobile": 4
+              "position_mobile": 4,
+              "text": "<p>2022 Fressnapf Tiernahrung GmbH<br\/>Westpreußenstraße 32-3<br\/>47809 Krefeld<\/p>",
+              "image": "shopify:\/\/shop_images\/Snip20221209_136.png"
             }
           },
           "a95f0c05-3391-4de2-b18d-783717daf970": {
             "type": "menu",
             "settings": {
               "heading": "Seiten",
-              "position_mobile": 2
+              "position_mobile": 2,
+              "menu": "footer"
             }
           },
           "69c5c0bb-d6f7-4cb3-a450-f0dd9499a301": {
             "type": "menu",
             "settings": {
               "heading": "Rechtliches",
-              "position_mobile": 3
+              "position_mobile": 3,
+              "menu": "rechtliches-menu"
             }
           },
           "afb8f3e8-3e11-4a9b-93f9-5f9db29bb533": {
             "type": "payment-social",
             "settings": {
               "heading": "Zahlarten",
-              "position_mobile": 1
+              "position_mobile": 1,
+              "show_social": true,
+              "social_heading": "Folge uns"
             }
           }
         },

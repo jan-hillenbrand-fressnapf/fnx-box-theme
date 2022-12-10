@@ -1,0 +1,17 @@
+#MainContent #product-page .section-product-video {
+  padding-top: 0 !important;
+  margin-bottom: -16rem;
+}
+
+.section-product-video + .section .section-padding {
+  padding-top: 0;
+}
+
+.product-video {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-video video {
+  width: 100%;
+}

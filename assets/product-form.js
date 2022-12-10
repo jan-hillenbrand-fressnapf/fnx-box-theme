@@ -10,7 +10,9 @@ if (!customElements.get('product-form')) {
     }
 
     onSubmitHandler(evt) {
-      evt.preventDefault();
+      // Disable ajax cart
+      // evt.preventDefault();
+
       const submitButton = this.querySelector('[type="submit"]');
       if (submitButton.classList.contains('loading')) return;
 
@@ -20,6 +22,9 @@ if (!customElements.get('product-form')) {
       submitButton.setAttribute('aria-disabled', true);
       submitButton.classList.add('loading');
       this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
+
+      // Disable ajax cart
+      return;
 
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
