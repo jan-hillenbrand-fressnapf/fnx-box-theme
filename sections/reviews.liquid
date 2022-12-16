@@ -8,7 +8,7 @@
       <div class="title-wrapper--self-padded-mobile title-wrapper--no-top-margin{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
         <h2 class="h1 title center">
           {{ section.settings.title | escape }}
-          <div class="text-body">Powered by <a class="link" href="/pages/kundenbewertungen">Judge.me</a></div>
+          <div class="text-body">Powered by <a class="link" href="{{ section.settings.all_reviews_url }}">Judge.me</a></div>
         </h2>
         
       </div>
@@ -18,7 +18,7 @@
 
     <div class="section-reviews__cta">
       <button class="button button__primary" onclick="jdgm.showReviewsTab()">Bewertung abgeben</button>
-      <a class="link" href="/pages/kundenbewertungen">Alle Bewertungen ansehen</a>
+      <a class="link" href="{{ section.settings.all_reviews_url }}">Alle Bewertungen ansehen</a>
     </div>
     
     {% comment %}
@@ -233,8 +233,9 @@
       "label": "t:sections.all.colors.label"
     },
     {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "type": "url",
+      "id": "all_reviews_url",
+      "label": "All Reviews URL"
     }
   ],
   "blocks": [

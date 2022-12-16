@@ -86,7 +86,7 @@ class ProductNavigation extends HTMLElement {
   }
 
   scrollToActiveItem(activeItem) {
-    this.navigation.querySelector("ul").scrollTo({left: activeItem.offsetLeft - 16, behavior: 'smooth'});
+    this.navigation.querySelector("ul").scrollTo({left: activeItem.offsetLeft - 24, behavior: 'smooth'});
   }
 
   onScroll() {

@@ -177,7 +177,7 @@
         "68ac56fe-fef0-4a74-87cc-8ac7033a1c5c": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "button-type": "primary"
           }
         },

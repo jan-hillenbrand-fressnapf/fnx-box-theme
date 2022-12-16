@@ -17,12 +17,6 @@ if (window.location.href.includes('/products/')){
       });
     }
 
-    let buyButtons = document.getElementsByClassName('product-form__submit');
-    if (buyButtons.length && buttons.length > 0) {
-      buyButtons[0].classList.add('inverted_button');
-    }
-    let imageTextSection = document.querySelectorAll(".image-with-text");
-
     // waubox-/miaubox
     //imageTextSection[0].classList.add("waubox-teaser");
     //imageTextSection[1].classList.add("manual");

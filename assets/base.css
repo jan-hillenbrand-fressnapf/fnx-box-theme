@@ -519,6 +519,11 @@ blockquote {
   }
 }
 
+a, a:visited {
+  color: #819F17;
+  text-decoration: underline;
+}
+
 .caption {
   font-size: 1rem;
   letter-spacing: 0.07rem;
@@ -1009,7 +1014,6 @@ summary::-webkit-details-marker {
 .subtitle {
   font-size: 1.8rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
-  letter-spacing: 0.06rem;
   color: rgba(var(--color-foreground), 0.7);
 }
 
@@ -1296,7 +1300,7 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-weight: 700;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
+  color: rgb(var(--color-button-text)) !important;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
@@ -1340,6 +1344,11 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
+.button--secondary {
+  border: 2px solid #819F17;
+  border-radius: 16px;
+}
+
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
 }
@@ -1378,6 +1387,10 @@ button.shopify-payment-button__button--unbranded {
 
 .button--small {
   padding: 1.2rem 2.6rem;
+}
+
+.button .icon {
+  margin-right: 1rem;
 }
 
 /* Button - other */
@@ -2168,8 +2181,14 @@ input[type='checkbox'] {
 
 /* Main Header Layout */
 .header-wrapper {
-  display: block;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 1.6rem;
+}
+
+.header-wrapper a,
+.header-wrapper a:visited {
+  color: #464646;
 }
 
 .header-wrapper--border-bottom {
@@ -2181,9 +2200,7 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  margin-top: 1.6rem;
   margin-bottom: 1.6rem;
-
   padding: 1.6rem 1.8rem;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -2261,14 +2278,12 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
-  .header-wrapper {
-    position: absolute;
-    width: 100%;
-    top: 2.4rem;
-  }
-
   #MainContent .shopify-section:first-child {
     padding-top: 20rem !important;
+  }
+
+  .header-wrapper {
+    top: 2.4rem;
   }
 
   .header {

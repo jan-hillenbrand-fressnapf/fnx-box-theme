@@ -12,3 +12,42 @@
 .section-reviews__cta .button {
   margin-bottom: 2.8rem;
 }
+
+.section-reviews .jdgm-carousel-wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.section-reviews .jdgm-carousel-wrapper .jdgm-carousel-item {
+  padding: 0 8px 30px 8px;
+}
+
+.section-reviews .jdgm-carousel__item-wrapper {
+  height: 250px;
+}
+
+.section-reviews .jdgm-carousel-wrapper .jdgm-carousel-item__inner-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.section-reviews .jdgm-carousel-item__review-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #757575;
+  margin-bottom: 1.6rem;
+}
+
+.section-reviews .jdgm-carousel-wrapper .jdgm-carousel-item__inner-wrapper .jdgm-star {
+  background: none !important;
+  color: #FFB300;
+  margin: 0 !important;
+}
+
+.section-reviews .jdgm-carousel-item__reviewer-name,
+.section-reviews .jdgm-carousel__arrows {
+  display: none;
+}

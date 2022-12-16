@@ -47,6 +47,7 @@
 .section-images-list__image__instagram svg {
   width: 20px;
   margin-right: 8px;
+  flex: none;
 }
 
 .section-images-list__images .grid__item .section-images-list__image__text .h2,

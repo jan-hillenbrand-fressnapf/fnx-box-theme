@@ -81,16 +81,6 @@
               {%- endunless -%}
             {%- endfor -%}
           </ul>
-          <div class="slider-buttons no-js-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
-            <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-            <div class="slider-counter caption">
-              <span class="slider-counter--current">1</span>
-              <span aria-hidden="true"> / </span>
-              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ media_count }}</span>
-            </div>
-            <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
-          </div>
         </slider-component>
         {%- if first_3d_model -%}
           <button
@@ -460,9 +450,32 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      class="product-form__submit button button--full-width button--primary"
+                      data-buy-now="true"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
+                        <span>
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            Sofort kaufen
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                    </button>
+
+                    <button
+                      type="submit"
+                      name="add"
+                      class="product-form__submit button button--full-width button--secondary"
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                    >
+                        {% render 'icon-cart-plus' %}
+
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
@@ -476,6 +489,8 @@
                           </svg>
                         </div>
                     </button>
+
+                    
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
@@ -786,7 +801,7 @@
         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
-          "default": true,
+          "default": false,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         },
