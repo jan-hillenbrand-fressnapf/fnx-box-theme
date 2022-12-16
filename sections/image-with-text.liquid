@@ -46,21 +46,21 @@
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                 {%- endif -%}
               {%- when 'button' -%}
-              <div class="button-wrapper">
-                {%- if block.settings.button_label != blank -%}
-                  <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button__{{ block.settings.button-type}}" {{ block.shopify_attributes }}>
-                    {{ block.settings.button_label | escape }}
-                  </a>
-                {%- endif -%}
-                {%- if block.settings.button_link_secondary != blank -%}
-                <a {% if block.settings.button_link_secondary == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_secondary }}"{% endif %} class="button 
-                {% if block.settings.button-type_secondary == "secondary" %}
-                  button__secondary__white"
-                {% endif %} {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label_secondary | escape }}
-                </a>
-              </div>
-              {%- endif -%}
+                <div class="button-wrapper">
+                  {%- if block.settings.button_label != blank -%}
+                    <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button__{{ block.settings.button-type}}" {{ block.shopify_attributes }}>
+                      {{ block.settings.button_label | escape }}
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.button_link_secondary != blank -%}
+                    <a {% if block.settings.button_link_secondary == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_secondary }}"{% endif %} class="button 
+                    {% if block.settings.button-type_secondary == "secondary" %}
+                      button__secondary__white"
+                    {% endif %} {{ block.shopify_attributes }}>
+                      {{ block.settings.button_label_secondary | escape }}
+                    </a>
+                  {%- endif -%}
+                </div>
             {%- endcase -%}
           {%- endfor -%}
         </div>
