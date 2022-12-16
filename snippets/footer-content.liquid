@@ -116,10 +116,10 @@
                     {%- if imageId == index -%}
                       <div class="
                       {% if block.settings.hide_on_mobile %}
-                      mobile-hidden 
+                      small-hide medium-hide
                       {% endif %}
                       {% if block.settings.hide_on_desktop %}
-                      desktop-hidden 
+                      large-up-hide 
                       {% endif %}
                         footer-block__details-content footer-block-image {{ block.settings.alignment }}" style="margin-top:{{ block.settings.image_margin_top}}px; margin-bottom:{{ block.settings.image_margin_bottom}}px;">
                         {%- if block.settings.image != blank -%}
