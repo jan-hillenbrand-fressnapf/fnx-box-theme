@@ -13,5 +13,7 @@
 }
 
 .product-video video {
+  height: 75vh;
+  object-fit: cover;
   width: 100%;
 }

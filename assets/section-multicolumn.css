@@ -196,6 +196,16 @@
   padding-right: 2.5rem;
 }
 
+.multicolumn-card__icon svg {
+  height: 36px;
+  width: 36px;
+}
+
+.multicolumn-card__icon svg,
+.multicolumn-card__icon svg > * {
+  fill: #196428;
+}
+
 @media screen and (max-width: 749px) {
   .background-none .slider .multicolumn-card__info {
     padding-bottom: 1rem;

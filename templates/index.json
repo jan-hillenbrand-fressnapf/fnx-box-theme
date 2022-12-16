@@ -3,19 +3,19 @@
     "110cd995-3643-4561-91bb-e88dfdc02785": {
       "type": "intro-section",
       "settings": {
-        "headline": "Tierliebe vom Feinsten",
+        "headline": "Exklusive Produkte und einzigartige Freude in einer Box",
         "rating": "4,56",
         "ratings_count": 36,
         "reviews_url": "shopify:\/\/pages\/kundenbewertungen",
-        "box1_heading": "Für Hunde",
+        "box1_heading": "Team Hund",
         "box1_image": "shopify:\/\/shop_images\/Snip20221201_70.png",
         "box1_product": "deine-wau-box",
-        "box1_button_text": "Waubox entdecken",
+        "box1_button_text": "#Waubox entdecken",
         "box1_button_url": "shopify:\/\/products\/deine-wau-box",
-        "box2_heading": "Für Katzen",
+        "box2_heading": "Team Katze",
         "box2_image": "shopify:\/\/shop_images\/Snip20221201_71.png",
         "box2_product": "deine-miau-box",
-        "box2_button_text": "Miaubox entdecken",
+        "box2_button_text": "#Miaubox entdecken",
         "box2_button_url": "shopify:\/\/products\/deine-miau-box"
       }
     },
@@ -26,9 +26,9 @@
           "type": "column",
           "settings": {
             "icon": "surprise",
-            "title": "Überraschung garantiert",
-            "text": "<p>Jede Box enthält tolle und hochwertige Produktneuheiten mit einem Warenwert von 50 €, für nur 24,90 €.<\/p>",
-            "link_label": "Welche Produkte sind in der Box?",
+            "title": "Exklusive Überraschung garantiert",
+            "text": "<p>Mit der Box erhältst du vor allen anderen Zugang zu exklusiven Produkten.<\/p>",
+            "link_label": "Zu den letzten Boxen",
             "link": ""
           }
         },
@@ -36,9 +36,9 @@
           "type": "column",
           "settings": {
             "icon": "calendar",
-            "title": "Du entscheidest",
-            "text": "<p>Du hast die volle Kontrolle und kannst den Lieferrhythmus jederzeit ganz einfach pausieren oder kündigen.<\/p>",
-            "link_label": "Wie funktioniert’s?",
+            "title": "Jederzeit per Kopfdruck kündigen",
+            "text": "<p>Du hast die volle Kontrolle und kannst dein Abo jederzeit per Knopfdruck kündigen.<\/p>",
+            "link_label": "Zum Kundenkonto",
             "link": ""
           }
         },
@@ -46,9 +46,9 @@
           "type": "column",
           "settings": {
             "icon": "savings",
-            "title": "Spar dir die Versandkosten",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.<\/p>",
-            "link_label": "Nächster Boxversandt?",
+            "title": "Keine Versandkosten und Zufriedenheitsgarantie",
+            "text": "<p>Du erhältst deine Box  versandkostenfrei und kannst entscheiden, wie du bezahlst.<\/p>",
+            "link_label": "Nächster Boxen-Versand",
             "link": ""
           }
         }
@@ -59,7 +59,7 @@
         "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-2"
       ],
       "settings": {
-        "title": "Das besondere an der Happy Box",
+        "title": "Warum alle unsere limitierte Box lieben",
         "column_alignment": "center",
         "swipe_on_mobile": false
       }
@@ -70,41 +70,41 @@
         "4de5a92d-fe94-4be3-91d4-1068089d2abc": {
           "type": "image",
           "settings": {
-            "url": "",
+            "url": "shopify:\/\/pages\/waubox-edition",
             "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
             "instagram_name": "",
             "title": "Waubox",
-            "subtitle": "Oktober 2022"
+            "subtitle": "Dezember 2022"
           }
         },
         "5cd106ef-e16f-471f-9612-a65811f840d3": {
           "type": "image",
           "settings": {
-            "url": "",
+            "url": "shopify:\/\/pages\/miaubox-edition",
             "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-17908204928655342.jpg",
             "instagram_name": "",
             "title": "Miaubox",
-            "subtitle": "September 2022"
+            "subtitle": "November 2022"
           }
         },
         "588b9e79-9640-467b-8971-8c3487a3e4e5": {
           "type": "image",
           "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1_521451a1-04fa-44b7-91f8-cf3a158dc2bc.jpg",
+            "url": "shopify:\/\/pages\/waubox-edition",
+            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized_7955d474-3b10-43a9-ac12-08072ba356fb.jpg",
             "instagram_name": "",
             "title": "Waubox",
-            "subtitle": "August 2022"
+            "subtitle": "Oktober 2022"
           }
         },
         "05d7f18c-4dda-4279-8b32-f16babbc5306": {
           "type": "image",
           "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/snips-the-doge-image-1668153771115.jpg",
+            "url": "shopify:\/\/pages\/miaubox-edition",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
             "instagram_name": "",
-            "title": "Waubox",
-            "subtitle": "Januar 2020"
+            "title": "Miaubox",
+            "subtitle": "September 2022"
           }
         }
       },
@@ -116,7 +116,7 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "headline": "Was war in den letzten Boxen?",
+        "headline": "Unsere vergangenen Fressnapf Boxen",
         "show_overlay": true
       }
     },
@@ -132,14 +132,14 @@
         "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-0": {
           "type": "heading",
           "settings": {
-            "heading": "Die Überraschungsbox für deinen Hund",
-            "heading_size": "h1"
+            "heading": "Überraschungsbox für deinen Hund",
+            "heading_size": "h2"
           }
         },
         "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Spiel, Spaß, Pflege und ganz viel Belohnung - Mit eurer Waubox entdecket ihr immer neue Produkte rund um den Hund.<\/p>",
+            "text": "<p>Mit der Waubox kannst du deinen Hund alle zwei Monate mit Spiel, Spaß und Freude überraschen und für eine abwechslungsreiche Beschäftigung sorgen.<\/p>",
             "text_style": "body"
           }
         },
@@ -162,7 +162,8 @@
         "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "image": "shopify:\/\/shop_images\/Waubox_06_0.75x.png",
+        "show_in_container": false,
         "height": "adapt",
         "image_mode": "image-mode-contain",
         "desktop_image_width": "medium",
@@ -187,14 +188,14 @@
         "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Die Überaschungsbox für deine Katze",
-            "heading_size": "h1"
+            "heading": "Überraschungsbox für deine Katze",
+            "heading_size": "h2"
           }
         },
         "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Alles für die Katz! Mit eurer Miaubox entdecket ihr immer neue Produkte rund um Spiel, Spaß und Pflege.<\/p>",
+            "text": "<p>Mit der Miaubox von Fressnapf kannst du deine Katze alle zwei Monate mit neuen Produkten beschäftigen und neue Leckereien ausprobieren.<\/p>",
             "text_style": "body"
           }
         },
@@ -217,7 +218,8 @@
         "template--16416885604616__7af1e66d-a02c-4900-9de4-6e1ef3aec960-166998155257620f7a-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "image": "shopify:\/\/shop_images\/Miaubox_05_0.75x.png",
+        "show_in_container": false,
         "height": "adapt",
         "image_mode": "image-mode-cover",
         "desktop_image_width": "medium",
@@ -238,7 +240,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
             "title": "Bestelle deine Box in wenigen Klicks",
-            "text": "<p>Jede Box enthält Spielzeug, Leckerlis und Pflegeprodukte im Wert von mehr als 50 €.<\/p>",
+            "text": "<p>Unsere Experten stecken viel Liebe in die Auswahl von immer neuen Produkten im Wert von über 50 €. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -247,8 +249,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
-            "title": "Freu dich auf den Versand",
-            "text": "<p>Du erhälts alle Zwei Monate eine individuell gepackte Box mit neuen Produkten.<\/p>",
+            "title": "Gemeinsame Vorfreude auf die Box",
+            "text": "<p>Alle zwei Monate erhältst du eine Box mit exklusiven Inhalten ohne eine Produktneuheit zu verpassen.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -257,8 +259,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
-            "title": "Überraschung mit Happy-Faktor",
-            "text": "<p>Teile unvergessliche Happy-Momente mit deiner Fellnase. Jeden Monat auf’s Neue.<\/p>",
+            "title": "Überraschung mit 100 % Happy-Faktor",
+            "text": "<p>Teile unvergessliche Happy-Momente mit deiner Fellnase. Unzufrieden? Ganz einfach per Knopfdruck kündigen.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -319,7 +321,7 @@
         "template--16416885604616__114cc600-b178-47a8-86a1-dee0d9ffe78c-16699920281389db7d-2"
       ],
       "settings": {
-        "title": "Mehr als 8000 zufriedene Fellnasen",
+        "title": "Mehr als 8.000 zufriedene Hunde & Katzen",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -334,12 +336,22 @@
     "c560d97b-94e3-4b69-93ff-870dbed59a45": {
       "type": "images-list",
       "blocks": {
+        "3f4d536f-b000-443c-9c32-1be43a21d268": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/www.instagram.com\/samweis_aragorn_the_eurasiers\/",
+            "image": "shopify:\/\/shop_images\/samweis_aragorn_the_eurasiers_Instagram_carousel_album_2022-12-03_14-56-39_17900565254697702.jpg",
+            "instagram_name": "samweis_aragorn_the_eurasiers",
+            "title": "",
+            "subtitle": ""
+          }
+        },
         "a18dd23a-4214-4c98-a446-8babdd7e8beb": {
           "type": "image",
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
-            "instagram_name": "Instagram Name",
+            "instagram_name": "katzenwahnsinn_hoch_5",
             "title": "",
             "subtitle": ""
           }
@@ -349,7 +361,7 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-17908204928655342.jpg",
-            "instagram_name": "Instagram Name",
+            "instagram_name": "rudi.and.the.gang",
             "title": "",
             "subtitle": ""
           }
@@ -359,7 +371,7 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
-            "instagram_name": "Instagram Name",
+            "instagram_name": "liorandkelly_bsh",
             "title": "",
             "subtitle": ""
           }
@@ -368,14 +380,15 @@
           "type": "image",
           "settings": {
             "url": "",
-            "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
-            "instagram_name": "Instagram Name",
+            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized_7955d474-3b10-43a9-ac12-08072ba356fb.jpg",
+            "instagram_name": "paura_dieblauedackeline",
             "title": "",
             "subtitle": ""
           }
         }
       },
       "block_order": [
+        "3f4d536f-b000-443c-9c32-1be43a21d268",
         "a18dd23a-4214-4c98-a446-8babdd7e8beb",
         "a914d729-fa72-48e2-b77e-212385945c03",
         "b97c7ddd-fed4-42b0-b108-a51cf214da1c",
@@ -393,13 +406,13 @@
         "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>15 % Rabatt auf deine erste Box<\/p>"
+            "text": "<p>10 % Rabatt auf deine erste Box<\/p>"
           }
         },
         "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil unserer Box Familie"
+            "heading": "Werde Teil unserer Box Familie und verpasse keine Neuigkeiten"
           }
         },
         "template--16416885604616__b659fae3-f3a0-4ae8-be2a-713e8eddfa73-1669997368ede285c7-2": {
@@ -426,95 +439,221 @@
             "heading": "Allgemeines zum Abo"
           }
         },
-        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0": {
+        "9e5f204d-a5f1-45f2-b28c-71b1f96a7d25": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Welche Produkte sind in der Miaubox?",
-            "row_content": "<p>Der genaue Inhalt unserer Überraschungsbox für Hunde bleibt natürlich geheim. Ein kleiner Tipp: Du kannst dich unter anderem auf tolle Produkte, Services und Snacks für deinen Hund freuen. Der Warenwert der Box liegt bei über 50€. Was bisher enthalten war erfährst du hier.<\/p>",
+            "heading": "Warum benötige ich eine solche Überraschungsbox?",
+            "row_content": "<p>Mit unseren Überraschungsboxen hast du die Möglichkeit, dich häufiger und abwechslungsreicher mit deinen Lieblingen zu beschäftigen. Du bekommst alle zwei Monate Zugang zu exklusiven Produkten rund um Spaß, Beschäftigung und sinnvollem Zubehör. <\/p><p>Mit einer unser Abo-Boxen hast du häufig als erste Zugriff auf neue Produkte im Fressnapf Sortiment. <\/p>",
             "page": ""
           }
         },
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Warum werden die Boxen alle 2 Monate versendet?",
-            "row_content": "<p>asdasd<\/p>",
+            "heading": "Warum bietet ihr die Box nur als Abo an?",
+            "row_content": "<p>Die Box ist aktuell nur als Abo verfügbar, weil es uns ermöglicht, die Boxen für nur 24,90 € anzubieten. Du kannst das Abo direkt nach deinem Kauf kündigen, sodass du keine Sorge vor einer Abofallen haben musst.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Muss ich bei der Waubox oder Miaubox, Angst vor einer Abofalle haben?",
+            "row_content": "<p>Dein Abo kannst du jederzeit ohne Vertragslaufzeit in deinem persönlichen Kundenkonto zum 16ten des Monats kündigen. Wenn du bei der nächsten Box im Urlaub bist, kannst du die nächste Lieferung auch erstmal nur überspringen.<\/p>",
             "page": ""
           }
         },
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>asdasd<\/p>",
+            "heading": "Welche Waubox Größe ist die richtige?",
+            "row_content": "<p>Unsere Waubox ist in zwei Größen erhältlich, damit die Produkte besser zu deinem Liebling passen. Die Box für kleine Hunde eignet sich für die Hunde der Größe S, die kleine\/mittlere Waubox für die Größen M\/L. Hier findest du eine Vergleichstabelle:<\/p><p>S: Bolonka, Chihuahua, Havaneser, Malteser, Mops, Parson- und Jack Russel Terrier, Rauhaardackel, Shi Tzu, Zwergpudel.<\/p><p>M & L: Cairn Terrier, Cocker Spaniel, Französische Bulldogge, Kleinpudel, Nordfolk, Australien Shepherd, Bearded Collie, Border Collie, Fox Terrier, Golden- und Labradoodle, Golden Retriever, Irish Terrier, Mittelschnauzer.<\/p>",
             "page": ""
           }
         },
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>qweqwe<\/p>",
+            "heading": "Kann ich angeben, welche Unverträglichkeiten mein Tier hat, damit diese berücksichtigt werden? ",
+            "row_content": "<p>Wir versuchen, mit unseren Boxen all unsere Kund:innen glücklich zu machen. Aktuell können wir also leider noch nicht auf die einzelnen Vorlieben eurer Lieblinge eingehen.<\/p>",
+            "page": ""
+          }
+        },
+        "d6ff2ff8-83c4-4d01-949e-7345bcbffc1c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich vergangene Wau- oder Miauboxen kaufen? ",
+            "row_content": "<p>Du kannst leider immer nur die nächste Wau- oder Miaubox in unserem Shop bestellen.<\/p>",
+            "page": ""
+          }
+        },
+        "b72d657a-80a5-4333-89cf-6efcc96a4df2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich einzelne Produkte aus der Box kaufen? ",
+            "row_content": "<p>Du kannst einzelne Produkte aus unseren Boxen jederzeit über unsere digitale Boxseite nachkaufen:<\/p><p>Hier geht es zur digitalen Waubox<\/p><p>Hier geht es zur digitalen Miaubox<\/p>",
+            "page": ""
+          }
+        },
+        "2305eb2f-4cd9-4e24-be81-e8900d357047": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ist es möglich, die Box umzutauschen?",
+            "row_content": "<p>Wie bei anderen Onlinekäufen auch hast du ein ganz normales 14-tägiges Rückgaberecht nach Erhalt deiner ersten Box. Alle danach folgenden Boxen im Abo können allerdings nicht mehr umgetauscht werden.<\/p>",
             "page": ""
           }
         },
         "40cdb9cc-2072-484c-b7e9-2f8710bdfa72": {
           "type": "tab",
           "settings": {
-            "heading": "Lieferung"
+            "heading": "Lieferung & Bezahlung"
           }
         },
         "07f94e4a-d12a-41c2-b5b4-55ecb24b7e11": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>asdasd<\/p>",
+            "heading": "Wie lange dauert es, bis ich die erste Box erhalte?",
+            "row_content": "<p>...<\/p>",
             "page": ""
           }
         },
         "af237209-7ce2-4c80-960c-f39a108caa86": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>asdasd<\/p>",
+            "heading": "Wie viel kosten Lieferung und Rücksendung?",
+            "row_content": "<p>Die Versandkosten deiner Box übernehmen wir für dich. Es kann natürlich vorkommen, dass dir deine Box nicht gefällt. Da es sich um eine Überraschungsbox handelt und wir alle etwas für die Umwelt tun müssen, würden wir dich bitten eine Retoure genau zu überlegen. <\/p><p>Das hat auch damit zu tun, dass wir uns aufgrund gestiegener Kosten gezwungen sehen, Kosten für Retouren an euch weiterzugeben.<\/p>",
             "page": ""
           }
         },
-        "41e8779c-3221-4085-914c-d08a7c65bed5": {
-          "type": "tab",
+        "b07294e5-c22b-4033-ad6d-72850f38bfda": {
+          "type": "collapsible_row",
           "settings": {
-            "heading": "Bezahlung"
+            "heading": "Kann ich die Lieferung mit einer Sendungsnummer verfolgen? ",
+            "row_content": "<p>Sobald wir deine Box gepackt haben, erhältst du von uns eine Sendungsnummer, mit der du deine Box verfolgen kannst. Es kann danach nochmal ein paar Tage dauern, da wir die Boxen erst packen und dann an den Versanddienstleister übergeben müssen.<\/p>",
+            "page": ""
+          }
+        },
+        "fe8f5db3-6e11-4189-8296-40590fb4d23d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ein Produkt aus meiner Box ist beschädigt, was kann ich tun?",
+            "row_content": "<p>Sollten Produkte aus deiner Box beschädigt sein, kontaktiere uns gerne über unseren Chatbot und wir helfen dir weiter.<\/p>",
+            "page": ""
           }
         },
         "9e1c161e-8290-4eab-87ac-b01cd4aede23": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>asdasd<\/p>",
+            "heading": "Ein Produkt aus meiner Box hat gefehlt, was kann ich tun? ",
+            "row_content": "<p>Sollten Produkte aus deiner Box gefehlt haben, kontaktiere uns gerne über unseren Chatbot und wir helfen dir weiter.<\/p>",
             "page": ""
           }
         },
         "a01efae2-35df-4e1c-86e9-7debac91fa50": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "<p>qweqwe<\/p>",
+            "heading": "Wann wird der Betrag für die Wau- oder Miaubox fällig? ",
+            "row_content": "<p>Bei deiner ersten Bestellung wird der Betrag sofort fällig. Anschließend wird dein Konto alle zwei Monate, zwei Wochen vor Versand der nächsten Box - also am 16. des Vormonats, belastet.<\/p>",
+            "page": ""
+          }
+        },
+        "b754da08-870c-4992-8bb1-00bf30e08816": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Zahlungsmethoden gibt es?",
+            "row_content": "<p>Wir bieten auf unserer Seite die Zahlung über PayPal,per Kreditkarte und Google Pay an. Rechnungskauf, Lastschrift und Apple Pay können wir aufgrund technischer Bedingungen aktuell nicht anbieten.<\/p>",
+            "page": ""
+          }
+        },
+        "b0460ec4-0e3c-4636-ac9a-f94ee84f4b00": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich einer zukünftigen Bestellung im Abo ein Gutscheincode hinzufügen? ",
+            "row_content": "<p>Ja, du kannst in deinem Kundenprofil unter \"Meine Abos\" und dann \"Aktive Abos\" ein Rabattcode weiter unten auf der Seite einfügen.<\/p>",
+            "page": ""
+          }
+        },
+        "41e8779c-3221-4085-914c-d08a7c65bed5": {
+          "type": "tab",
+          "settings": {
+            "heading": "Kundenprofil"
+          }
+        },
+        "24c16b69-dc91-425d-983b-53c736dd9d11": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Muss ich ein Kundenkonto anlegen? ",
+            "row_content": "<p>Du kannst deine Box auch ohne ein Kundenkonto bestellen. Wir empfehlen dir allerdings ein Konto anzulegen, um dein Abo ganz gemütlich selbst verwalten zu können.<\/p>",
+            "page": ""
+          }
+        },
+        "c853a066-53b5-4dc1-91c8-7a2dbdfe51b7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich meine Adresse hinterlegen oder ändern? ",
+            "row_content": "<p>Deine Adresse wird automatisch während des Bestellvorgangs hinterlegt. Solltest du deine Adresse ändern wollen, kannst du dies ganz einfach über dein persönliches Kundenkonto tun oder du schreibst uns über unseren Chatbot an.<\/p>",
+            "page": ""
+          }
+        },
+        "bab5c758-9b76-455a-a55a-c00d93f02937": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich meine Mailadresse oder meinen Namen anpassen?",
+            "row_content": "<p>Möchtest du deine Mailadresse oder deinen Namen anpassen, schreib uns über unseren Chatbot an und wir helfen dir dabei. <\/p>",
+            "page": ""
+          }
+        },
+        "fd85163a-97bb-48d8-b40b-acb853ac4f1f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie erhalte ich ein neues Passwort oder kann dies ändern?",
+            "row_content": "<p>Dein Passwort kannst du jederzeit <a href=\"https:\/\/fnxbox.de\/account\/login\" target=\"_blank\" title=\"https:\/\/fnxbox.de\/account\/login\">hier<\/a> zurücksetzen lassen.<\/p>",
+            "page": ""
+          }
+        },
+        "670685d0-463d-4821-ab2e-364de8bc6acd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich mein Konto löschen?",
+            "row_content": "<p>Dein Konto kannst du über dein persönliches Kundenkonto löschen.<\/p>",
+            "page": ""
+          }
+        },
+        "a99f94ce-9d2f-4c53-85cd-48f1bd894709": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich meine Zahlungsmethode ändern?",
+            "row_content": "<p>Im Kundenprofil hast du unter \"Meine Abos\" die Möglichkeit, deine Zahlungsmethode anzupassen.<\/p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "9140619a-fe41-4318-80f0-443ecb8c6fab",
-        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0",
+        "9e5f204d-a5f1-45f2-b28c-71b1f96a7d25",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-1",
+        "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-0",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-2",
         "template--16416885604616__0504c5d4-3ba5-45cb-8b57-28a5c2b2f134-16700662028038acd7-3",
+        "d6ff2ff8-83c4-4d01-949e-7345bcbffc1c",
+        "b72d657a-80a5-4333-89cf-6efcc96a4df2",
+        "2305eb2f-4cd9-4e24-be81-e8900d357047",
         "40cdb9cc-2072-484c-b7e9-2f8710bdfa72",
         "07f94e4a-d12a-41c2-b5b4-55ecb24b7e11",
         "af237209-7ce2-4c80-960c-f39a108caa86",
-        "41e8779c-3221-4085-914c-d08a7c65bed5",
+        "b07294e5-c22b-4033-ad6d-72850f38bfda",
+        "fe8f5db3-6e11-4189-8296-40590fb4d23d",
         "9e1c161e-8290-4eab-87ac-b01cd4aede23",
-        "a01efae2-35df-4e1c-86e9-7debac91fa50"
+        "a01efae2-35df-4e1c-86e9-7debac91fa50",
+        "b754da08-870c-4992-8bb1-00bf30e08816",
+        "b0460ec4-0e3c-4636-ac9a-f94ee84f4b00",
+        "41e8779c-3221-4085-914c-d08a7c65bed5",
+        "24c16b69-dc91-425d-983b-53c736dd9d11",
+        "c853a066-53b5-4dc1-91c8-7a2dbdfe51b7",
+        "bab5c758-9b76-455a-a55a-c00d93f02937",
+        "fd85163a-97bb-48d8-b40b-acb853ac4f1f",
+        "670685d0-463d-4821-ab2e-364de8bc6acd",
+        "a99f94ce-9d2f-4c53-85cd-48f1bd894709"
       ],
       "settings": {
         "caption": "",
@@ -530,14 +669,14 @@
         "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-0": {
           "type": "heading",
           "settings": {
-            "heading": "Tierisch Engagiert für Fellnasen in Not",
+            "heading": "Gemeinsam für Tiere in Not",
             "heading_size": "h1"
           }
         },
         "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Unter der Initiative “Tierisch Engagiert” unterstützt Fressnapf Tierschutzeinrichtungen in ganz Deutschland mit Geld- und Sachspenden. So konnten wir allein im letzten Jahr mit insgesamt über 1.800 Spendenpaletten und 1.5 Mio. Euro Tierschutzvereine bei ihrer wichtigen Arbeit unterstützen und dazu beitragen, dass viele Tiere in Not einen warmen und schützenden Schlafplatz haben. Erfahre mehr über unser tierisches Engagement.<\/p>",
+            "text": "<p>Mit der Initiative <strong>Tierisch Engagiert<\/strong> unterstützt Fressnapf Tierschutzeinrichtungen in ganz Deutschland mit Geld- und Sachspenden. Erfahre mehr über unser <a href=\"https:\/\/www.fressnapf.de\/tierischengagiert\/\" target=\"_blank\" title=\"https:\/\/www.fressnapf.de\/tierischengagiert\/\">tierisches Engagement<\/a>. <strong><br\/><br\/>Von jeder Box geht 1 € an den Tierschutz.<\/strong><\/p>",
             "text_style": "body"
           }
         }
@@ -548,6 +687,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Snip20221203_88.png",
+        "show_in_container": false,
         "height": "adapt",
         "image_mode": "image-mode-contain",
         "desktop_image_width": "medium",

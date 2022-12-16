@@ -69,6 +69,14 @@
                 <li id="Slide-{{ section.id }}-{{ media.id }}" class="product__media-item grid__item slider__slide{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   {%- assign media_position = media_position | default: 0 | plus: 1 -%}
                   {% render 'product-thumbnail', media: media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: true %}
+                  
+                  {% assign alt_splitted = media.alt | split: '|' %}
+                  {% if alt_splitted.size == 2 %}
+                    <div class="product__media-item__label">
+                      {{ alt_splitted[0] }}
+                      <a href="{{ alt_splitted[1] }}" class="link">Ansehen</a>
+                    </div>
+                  {% endif %}
                 </li>
               {%- endunless -%}
             {%- endfor -%}
@@ -101,7 +109,6 @@
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' -%}
           {% if product.images.size > 1 %}
           <slider-component id="GalleryThumbnails-{{ section.id }}" class="thumbnail-slider slider-mobile-gutter{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}">
-            <button type="button" class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">{% render 'icon-caret' %}</button>
             <ul id="Slider-Thumbnails-{{ section.id }}" class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}">
               {%- if featured_media != null -%}
                 {%- capture media_index -%}
@@ -180,7 +187,6 @@
                 {%- endunless -%}
               {%- endfor -%}
             </ul>
-            <button type="button" class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">{% render 'icon-caret' %}</button>
           </slider-component>
           {% endif %}
         {%- endif -%}
@@ -358,27 +364,51 @@
                 </variant-radios>
         		{%- endif -%}
               {%- else -%}
+                <script src="{{ 'custom-select.js' | asset_url }}" defer="defer"></script>
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                    <div class="product-form__input product-form__input--dropdown">
-                      <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
-                        {{ option.name }}
-                      </label>
-                      <div class="select">
-                        <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                          class="select__select"
-                          name="options[{{ option.name | escape }}]"
-                          form="{{ product_form_id }}"
-                        >
-                          {%- for value in option.values -%}
-                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                              {{ value }}
-                            </option>
-                          {%- endfor -%}
-                        </select>
-                        {% render 'icon-caret' %}
+                    <custom-select>
+                      <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" form="{{ product_form_id }}">
+                        {%- for value in option.values -%}
+                          <option value="{{ value | escape }}">{{ value }}</option>
+                        {%- endfor -%}
+                      </select>
+
+                      <label class="custom-select__label">{{ option.name }} wählen</label>
+                      <div class="accordion">
+                        <details id="Details-{{ block.id }}-{{ section.id }}">
+                          <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                            <b class="accordion__title">
+                              {{ option.selected_value }}
+                            </b>
+                            {% render 'icon-caret' %}
+                          </summary>
+                          <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
+                            <ul>
+                              {%- for value in option.values -%}
+                                <li class="custom-select__option" data-value="{{ value | escape }}" data-title="{{ value }}">
+                                  {{ value }}
+                                  {% if product.metafields.option_labels[value] != empty %}
+                                    <span class="custom-select__option__description">{{ product.metafields.option_labels[value].value }}</span>
+                                  {% endif %}
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </details>
                       </div>
-                    </div>
+
+                      {%- for value in option.values -%}
+                        {% if product.metafields.option_descriptions[value] != empty %}
+                          <div class="custom-select__description {% unless value == option.selected_value %}hidden{% endunless %}" data-option="{{ value }}">
+                            {{ product.metafields.option_descriptions[value] }}
+                            {% if section.settings.groessentabelle != blank %}
+                              <a href="{{ section.settings.groessentabelle }}" class="link">Größentabelle anzeigen</a>
+                            {% endif %}
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </custom-select>
                   {%- endfor -%}
 
                   <script type="application/json">
@@ -498,6 +528,11 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
+          {%- when 'text_with_icon' -%}
+            <div class="product__usp">
+              {% render 'icons', icon: block.settings.icon %}
+              {{ block.settings.text }}
+            </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -1044,6 +1079,49 @@
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
         }
       ]
+    },
+    {
+      "type": "text_with_icon",
+      "name": "USP",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "default": "check",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label",
+          "options": [
+            {
+              "label": "Kein Icon",
+              "value": "none"
+            },
+            {
+              "label": "Überraschung",
+              "value": "surprise"
+            },
+            {
+              "label": "Lieferrhythmus",
+              "value": "calendar"
+            },
+            {
+              "label": "Sparen",
+              "value": "savings"
+            },
+            {
+              "label": "Check",
+              "value": "check"
+            },
+            {
+              "label": "Lieferwagen",
+              "value": "truck"
+            }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
     }
   ],
   "settings": [
@@ -1126,6 +1204,11 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "url",
+      "id": "groessentabelle",
+      "label": "Größentabelle"
     },
     {
       "type": "header",

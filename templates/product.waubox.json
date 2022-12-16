@@ -119,100 +119,22 @@
       "settings": {
       }
     },
-    "1655889727a96577ae": {
-      "type": "hero-section",
-      "blocks": {
-        "73374715-7e73-4efe-8ddf-bc866d579f08": {
-          "type": "text",
-          "settings": {
-            "text": "Die einzigartige Überraschungsbox für Hunde im flexiblen Abo - jederzeit kündbar.",
-            "text_style": "body",
-            "text_color": "text-color-1"
-          }
-        },
-        "bd2e0be5-1b8a-47cf-ac8c-8c7f30a6f70a": {
-          "type": "heading",
-          "settings": {
-            "heading": "Erhalte tolle Snacks, Spielzeug und Zubehör in deiner Waubox",
-            "heading_size": "large"
-          }
-        },
-        "c899f8dc-22a0-40b8-bdae-1605fac71c7b": {
-          "type": "button",
-          "settings": {
-            "button_label": "Jetzt Waubox bestellen",
-            "button_link": "shopify:\/\/products\/deine-wau-box",
-            "button-type": "primary",
-            "secondary_button_label": "Artikel der vorherigen Waubox",
-            "secondary_button_link": "shopify:\/\/pages\/waubox-edition"
-          }
-        }
-      },
-      "block_order": [
-        "73374715-7e73-4efe-8ddf-bc866d579f08",
-        "bd2e0be5-1b8a-47cf-ac8c-8c7f30a6f70a",
-        "c899f8dc-22a0-40b8-bdae-1605fac71c7b"
-      ],
+    "d9373611-750e-47f6-88b2-3f0d466b0551": {
+      "type": "jumpmark",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Waubox_Stage-Preis_7263ecc3-8f32-4824-8f83-efe03d3b04de.png",
-        "color_scheme": "background-2",
-        "background_color": "background-color-3",
-        "heading_size": "large",
-        "margin_top": 0,
-        "margin_bottom": 36,
-        "content-width": 1200
+        "id": "auslieferung"
       }
     },
-    "usp": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/innovative-product_bb79f5cf-4537-4af2-a23b-253a4288b111.png",
-            "title": "Einzigartige Produkte",
-            "text": "<p>Jede Waubox erlaubt dir, die neusten und innovativsten Produkte kennenzulernen.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/charity_739c6b21-c53a-4c77-8109-b190ed5627eb.png",
-            "title": "1 EUR Spende",
-            "text": "<p>Mit jeder Waubox tust du etwas Gutes und spendest an Tierschutzprojekte in ganz Deutschland.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "05f589fb-62d8-4f94-89cd-b4161e1966e4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/refresh.png",
-            "title": "Jederzeit kündbar",
-            "text": "<p>Du hast die volle Kontrolle und kannst dein flexibles Abo jederzeit pausieren oder kündigen.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column3",
-        "05f589fb-62d8-4f94-89cd-b4161e1966e4"
-      ],
+    "930e9a23-0d83-42b6-b0f2-941f305990a9": {
+      "type": "countdown",
       "settings": {
-        "title": "",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "show_in_boxes": true,
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1"
+        "heading": "Nächste Auslieferung",
+        "subheading": "Versand jeden zweiten Monat",
+        "date": "2023-02-01T01:00:00.000Z",
+        "button_text": "Jetzt zuschnappen",
+        "button_url": "#",
+        "link_text": "Was war in den letzten Boxen?",
+        "link_url": "#"
       }
     },
     "2efc1d25-4ca5-48c4-8af9-f7b6b2cc5908": {
@@ -222,52 +144,33 @@
       }
     },
     "main": {
-      "type": "waubox-product",
+      "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "5ff8dc2f-6681-4990-92e0-2d2eba99b568": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
-        "18027bb3-1a9c-4a67-8212-dec5403858f7": {
-          "type": "text",
+        "title": {
+          "type": "title",
           "settings": {
-            "text": "Warenwert über 50 EUR",
-            "text_style": "uppercase"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
           }
         },
         "cbc5a1f6-bf9b-49cd-828d-9592834ae3c0": {
           "type": "text",
           "settings": {
-            "text": "Anfang {{ product.metafields.my_fields.next_charge_month.value }} bekommst du deine nächste Waubox - natürlich versandkostenfrei.",
-            "text_style": "subtitle"
+            "text": "Die von unserem Team zusammengestellte Überraschungsbox für Hunde enthält immer einen Ball mit Funktion, Spielzeug oder großes Kuscheltier sowie ein Premium Snack.",
+            "text_style": "body"
           }
         },
-        "3a7a4c14-1af3-4047-a82f-66998fc13a6f": {
-          "type": "text",
+        "variant_picker": {
+          "type": "variant_picker",
           "settings": {
-            "text": "Bei den Bildern handelt es sich um Beispiele von vorherigen Wauboxen.",
-            "text_style": "uppercase"
+            "picker_type": "dropdown"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
@@ -278,31 +181,25 @@
             "button-type": "primary"
           }
         },
-        "05bf633d-f6de-45f3-9500-e307607db16a": {
-          "type": "text",
+        "33b52a16-c438-46b6-8934-8c3ebfd4da3d": {
+          "type": "text_with_icon",
           "settings": {
-            "text": "Das Abo ist jederzeit kündbar",
-            "text_style": "body"
+            "icon": "truck",
+            "text": "<p>Nächste kostenfreie Auslieferung am 04. Oktober<\/p>"
           }
         },
-        "description": {
-          "type": "description",
+        "33e9d413-105c-4cc2-b164-cec7062f7901": {
+          "type": "text_with_icon",
           "settings": {
+            "icon": "surprise",
+            "text": "<p>Produkte im Wert von 50 € für nur 24,90 €<\/p>"
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
+        "80a87645-dcff-42e5-bbf9-94a6c8d0bd33": {
+          "type": "text_with_icon",
           "settings": {
-            "heading": "Lieferung",
-            "icon": "none",
-            "content": "<p>Der Versand erfolgt voraussichtlich in der ersten Woche des Versandmonats. Die DHL liefert dir jeden zweiten Monat eine Box von uns direkt an deine Haustür. Der Versand ist kostenlos. <\/p>",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Teilen"
+            "icon": "check",
+            "text": "<p>Du hast die volle Kontrolle – Jederzeit kündbar<\/p>"
           }
         },
         "435e3c22-4700-49fd-8887-d53a0740947a": {
@@ -313,19 +210,15 @@
         }
       },
       "block_order": [
-        "title",
         "5ff8dc2f-6681-4990-92e0-2d2eba99b568",
-        "18027bb3-1a9c-4a67-8212-dec5403858f7",
-        "price",
-        "variant_picker",
+        "title",
         "cbc5a1f6-bf9b-49cd-828d-9592834ae3c0",
-        "3a7a4c14-1af3-4047-a82f-66998fc13a6f",
-        "quantity_selector",
+        "variant_picker",
+        "price",
         "68ac56fe-fef0-4a74-87cc-8ac7033a1c5c",
-        "05bf633d-f6de-45f3-9500-e307607db16a",
-        "description",
-        "collapsible-row-1",
-        "share",
+        "33b52a16-c438-46b6-8934-8c3ebfd4da3d",
+        "33e9d413-105c-4cc2-b164-cec7062f7901",
+        "80a87645-dcff-42e5-bbf9-94a6c8d0bd33",
         "435e3c22-4700-49fd-8887-d53a0740947a"
       ],
       "settings": {
@@ -335,174 +228,9 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
+        "groessentabelle": "#",
         "padding_top": 36,
         "padding_bottom": 100
-      }
-    },
-    "37710e42-029b-4014-a3e4-d924fe7d2ca0": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16154606076168__37710e42-029b-4014-a3e4-d924fe7d2ca0-16690507868d08bdb8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Mehr als 4.000 glückliche Kund:innen",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "template--16154606076168__37710e42-029b-4014-a3e4-d924fe7d2ca0-16690507868d08bdb8-0"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "1667320951e7d60c76": {
-      "type": "apps",
-      "blocks": {
-        "7e9d0d9e-c15d-46bc-ad51-f44d9ca6077e": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "7e9d0d9e-c15d-46bc-ad51-f44d9ca6077e"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "3b040c77-c08b-4fc4-8154-22c206130be1": {
-      "type": "jumpmark",
-      "settings": {
-        "id": "newsletter"
-      }
-    },
-    "1647873865597a6ba8": {
-      "type": "newsletter",
-      "blocks": {
-        "1647873865ef7c7f6b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Unser Leckerchen: 10 % Willkommensrabatt"
-          }
-        },
-        "1647873865ef7c7f6b-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        },
-        "1647873865ef7c7f6b-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p><strong>Registriere dich hier, um einen 10 % Willkommensrabatt zu erhalten und Teil der Box-Community zu werden.<\/strong><\/p><p><em>Ich bin damit einverstanden, dass Fressnapf und seine <\/em><a href=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\" target=\"_blank\" title=\"https:\/\/www.fressnapf.de\/datenschutz\/partner\/\"><em>Partner<\/em><\/a><em> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <\/em><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\"><em>Datenschutzhinweisen<\/em><\/a><em>.<\/em><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1647873865ef7c7f6b-0",
-        "1647873865ef7c7f6b-2",
-        "1647873865ef7c7f6b-1"
-      ],
-      "settings": {
-        "small_text": ""
-      }
-    },
-    "1650470749b39fd6dc": {
-      "type": "slideshow",
-      "blocks": {
-        "165047074922d3c054-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/waubox-luebeck.png",
-            "heading": "Haustierhilfe Lübeck e.V.",
-            "heading_size": "small",
-            "subheading": "Der Tierschutzverein unterstützt bedürftige Haustierbesitzer bei medizinischen Notfällen und sorgt u.a. dafür, dass die Tiere bei ihren geliebten Menschen bleiben können.",
-            "button_label": "Projekt ansehen",
-            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/57534",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "165047074922d3c054-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1Y3A6840-web.jpg",
-            "heading": "HundeDoc - Stiftung SPI",
-            "heading_size": "small",
-            "subheading": "Der HundedDoc ist eine von Tierärzten ins Leben gerufene Initiative zur mobilen Bereitstellung von tiermedizinischer Beratung und Grundversorgung, welche sich an bedürftige Menschen richtet.",
-            "button_label": "Projekt ansehen",
-            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/83014",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "74384cfa-e155-4653-8ab7-d6ba495c5572": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Karli_Baum_Fotor.jpg",
-            "heading": "Gnadenhof Katzentraum e.V.",
-            "heading_size": "small",
-            "subheading": "Der Gnadenhof Katzentraum ist für viele Katzen die letzte Chance auf Futter, medizinische Versorgung und Zuwendung. Gemeinsam mit dir unterstützen wir den Umzug des Gnadenhofs in eine größere Einrichtung, da eine Vielzahl an Katzen versorgt werden muss.",
-            "button_label": "Projekt ansehen",
-            "link": "https:\/\/tierisch-engagiert.fressnapf.de\/projects\/33288",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "8f3877b8-72a3-4617-bfa3-27bd6bebf3a3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cassius.jpg",
-            "heading": "Tierschutzverein Krefeld und Umgebung von 1877 e.V.",
-            "heading_size": "small",
-            "subheading": "Der Tierschutzverein Krefeld möchte neue Freilaufgehege für seine tierischen Bewohner schaffen, um die immer stärker überfüllten Tierheime zu entlasten und den Hunden einen Platz zum Rennen, Spielen, Toben und Schnüffeln zu schenken.",
-            "button_label": "Projekt ansehen",
-            "link": "https:\/\/www.betterplace.org\/de\/projects\/109489-zusaetzliche-freilaufwiesen-fuer-unsere-hunde",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "165047074922d3c054-0",
-        "165047074922d3c054-1",
-        "74384cfa-e155-4653-8ab7-d6ba495c5572",
-        "8f3877b8-72a3-4617-bfa3-27bd6bebf3a3"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 9,
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
       }
     },
     "product-recommendations": {
@@ -519,158 +247,370 @@
         "padding_bottom": 28
       }
     },
-    "16456116897fb0f363": {
+    "399d8128-2fbd-4d73-801c-62bb6c94c125": {
+      "type": "jumpmark",
+      "settings": {
+        "id": "kundenbewertung"
+      }
+    },
+    "3fbacf4e-0217-4d1d-b097-036091ae4362": {
+      "type": "reviews",
+      "blocks": {
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-0",
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-1",
+        "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-2"
+      ],
+      "settings": {
+        "title": "Mehr als 8000 zufriedene Fellnasen",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "show_in_boxes": true,
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-2"
+      }
+    },
+    "63e51edf-90cf-4649-a0f1-ee21e5aaa1ef": {
+      "type": "images-list",
+      "blocks": {
+        "9f43f615-fd7c-4a27-bed5-c88b9ccab51f": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/samweis_aragorn_the_eurasiers_Instagram_carousel_album_2022-12-03_14-56-39_17900565254697702.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "fb06a857-08c9-4009-89bf-215acf420e22": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized_7955d474-3b10-43a9-ac12-08072ba356fb.jpg",
+            "instagram_name": "Instagram Name",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "eed5be07-80e5-48e9-a4ec-beffbb7f090a": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "instagram_name": "",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "instagram_name": "",
+            "title": "",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "9f43f615-fd7c-4a27-bed5-c88b9ccab51f",
+        "fb06a857-08c9-4009-89bf-215acf420e22",
+        "eed5be07-80e5-48e9-a4ec-beffbb7f090a",
+        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "headline": "",
+        "show_overlay": true
+      }
+    },
+    "00bb7395-141d-4513-89d0-a3d586e049bb": {
+      "type": "jumpmark",
+      "settings": {
+        "id": "besonderheiten"
+      }
+    },
+    "5f1f8c6f-3ba4-483a-bbdb-557afbc7e630": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-0": {
+          "type": "column",
+          "settings": {
+            "icon": "surprise",
+            "title": "Überraschung garantiert",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Link",
+            "link": "#"
+          }
+        },
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-1": {
+          "type": "column",
+          "settings": {
+            "icon": "calendar",
+            "title": "Du entscheidest",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-2": {
+          "type": "column",
+          "settings": {
+            "icon": "savings",
+            "title": "Spar dir die Versandkosten",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-0",
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-1",
+        "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-2"
+      ],
+      "settings": {
+        "title": "Das besondere an der Waubox",
+        "column_alignment": "center",
+        "swipe_on_mobile": false
+      }
+    },
+    "745130c6-5578-4c7d-be9d-e54fa0486c29": {
+      "type": "jumpmark",
+      "settings": {
+        "id": "faq"
+      }
+    },
+    "a00be145-37bc-460f-983d-ab3385746ef5": {
       "type": "collapsible-content",
       "blocks": {
-        "1645611688e0223b49-1": {
+        "18b9569d-474b-4671-b8fa-7cd1a01134ec": {
+          "type": "tab",
+          "settings": {
+            "heading": "Test"
+          }
+        },
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Was ist in einer Waubox enthalten?",
-            "row_content": "<p>Der genaue Inhalt unserer Überraschungsbox für Hunde bleibt natürlich geheim. <\/p><p><strong>Ein kleiner Tipp:<\/strong> Du kannst dich unter anderem auf tolle Produkte, Services und Snacks für deinen Hund freuen. Der Warenwert der Box liegt bei über 50€.<\/p><p>Was bisher enthalten war erfährst du <a href=\"\/pages\/waubox-edition\" target=\"_blank\" title=\"Waubox Edition\">hier<\/a>.<\/p>",
+            "heading": "Collapsible row",
+            "row_content": "",
             "page": ""
           }
         },
-        "417fcf48-a539-473a-9178-a9bd28de23b1": {
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Welche Größe der Waubox ist für meinen Hund die richtige?",
-            "row_content": "<p>Als Größenvergleich haben wir für die Größen S und M - L folgende Rassen als Beispiel: <\/p><p>S: Bolonka, Chihuahua, Havaneser, Malteser, Mops, Parson- und Jack Russel Terrier, Rauhaardackel, Shi Tzu, Zwergpudel<\/p><p><\/p><p>M - L: Cairn Terrier, Cocker Spaniel, Französische Bulldogge, Kleinpudel, Nordfolk, Australien Shepherd, Bearded Collie, Border Collie, Fox Terrier, Golden- und Labradoodle, Golden Retriever, Irish Terrier, Mittelschnauzer<\/p>",
+            "heading": "Collapsible row",
+            "row_content": "",
             "page": ""
           }
         },
-        "1645611688e0223b49-3": {
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie tue ich mit der Waubox etwas Gutes?",
-            "row_content": "<p>Von jeder Waubox, die wir verkaufen, wandert 1€ direkt an \"Tierisch Engagiert\" und hilft somit auch anderen Tieren in Not. <\/p>",
+            "heading": "Collapsible row",
+            "row_content": "",
             "page": ""
           }
         },
-        "3a384ede-0868-4f90-be73-f3e5297ba292": {
-          "type": "collapsible_row",
+        "91586c28-4143-4691-bba9-4fa3a8cf63e9": {
+          "type": "tab",
           "settings": {
-            "heading": "Kann ich mein Abo kündigen?",
-            "row_content": "<p>Ja, dein  Waubox Abo kannst du monatlich kündigen. Andernfalls kannst du dein Abo auch erstmal pausieren und in ein paar Monaten wieder aktivieren. All das kannst du in deinem persönlichen <a href=\"https:\/\/wau-box.de\/account\" title=\"https:\/\/wau-box.de\/account\">Kundenportal<\/a> machen.<\/p><p><strong>Wichtig:<\/strong> Wenn du die nächste Box nicht erhalten möchtest, musst du spätestens bis zum 15. des jeweiligen Vormonats des nächsten Versandzeitraums gekündigt haben.<\/p>",
-            "page": ""
+            "heading": "Test 2"
           }
         },
-        "08653bc3-3207-48fd-a28a-4c83200af09d": {
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Kann ich die Waubox auch bestellen ohne ein Abo abzuschließen?",
-            "row_content": "<p>Wir arbeiten laufend eine Erweiterung unseres Services, um dir das passende und beste Erlebnis zu bieten. Daher wird es vorerst erstmal nur das Abo geben - weitere Produkte sind aber schon in Planung. Wir freuen uns natürlich immer über Feedback und Anregungen über unsere <a href=\"\/pages\/kontakt\" title=\"Kontakt\">Kontaktseite<\/a>.<\/p>",
-            "page": ""
-          }
-        },
-        "9ee5b9c7-0659-4f45-9f18-3976da97d4c6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Wo finde ich meinen Gutscheincode?",
-            "row_content": "<p>Sollte in deiner Box ein Gutschein für einen innovativen Service sein, findest du diesen auf der Bestellübersichtsseite deiner aktuellen Bestellung. Den Link zu dieser findest du in der Versandbestätigungs-Mail.<\/p>",
+            "heading": "Collapsible row",
+            "row_content": "",
             "page": ""
           }
         }
       },
       "block_order": [
-        "1645611688e0223b49-1",
-        "417fcf48-a539-473a-9178-a9bd28de23b1",
-        "1645611688e0223b49-3",
-        "3a384ede-0868-4f90-be73-f3e5297ba292",
-        "08653bc3-3207-48fd-a28a-4c83200af09d",
-        "9ee5b9c7-0659-4f45-9f18-3976da97d4c6"
+        "18b9569d-474b-4671-b8fa-7cd1a01134ec",
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-0",
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-1",
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-2",
+        "91586c28-4143-4691-bba9-4fa3a8cf63e9",
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-3"
       ],
       "settings": {
-        "caption": "FAQ",
-        "heading": "Häufig gestellte Fragen",
-        "heading_alignment": "left",
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_alignment": "center",
         "layout": "none",
         "open_first_collapsible_row": false
       }
     },
-    "1664608089903029d4": {
-      "type": "rich-text",
+    "99a9b864-aa9e-462f-b822-0465fbbb1920": {
+      "type": "image-with-text",
       "blocks": {
-        "166460808948b6d024-0": {
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil der #Waubox Familie",
-            "heading_size": "h2"
+            "heading": "Die Überraschungsbox für deine Katze",
+            "heading_size": "h1"
+          }
+        },
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button-type": "primary",
+            "button_label_secondary": "Button label",
+            "button_link_secondary": "",
+            "button-type_secondary": "secondary"
           }
         }
       },
       "block_order": [
-        "166460808948b6d024-0"
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-0",
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-1",
+        "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "show_in_container": false,
+        "height": "adapt",
+        "image_mode": "image-mode-cover",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "box-width": "main-width",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-3",
+        "mobile_content_alignment": "left"
       }
     },
-    "1664608216844ff593": {
-      "type": "content-carousel",
+    "8db92326-4817-40f8-bd37-8afbbc805512": {
+      "type": "multicolumn",
       "blocks": {
-        "166460821682465074-0": {
-          "type": "slide",
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-0": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized.jpg"
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "166460821682465074-1": {
-          "type": "slide",
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-1": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/emma_the_happy_maltipoo-image-1662041635241_sized.jpg"
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "3803f34d-af9e-49ba-8570-051faeb794f2": {
-          "type": "slide",
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-2": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Waubox_Boris_Sven_2_sized.png"
-          }
-        },
-        "9a3388c2-87b2-4a52-bc2b-2e8c5b4aac71": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Powerdackel.png"
-          }
-        },
-        "4f8d39f2-e0ff-4555-8613-59c2e2dbb3f2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/baileycherryblossom-image-1662041620920_sized.jpg"
-          }
-        },
-        "862f8386-abc6-423f-88a8-702bfea76e6f": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/togo-saltandpepperschnauzer-image-1662041536660_sized.jpg"
-          }
-        },
-        "ff7dda5c-6edd-4891-98d5-a69c6a110305": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fressnapf_regensburg-image-1662041601683_sized.jpg"
-          }
-        },
-        "6c96e4ef-bcb8-4559-aba3-d235f659f003": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/whiskeythebaladi-image-1662041679574_sized.jpg"
+            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "166460821682465074-0",
-        "166460821682465074-1",
-        "3803f34d-af9e-49ba-8570-051faeb794f2",
-        "9a3388c2-87b2-4a52-bc2b-2e8c5b4aac71",
-        "4f8d39f2-e0ff-4555-8613-59c2e2dbb3f2",
-        "862f8386-abc6-423f-88a8-702bfea76e6f",
-        "ff7dda5c-6edd-4891-98d5-a69c6a110305",
-        "6c96e4ef-bcb8-4559-aba3-d235f659f003"
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-0",
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-1",
+        "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-2"
       ],
       "settings": {
+        "title": "So funktioniert's",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "show_in_boxes": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "4216de6d-2982-44bf-9bb2-2811da90e872": {
+      "type": "jumpmark",
+      "settings": {
+        "id": "newsletter"
+      }
+    },
+    "cefbe7a8-9654-43a0-85db-cbf8077f5c0e": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>15% Rabatt auf deine erste Box<\/p>"
+          }
+        },
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Werde Teil unserer Box Familie"
+          }
+        },
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-1",
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-0",
+        "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2"
+      ],
+      "settings": {
+        "small_text": ""
       }
     }
   },
@@ -678,18 +618,21 @@
     "d3c2aea7-5289-4d09-b279-a9f89bd90bd8",
     "cba8b274-d3e9-4c25-ab45-6429bb8112dd",
     "0d6b71d9-0994-48c2-8848-4482deb27140",
-    "1655889727a96577ae",
-    "usp",
+    "d9373611-750e-47f6-88b2-3f0d466b0551",
+    "930e9a23-0d83-42b6-b0f2-941f305990a9",
     "2efc1d25-4ca5-48c4-8af9-f7b6b2cc5908",
     "main",
-    "37710e42-029b-4014-a3e4-d924fe7d2ca0",
-    "1667320951e7d60c76",
-    "3b040c77-c08b-4fc4-8154-22c206130be1",
-    "1647873865597a6ba8",
-    "1650470749b39fd6dc",
     "product-recommendations",
-    "16456116897fb0f363",
-    "1664608089903029d4",
-    "1664608216844ff593"
+    "399d8128-2fbd-4d73-801c-62bb6c94c125",
+    "3fbacf4e-0217-4d1d-b097-036091ae4362",
+    "63e51edf-90cf-4649-a0f1-ee21e5aaa1ef",
+    "00bb7395-141d-4513-89d0-a3d586e049bb",
+    "5f1f8c6f-3ba4-483a-bbdb-557afbc7e630",
+    "745130c6-5578-4c7d-be9d-e54fa0486c29",
+    "a00be145-37bc-460f-983d-ab3385746ef5",
+    "99a9b864-aa9e-462f-b822-0465fbbb1920",
+    "8db92326-4817-40f8-bd37-8afbbc805512",
+    "4216de6d-2982-44bf-9bb2-2811da90e872",
+    "cefbe7a8-9654-43a0-85db-cbf8077f5c0e"
   ]
 }

@@ -738,6 +738,13 @@ class VariantSelects extends HTMLElement {
   constructor() {
     super();
     this.addEventListener('change', this.onVariantChange);
+
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   const customSelect = this.querySelector('select-pure');
+    //   if(customSelect) {
+    //     customSelect.addEventListener('change', this.onVariantChange.bind(this));
+    //   }
+    // })
   }
 
   onVariantChange() {
@@ -760,7 +767,7 @@ class VariantSelects extends HTMLElement {
   }
 
   updateOptions() {
-    this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
+    this.options = Array.from(this.querySelectorAll('select, select-pure'), (select) => select.value);
   }
 
   updateMasterId() {

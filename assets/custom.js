@@ -57,11 +57,6 @@ if (paymentItems.length && paymentItems.length > 0) {
     }
   });
 }
-// set footer Color
-if (document.getElementById("product-page")){
-  document.getElementsByClassName("footer-smile")[0].classList.add("color-background-2");
-}
-
 
 // Copy Coupon Code to Clipboard
 function copyToClipboard(text) {
