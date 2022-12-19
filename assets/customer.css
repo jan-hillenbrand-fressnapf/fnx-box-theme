@@ -1017,6 +1017,10 @@ li[data-address]>h2 {
   color: #464646;
 }
 
+.customer__box__line-item--left {
+  margin-bottom: var(--grid-mobile-vertical-spacing);
+}
+
 @media screen and (min-width: 990px) {
   .customer__wrapper {
     display: flex;
@@ -1034,6 +1038,7 @@ li[data-address]>h2 {
 
   .customer__box__line-item--left {
     width: calc(70% - var(--grid-desktop-horizontal-spacing) / 2);
+    margin-bottom: 0;
   }
 
   .customer__box__line-item--right {
