@@ -130,7 +130,7 @@
       "settings": {
         "heading": "Nächste Auslieferung",
         "subheading": "Versand jeden zweiten Monat",
-        "date": "2023-02-01T01:00:00.000Z",
+        "date": "2023-03-01T01:00:00.000Z",
         "button_text": "Jetzt zuschnappen",
         "button_url": "#",
         "link_text": "Was war in den letzten Boxen?",
@@ -185,7 +185,7 @@
           "type": "text_with_icon",
           "settings": {
             "icon": "truck",
-            "text": "<p>Nächste kostenfreie Auslieferung am 04. Oktober<\/p>"
+            "text": "<p>Nächste kostenfreie Auslieferung Anfang März<\/p>"
           }
         },
         "33e9d413-105c-4cc2-b164-cec7062f7901": {
@@ -199,7 +199,7 @@
           "type": "text_with_icon",
           "settings": {
             "icon": "check",
-            "text": "<p>Du hast die volle Kontrolle – Jederzeit kündbar<\/p>"
+            "text": "<p>Das Abo ist jederzeit kündbar<\/p>"
           }
         },
         "435e3c22-4700-49fd-8887-d53a0740947a": {
@@ -299,7 +299,8 @@
         "button_label": "Button label",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "background-2"
+        "color_scheme": "background-2",
+        "all_reviews_url": ""
       }
     },
     "63e51edf-90cf-4649-a0f1-ee21e5aaa1ef": {
@@ -589,13 +590,13 @@
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>15% Rabatt auf deine erste Box<\/p>"
+            "text": "<p>10 % Rabatt auf deine erste Box<\/p>"
           }
         },
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil unserer Box Familie"
+            "heading": "Werde Teil unserer Miaubox Familie und verpasse keine Angebote mehr"
           }
         },
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2": {

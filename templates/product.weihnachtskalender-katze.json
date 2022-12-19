@@ -90,9 +90,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "mobile_content_alignment": "left"
       }
     },
     "1645694934aafcf6ed": {
@@ -140,9 +138,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "mobile_content_alignment": "left"
       }
     },
     "usp": {
@@ -193,9 +189,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "padding_top": 20,
-        "padding_bottom": 60
+        "color_scheme": "background-1"
       }
     },
     "main": {
@@ -324,10 +318,6 @@
         "1647873865ef7c7f6b-1"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 68
       }
     },
     "1650470749b39fd6dc": {

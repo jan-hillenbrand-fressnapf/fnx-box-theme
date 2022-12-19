@@ -47,57 +47,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1645712426c011bca4": {
-      "type": "image-with-text",
-      "blocks": {
-        "1645712426c4597959-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tierisch Engagiert sagt Danke!",
-            "heading_size": "h1"
-          }
-        },
-        "1645712426c4597959-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Nur noch ein Schritt und du hast uns mit 1€ als Spende für unterschiedliche gute Zwecke geholfen. Wir danken dir für deine Unterstützung und wünschen dir viel Spaß mit deiner Überraschungsbox. <\/p><p>Schreib uns gerne auf Social Media dein Feedback zur Waubox\/Miaubox. Wir freuen uns auch in Zukunft mit dir gemeinsam Tiere in Not zu retten. <\/p>",
-            "text_style": "body"
-          }
-        },
-        "1645712426c4597959-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1645712426c4597959-0",
-        "1645712426c4597959-1",
-        "1645712426c4597959-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Alma.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-collection",
-    "1645712426c011bca4"
+    "featured-collection"
   ]
 }

@@ -4,18 +4,18 @@
       "type": "intro-section",
       "settings": {
         "headline": "Exklusive Produkte und einzigartige Freude in einer Box",
-        "rating": "4,56",
-        "ratings_count": 36,
+        "rating": "4,6",
+        "ratings_count": 37,
         "reviews_url": "shopify:\/\/pages\/kundenbewertungen",
         "box1_heading": "Team Hund",
         "box1_image": "shopify:\/\/shop_images\/Snip20221201_70.png",
         "box1_product": "deine-wau-box",
-        "box1_button_text": "#Waubox entdecken",
+        "box1_button_text": "Waubox entdecken",
         "box1_button_url": "shopify:\/\/products\/deine-wau-box",
         "box2_heading": "Team Katze",
         "box2_image": "shopify:\/\/shop_images\/Snip20221201_71.png",
         "box2_product": "deine-miau-box",
-        "box2_button_text": "#Miaubox entdecken",
+        "box2_button_text": "Miaubox entdecken",
         "box2_button_url": "shopify:\/\/products\/deine-miau-box"
       }
     },
@@ -221,7 +221,7 @@
         "image": "shopify:\/\/shop_images\/Miaubox_05_0.75x.png",
         "show_in_container": false,
         "height": "adapt",
-        "image_mode": "image-mode-cover",
+        "image_mode": "image-mode-contain",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -330,7 +330,8 @@
         "button_label": "Button label",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "background-2"
+        "color_scheme": "background-2",
+        "all_reviews_url": ""
       }
     },
     "c560d97b-94e3-4b69-93ff-870dbed59a45": {
@@ -366,16 +367,6 @@
             "subtitle": ""
           }
         },
-        "b97c7ddd-fed4-42b0-b108-a51cf214da1c": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
-            "instagram_name": "liorandkelly_bsh",
-            "title": "",
-            "subtitle": ""
-          }
-        },
         "bb403335-24fb-429c-9a2f-e858c3191eae": {
           "type": "image",
           "settings": {
@@ -385,14 +376,24 @@
             "title": "",
             "subtitle": ""
           }
+        },
+        "b97c7ddd-fed4-42b0-b108-a51cf214da1c": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
+            "instagram_name": "liorandkelly_bsh",
+            "title": "",
+            "subtitle": ""
+          }
         }
       },
       "block_order": [
         "3f4d536f-b000-443c-9c32-1be43a21d268",
         "a18dd23a-4214-4c98-a446-8babdd7e8beb",
         "a914d729-fa72-48e2-b77e-212385945c03",
-        "b97c7ddd-fed4-42b0-b108-a51cf214da1c",
-        "bb403335-24fb-429c-9a2f-e858c3191eae"
+        "bb403335-24fb-429c-9a2f-e858c3191eae",
+        "b97c7ddd-fed4-42b0-b108-a51cf214da1c"
       ],
       "settings": {
         "color_scheme": "background-2",
@@ -686,7 +687,7 @@
         "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snip20221203_88.png",
+        "image": "shopify:\/\/shop_images\/content_csr.png",
         "show_in_container": false,
         "height": "adapt",
         "image_mode": "image-mode-contain",

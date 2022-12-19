@@ -131,7 +131,7 @@
         "heading": "Nächste Auslieferung",
         "subheading": "Versand jeden zweiten Monat",
         "date": "2023-02-01T01:00:00.000Z",
-        "button_text": "Jetzt zuschnappen",
+        "button_text": "Jetzt abonnieren",
         "button_url": "#",
         "link_text": "Was war in den letzten Boxen?",
         "link_url": "#"
@@ -290,7 +290,7 @@
         "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-2"
       ],
       "settings": {
-        "title": "Mehr als 8000 zufriedene Fellnasen",
+        "title": "Mehr als 8.000 zufriedene Fellnasen",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -299,7 +299,8 @@
         "button_label": "Button label",
         "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "background-2"
+        "color_scheme": "background-2",
+        "all_reviews_url": ""
       }
     },
     "63e51edf-90cf-4649-a0f1-ee21e5aaa1ef": {
