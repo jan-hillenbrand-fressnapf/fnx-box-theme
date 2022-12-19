@@ -1,7 +1,5 @@
 .intro__text-container {
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .intro__rating {
@@ -9,6 +7,21 @@
   border-radius: 30px;
   display: inline-block;
   padding: 8px 16px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.intro__rating .intro-rating__rating {
+  margin-right: 1.3rem;
+}
+
+.intro__rating svg {
+  height: 2rem;
+  width: auto;
 }
 
 .intro__rating .intro-rating__rating,
@@ -97,6 +110,8 @@
     left: 0;
     right: 0;
     text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .intro__rating-container {
@@ -117,9 +132,13 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .intro__rating svg {
-    margin-left: 9px;
+    height: 3.4rem;
+    width: auto;
   }
 }
