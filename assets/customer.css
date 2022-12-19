@@ -972,24 +972,22 @@ li[data-address]>h2 {
   margin-bottom: 0.8rem;
 }
 
-.customer__box__address {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .customer__box__address form {
   margin: 0;
+  width: 100%;
 }
 
 .customer__box__address__buttons {
   display: flex;
   flex-direction: column;
-} 
+}
 
 .customer__box__address .customer__box__address__buttons button {
-  width: auto;
+  width: 100%;
   margin: 0;
+}
+
+.customer__box__address .customer__box__address__buttons button {
   margin-bottom: 1.6rem;
 }
 
@@ -1043,5 +1041,17 @@ li[data-address]>h2 {
 
   .customer__box__line-item--right {
     width: calc(30% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .customer__box__address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .customer__box__address .customer__box__address__buttons button {
+    width: auto;
+    margin: 0;
+    margin-bottom: 1.6rem;
   }
 }
