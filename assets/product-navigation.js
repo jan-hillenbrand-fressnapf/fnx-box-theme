@@ -57,10 +57,10 @@ class ProductNavigation extends HTMLElement {
     window.addEventListener('scroll', this.onScrollHandler, false);
 
     this.navigationItems.map(navigationItem => navigationItem.addEventListener('click', (e) => {
-      e.preventDefault();
-
       const target = document.querySelector(navigationItem.dataset.target);
+
       if(target) {
+        e.preventDefault();
         window.scrollTo({top: target.parentElement.offsetTop - this.navigation.offsetHeight + 1, behavior: 'smooth'});
       }
     }))
@@ -69,6 +69,12 @@ class ProductNavigation extends HTMLElement {
     this.navigation.parentElement.style.height = `${this.navigation.offsetHeight}px`;
 
     this.createObserver();
+    // Initially scroll to active item
+
+    const initialActiveItem = this.navigation.querySelector('.product-navigation__item--active');
+    if(initialActiveItem) {
+      this.scrollToActiveItem(initialActiveItem, false);
+    }
   }
 
   disconnectedCallback() {
@@ -85,8 +91,8 @@ class ProductNavigation extends HTMLElement {
     observer.observe(this.navigation);
   }
 
-  scrollToActiveItem(activeItem) {
-    this.navigation.querySelector("ul").scrollTo({left: activeItem.offsetLeft - 24, behavior: 'smooth'});
+  scrollToActiveItem(activeItem, smooth=true) {
+    this.navigation.querySelector("ul").scrollTo({left: activeItem.offsetLeft - 24, behavior: smooth ? 'smooth' : 'auto'});
   }
 
   onScroll() {
@@ -94,6 +100,10 @@ class ProductNavigation extends HTMLElement {
 
     if(scrollTop > this.originalPosition) {
       requestAnimationFrame(this.reveal.bind(this));  
+
+      if(this.dataset.scrollToActive === "false") return;
+
+      // Set & scroll to active item
       let activeItem = false;
 
       // Reset navigation items
@@ -131,7 +141,9 @@ class ProductNavigation extends HTMLElement {
 
   hide() {
     this.navigation.classList.remove('product-navigation--sticky');
-    this.navigationItems.forEach(n => n.parentElement.classList.remove('product-navigation__item--active'));
+    if(this.dataset.scrollToActive !== "false") {
+      this.navigationItems.forEach(n => n.parentElement.classList.remove('product-navigation__item--active'));
+    }
   }
 
   reveal() {

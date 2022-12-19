@@ -637,8 +637,7 @@ h6:empty {
   display: none;
 }
 
-.link,
-.customer a {
+.link {
   cursor: pointer;
   display: inline-block;
   border: none;
@@ -738,16 +737,14 @@ details > * {
   --duration-long: 500ms;
 }
 
-.underlined-link,
-.customer a {
+.underlined-link {
   color: rgba(var(--color-link), var(--alpha-link));
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness ease 100ms;
 }
 
-.underlined-link:hover,
-.customer a:hover {
+.underlined-link:hover {
   color: rgb(var(--color-link));
   text-decoration-thickness: 0.2rem;
 }
@@ -1345,7 +1342,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button--secondary {
-  border: 2px solid #819F17;
+  border: 2px solid #819F17 !important;
   border-radius: 16px;
 }
 
@@ -1831,6 +1828,39 @@ details[open] > .share-button__fallback {
   color: rgb(0, 0, 0);
 }
 
+.fnx-field {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2.4rem;
+}
+
+.fnx-field.fnx-field label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #464646;
+  margin-bottom: 0.4rem;
+  padding-left: 1.6rem;
+}
+
+.fnx-field input {
+  background: #FFFFFF;
+  border: 2px solid #B2B2B2;
+  border-radius: 16px;
+  padding: 1.2rem 1.6rem;
+  font-family: 'FNMZ Skolar Sans Latin';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+
+.fnx-field > *:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Text area */
 
 .text-area {
@@ -2277,8 +2307,12 @@ input[type='checkbox'] {
   }
 }
 
+#MainContent > div:not(#product-page):first-of-type {
+  padding-top: 12rem !important;
+}
+
 @media screen and (min-width: 990px) {
-  #MainContent .shopify-section:first-child {
+  #MainContent > div:not(#product-page):first-of-type {
     padding-top: 20rem !important;
   }
 
@@ -2929,4 +2963,9 @@ details-disclosure > details {
 
 .overflow-hidden-tablet .overflow-hidden-tablet__overlay {
   display: block;
+}
+
+/* Recharge */
+.recharge-te {
+  background-color: transparent !important;
 }

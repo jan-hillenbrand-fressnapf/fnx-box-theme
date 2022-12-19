@@ -27,6 +27,7 @@
   list-style: none;
   margin-right: 1.2rem;
   padding: 0.8rem 1.2rem;
+  border-radius: 8px;
 }
 
 .product-navigation li a {
@@ -40,7 +41,6 @@
 
 .product-navigation li.product-navigation__item--active {
   background-color: #196428;
-  border-radius: 8px;
 }
 
 .product-navigation li.product-navigation__item--active a {

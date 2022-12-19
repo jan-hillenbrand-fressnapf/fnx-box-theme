@@ -308,8 +308,8 @@
     "addresses": {
       "title": "Adressen",
       "default": "Standard",
-      "add_new": "Neue Adresse hinzufügen",
-      "edit_address": "Adresse bearbeiten",
+      "add_new": "Versandadresse hinzufügen",
+      "edit_address": "Versandadresse",
       "first_name": "Vorname",
       "last_name": "Nachname",
       "company": "Unternehmen",
@@ -325,8 +325,8 @@
       "update": "Adresse aktualisieren",
       "cancel": "Abbrechen",
       "edit": "Bearbeiten",
-      "delete": "Löschen",
-      "delete_confirm": "Bist du sicher, dass du diese Adresse löschen möchtest?"
+      "delete": "Entfernen",
+      "delete_confirm": "Bist du sicher, dass du diese Adresse entfernen möchtest?"
     },
     "log_in": "Einloggen",
     "log_out": "Abmelden",

@@ -1,0 +1,151 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<div class="customer__wrapper page-width">
+  {% render 'customer-navigation' %}
+  <div class="customer account">
+    {% paginate customer.orders by 20 %}
+      {%- if customer.orders.size > 0 -%}
+        {%- for order in customer.orders -%}
+          {% for line_item in order.line_items %}
+            <div class="customer__box">
+              <div class="customer__box__header">
+                <span>Bestellnummer</span>
+                <span>
+                  {{ order.name }}
+                </span>
+              </div>
+
+              <div class="customer__box__product-title">
+                {% assign image = line_item.variant.featured_image | default: line_item.product.featured_image %}
+                {% if image != empty %}
+                  {% render 'image', image: image %}
+                {% endif %}
+
+                {{ line_item.title }}
+              </div>
+
+              <div class="customer__box__line-item">
+                <div class="customer__box__line-item--left">
+                  <div class="grid grid--2-col">
+                    <div class="grid__item">
+                      <label>Anzahl:</label>
+                      {{ line_item.quantity }}
+                    </div>
+                    <div class="grid__item">
+                      <label>Summe:</label>
+                      {{ line_item.price | money }}
+                    </div>
+                    <div class="grid__item">
+                      <label>Bestelldatum:</label>
+                      {{ order.created_at | date: '%d.%m.%Y' }}
+                    </div>
+                    <div class="grid__item">
+                      <label>Lieferstatus:</label>
+                      {{ order.fulfillment_status_label }}
+                    </div>
+                  </div>
+
+                  <div class="grid grid--1-col grid--2-col-desktop">
+                    <div class="grid__item">
+                      <label>Versandadresse:</label>
+                      {{ order.shipping_address.name }}<br/>
+                      {{ order.shipping_address.address1 }}<br/>
+                      {% if order.shipping_address.address2 != empty %}
+                        {{ order.shipping_address.address2 }}<br/>
+                      {% endif %}
+                      {% if order.shipping_address.company != empty %}
+                        {{ order.shipping_address.company }}<br/>
+                      {% endif %}
+                      {{ order.shipping_address.zip }} {{ order.shipping_address.city }}<br/>
+                      {{ order.shipping_address.country }}
+                    </div>
+                    {% for discount_application in order.discount_applications %}
+                      <div class="grid__item">
+                        <label>Gutschein:</label>
+                        {{ discount_application.title }}
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="customer__box__line-item--right">
+                  <a class="button button--secondary" href="#">
+                    TODO: Rechnung anzeigen
+                  </a>
+                  <a class="button button--secondary" href="/apps/returns?">
+                    Sendung zurückgeben
+                  </a>
+                  <a class="button button--secondary" href="/tools/recurring/login">
+                    Zum Abo
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          {% endfor %}
+        {%- endfor -%}
+
+      {%- else -%}
+        <p>{{ 'customer.orders.none' | t }}</p>
+      {%- endif -%}
+
+      {%- if paginate.pages > 1 -%}
+        {%- if paginate.parts.size > 0 -%}
+          <nav
+            class="pagination"
+            role="navigation"
+            aria-label="{{ 'general.pagination.label' | t }}">
+            <ul role="list">
+              {%- if paginate.previous -%}
+                <li>
+                  <a href="{{ paginate.previous.url }}" aria-label="{{ 'general.pagination.previous' | t }}">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      viewBox="0 0 10 6">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor">
+                    </svg>
+                  </a>
+                </li>
+              {%- endif -%}
+
+              {%- for part in paginate.parts -%}
+                <li>
+                  {%- if part.is_link -%}
+                    <a href="{{ part.url }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
+                  {%- else -%}
+                    {%- if part.title == paginate.current_page -%}
+                      <span aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</span>
+                    {%- else -%}
+                      <span>{{ part.title }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+
+              {%- if paginate.next -%}
+                <li>
+                  <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      viewBox="0 0 10 6">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                        fill="currentColor">
+                    </svg>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </nav>
+        {%- endif -%}
+      {%- endif -%}
+    {% endpaginate %}
+  </div>
+</div>

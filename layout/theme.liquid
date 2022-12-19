@@ -261,7 +261,18 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
+      {% if request.path contains 'tools/recurring' %}
+        {{ 'customer.css' | asset_url | stylesheet_tag }}
+
+        <div class="customer__wrapper page-width">
+          {% render 'customer-navigation' %}
+          <div class="account">
+            {{ content_for_layout }}
+          </div>
+        </div>
+      {% else %}
+        {{ content_for_layout }}
+      {% endif %}
     </main>
 
     {% section 'footer' %}

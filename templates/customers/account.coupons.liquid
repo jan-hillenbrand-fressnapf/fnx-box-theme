@@ -1,0 +1,63 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<div class="customer__wrapper page-width">
+  {% render 'customer-navigation' %}
+  <div class="customer account">
+    <h1 class="h1 customer__title">
+      Hallo {{ customer.first_name }},
+    </h1>
+    <p>auf dieser Seite findest du alle Informationen zu deinem Fressnapfbox Benutzerkonto.</p>
+
+    <div class="page-width table-wrapper">
+      <div>
+        <h2>{{ 'Deine Coupons'}}</h2>
+        
+        {% paginate customer.orders by 20 %}
+          {%- if customer.orders.size > 0 -%}
+            <table role="table" class="order-history">
+              <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th id="ColumnType" scope="col" role="columnheader">{{ 'Typ' }}</th>
+                  <th id="ColumnLink" scope="col" role="columnheader">{{ 'Link' }}</th>
+                  <th id="ColumnCode" scope="col" role="columnheader">{{ 'Code' }}</th>
+                  
+                </tr>
+              </thead>
+              <tbody role="rowgroup">
+                {%- for order in customer.orders -%}
+                  <tr role="row">
+                    <td headers="RowCoupon ColumnType" role="cell" data-label="Typ">
+                      {{ order.metafields.my_fields.coupon_type.value }}
+                    </td>
+                    <td headers="RowCoupon ColumnLink" role="cell" data-label="Link">
+                      <a
+                        href="{{ order.metafields.my_fields.coupon_link }}"
+                        target="_blank"
+                      > 
+                        {{ order.metafields.my_fields.coupon_link | split: '/' | last }}
+                      </a>
+                    </td>
+                    <td headers="RowCoupon ColumnCode" role="cell" data-label="Code">
+                      {{ order.metafields.my_fields.coupon_codes.value }}
+                      <a
+                        class="copy-coupon-code"
+                        href="#"
+                        data-code="{{ order.metafields.my_fields.coupon_codes.value }}"
+                      >
+                        {% render 'icon-clipboard' %}
+                      </a>
+                    </td>
+                  </tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+          {%- else -%}
+            <p>Keine Coupons</p>
+          {%- endif -%}
+        {% endpaginate %}
+      </div>
+    </div>
+  </div>
+</div>
+
