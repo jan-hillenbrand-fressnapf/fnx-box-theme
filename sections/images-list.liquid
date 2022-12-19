@@ -1,32 +1,41 @@
 {{ 'section-images-list.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="section-images-list color-{{ section.settings.color_scheme }} section-padding">
   <div class="page-width">
       <h2 class="h1 center">{{ section.settings.headline }}</h2>
-      <ul id="Slider-{{ section.id }}" class="section-images-list__images grid grid--1-col grid--4-col-tablet slider slider--mobile grid--peek" role="list">
-        {%- for block in section.blocks -%}
-          <li class="grid__item center slider__slide" {{ block.shopify_attributes }}>
-            <a href="{{ block.settings.url }}">
-              {% render 'image', image: block.settings.image %}
-              {% if section.settings.show_overlay %}<div class="overlay"></div>{% endif %}
-              {% if block.settings.instagram_name != blank %}
-                <div class="section-images-list__image__instagram">
-                  {% render 'icon-instagram-user' %}
-                  {{ block.settings.instagram_name }}
-                </div>
-              {% endif %}
-              {% if block.settings.title != blank or block.settings.subtitle != blank %}
-                <div class="section-images-list__image__text">
-                  <span class="h2">{{ block.settings.title }}</span>
-                  <span class="h3">{{ block.settings.subtitle }}</span>
-                </div>
-              {% endif %}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
+      <slider-component class="slider-mobile-gutter">
+        <ul id="Slider-{{ section.id }}" class="section-images-list__images grid grid--1-col grid--4-col-tablet slider slider--mobile slider--tablet-up grid--peek" role="list">
+          {%- for block in section.blocks -%}
+            <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item center slider__slide" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.url }}">
+                {% render 'image', image: block.settings.image %}
+                {% if section.settings.show_overlay %}<div class="overlay"></div>{% endif %}
+                {% if block.settings.instagram_name != blank %}
+                  <div class="section-images-list__image__instagram">
+                    {% render 'icon-instagram-user' %}
+                    {{ block.settings.instagram_name }}
+                  </div>
+                {% endif %}
+                {% if block.settings.title != blank or block.settings.subtitle != blank %}
+                  <div class="section-images-list__image__text">
+                    <span class="h2">{{ block.settings.title }}</span>
+                    <span class="h3">{{ block.settings.subtitle }}</span>
+                  </div>
+                {% endif %}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+        <div class="section-images-list__arrows">
+          <button type="button" class="slider-button slider-button--prev small-hide medium-hide {% if section.blocks.size <= 4 %} large-up-hide{% endif %}" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">{% render 'icon-arrow' %}</button>
+          <button type="button" class="slider-button slider-button--next small-hide medium-hide {% if section.blocks.size <= 4 %} large-up-hide{% endif %}" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">{% render 'icon-arrow' %}</button>
+        </div>
+      </slider-component>
+    
+  
     </div>
   </div>
 </div>

@@ -41,7 +41,8 @@
   z-index: 3;
   display: flex;
   align-items: center;
-  right: 0;
+  right: 1.6rem;
+  overflow: hidden;
 }
 
 .section-images-list__image__instagram svg {
@@ -53,4 +54,38 @@
 .section-images-list__images .grid__item .section-images-list__image__text .h2,
 .section-images-list__images .grid__item .section-images-list__image__text .h3 {
   color: #fff;
+}
+
+.section-images-list__arrows {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.section-images-list__arrows .slider-button {
+  padding: 12px;
+  background: #819F17;
+  border-radius: 16px;
+}
+
+.section-images-list__arrows .slider-button:disabled {
+  opacity: 0.5;
+}
+
+.section-images-list__arrows .slider-button.slider-button--prev .icon,
+.section-images-list__arrows .slider-button.slider-button--prev:hover .icon {
+  transform: rotate(180deg);
+}
+
+.section-images-list__arrows .slider-button.slider-button--next .icon,
+.section-images-list__arrows .slider-button.slider-button--next:hover .icon {
+  transform: none;
+}
+
+.section-images-list__arrows .slider-button svg {
+  width: 2rem;
+  height: auto;
+}
+
+.section-images-list__arrows .slider-button svg * {
+  fill: #fff;
 }
