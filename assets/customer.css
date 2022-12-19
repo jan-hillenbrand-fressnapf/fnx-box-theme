@@ -1019,7 +1019,18 @@ li[data-address]>h2 {
   margin-bottom: var(--grid-mobile-vertical-spacing);
 }
 
+.reset-password, .register, .order, .login {
+  margin: 0 auto 9rem;
+  max-width: 33.4rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 990px) {
+  .reset-password, .register, .order, .login {
+    max-width: 47.8rem;
+  }
+
   .customer__wrapper {
     display: flex;
   }

@@ -32,7 +32,7 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(-100%);
   visibility: hidden;
-  z-index: 3;
+  z-index: 200;
   left: 0;
   top: 100%;
   width: calc(100vw - 2.4rem);
@@ -128,6 +128,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-decoration: none;
   font-size: 2rem;
   line-height: 2.4rem;
+  font-weight: 700;
 }
 
 .menu-drawer__menu li:first-child .menu-drawer__menu-item {
@@ -159,7 +160,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
-  color: #196428;
+  color: #196428 !important;
 }
 
 .menu-drawer__menu-item--active:hover {
@@ -218,8 +219,33 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__utility-links {
-  padding: 2rem;
-  background-color: rgba(var(--color-foreground), 0.03);
+  padding-top: 4rem;
+}
+
+.menu-drawer__utility-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-drawer__utility-links li {
+  margin-bottom: 2.4rem;
+}
+
+.menu-drawer__utility-links li svg {
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.menu-drawer__utility-links li svg > * {
+  fill: #464646;
+}
+
+.menu-drawer__utility-links a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .menu-drawer__account {

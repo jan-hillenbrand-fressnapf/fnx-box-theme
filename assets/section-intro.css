@@ -1,5 +1,7 @@
 .intro__text-container {
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .intro__rating {
