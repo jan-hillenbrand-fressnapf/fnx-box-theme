@@ -81,6 +81,12 @@
     background: linear-gradient(90deg, #ECF3DD 50%, #F4E7F3 50%);
   }
 
+  .section-intro .h0 {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5.9rem;
+  }
+
   .section-intro .page-width {
     display: flex;
     max-width: 100%;
@@ -94,13 +100,14 @@
   }
 
   .intro__box img {
+    width: 80%;
     max-width: 700px;
   }
 
   .intro__box--left,
   .intro__box--right {
     width: 50%;
-    padding-top: 26rem;
+    padding-top: 18rem;
   }
 
   .intro__text-container {

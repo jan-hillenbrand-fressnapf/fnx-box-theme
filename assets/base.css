@@ -1839,6 +1839,9 @@ details[open] > .share-button__fallback {
 .fnx-field {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.fnx-field:not(:last-of-type) {
   margin-bottom: 2.4rem;
 }
 
@@ -2977,4 +2980,9 @@ details-disclosure > details {
 /* Recharge */
 .recharge-te {
   background-color: transparent !important;
+}
+
+/* JudgeMe */
+.jdgm-star {
+  color: #FFB300 !important;
 }

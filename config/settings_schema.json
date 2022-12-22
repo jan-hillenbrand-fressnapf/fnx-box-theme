@@ -631,16 +631,6 @@
         "default": 0
       },
       {
-        "type": "range",
-        "id": "text_boxes_radius",
-        "min": 0,
-        "max": 40,
-        "step": 2,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 0
-      },
-      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__shadow.content"
       },

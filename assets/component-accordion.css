@@ -99,9 +99,11 @@ details[open] .icon-minus {
   }
 
   .collapsible-content__nav label {
-    padding: 1.2rem 8.6rem;
+    padding: 1.2rem 2.4rem;
     font-size: 2rem;
     line-height: 2.4rem;
+    flex-grow: 1;
+    justify-content: center;
   }
 
   .collapsible-content__nav label:not(:last-child) {

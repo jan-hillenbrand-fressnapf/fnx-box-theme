@@ -203,7 +203,7 @@
 
 .multicolumn-card__icon svg,
 .multicolumn-card__icon svg > * {
-  fill: #196428;
+  fill: #464646;
 }
 
 @media screen and (max-width: 749px) {
