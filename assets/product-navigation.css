@@ -21,6 +21,12 @@
   padding: 0;
   margin: 0;
   padding: 1.6rem 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-navigation ul::-webkit-scrollbar {
+  display: none;
 }
 
 .product-navigation li {

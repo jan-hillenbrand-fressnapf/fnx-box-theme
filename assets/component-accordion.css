@@ -6,6 +6,12 @@
   padding-right: 4rem;
 }
 
+.accordion__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .accordion .summary__title {
   display: flex;
   flex: 1;
@@ -65,6 +71,12 @@ details[open] .icon-minus {
   display: flex;
   margin-bottom: 2.1rem;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.collapsible-content__nav::-webkit-scrollbar {
+  display: none;
 }
 
 .collapsible-content__nav label {

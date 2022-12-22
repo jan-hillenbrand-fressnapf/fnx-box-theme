@@ -13,7 +13,13 @@
 }
 
 .product-video video {
-  height: 75vh;
+  height: 65vh;
   object-fit: cover;
   width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .product-video video {
+    height: 75vh;
+  }
 }

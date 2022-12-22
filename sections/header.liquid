@@ -186,21 +186,12 @@
         <a href="{{ routes.root_url }}">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-              {%- if request.page_type == 'product' -%}
-                <img srcset="{{ product.metafields.my_fields.logo.value | img_url: image_size }} 1x, {{ product.metafields.my_fields.logo.value | img_url: image_size, scale: 2 }} 2x"
-                  src="{{ product.metafields.my_fields.logo.value | img_url: image_size }}"
-                  loading="lazy"
-                  class="header__heading-logo"
-                  alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-                >
-              {%- else -%}
-                <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-                  src="{{ section.settings.logo | img_url: image_size }}"
-                  loading="lazy"
-                  class="header__heading-logo"
-                  alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-                >
-              {%- endif -%}
+              <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                src="{{ section.settings.logo | img_url: image_size }}"
+                loading="lazy"
+                class="header__heading-logo"
+                alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+              >
           {%- endif -%}
         </a>
       {%- if request.page_type == 'index' -%}</h1>{% else %}</div>{% endif %}
