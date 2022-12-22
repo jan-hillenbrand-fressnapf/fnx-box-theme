@@ -2986,3 +2986,9 @@ details-disclosure > details {
 .jdgm-star {
   color: #FFB300 !important;
 }
+
+/* Smile */
+#smile-ui-lite-launcher-frame-container,
+.smile-launcher-frame-container {
+  display: none !important;
+}

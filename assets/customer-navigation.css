@@ -9,8 +9,11 @@
   align-items: center;
 }
 
-.customer-navigation li svg {
+.customer-navigation li svg,
+.customer-navigation li img {
   margin-right: 1rem;
+  width: 2rem;
+  height: auto;
 }
 
 .customer-navigation li svg * {
