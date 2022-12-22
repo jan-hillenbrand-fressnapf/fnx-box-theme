@@ -18,7 +18,7 @@
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-0": {
           "type": "heading",
           "settings": {
-            "heading": "Deine Überraschungsbox für deine Katze",
+            "heading": "Die Fressnapf Miaubox",
             "heading_size": "h1"
           }
         },
@@ -32,8 +32,8 @@
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-2": {
           "type": "button",
           "settings": {
-            "button_label": "Jetzt zuschnappen",
-            "button_link": "shopify:\/\/pages\/appi-compliance",
+            "button_label": "Jetzt bestellen",
+            "button_link": "#miaubox",
             "button-type": "primary",
             "button_label_secondary": "",
             "button_link_secondary": "",
@@ -48,7 +48,7 @@
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "image": "shopify:\/\/shop_images\/Miaubox_01_0.75x-8.png",
         "show_in_container": true,
         "height": "small",
         "image_mode": "image-mode-contain",
@@ -131,10 +131,10 @@
         "heading": "Nächste Auslieferung",
         "subheading": "Versand jeden zweiten Monat",
         "date": "2023-03-01T01:00:00.000Z",
-        "button_text": "Jetzt zuschnappen",
-        "button_url": "#",
+        "button_text": "Jetzt schnell sichern",
+        "button_url": "#miaubox",
         "link_text": "Was war in den letzten Boxen?",
-        "link_url": "#"
+        "link_url": "shopify:\/\/pages\/miaubox-edition"
       }
     },
     "2efc1d25-4ca5-48c4-8af9-f7b6b2cc5908": {
@@ -290,7 +290,7 @@
         "template--16627924304136__3fbacf4e-0217-4d1d-b097-036091ae4362-167120602676255d48-2"
       ],
       "settings": {
-        "title": "Mehr als 8000 zufriedene Fellnasen",
+        "title": "Mehr als 8.000 zufriedene Fellnasen",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -309,9 +309,9 @@
         "9f43f615-fd7c-4a27-bed5-c88b9ccab51f": {
           "type": "image",
           "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/samweis_aragorn_the_eurasiers_Instagram_carousel_album_2022-12-03_14-56-39_17900565254697702.jpg",
-            "instagram_name": "Instagram Name",
+            "url": "https:\/\/instagram.com\/katzenwahnsinn_hoch_5",
+            "image": "shopify:\/\/shop_images\/katzenwahnsinn_hoch_5_Instagram_image_2022-11-11_05-27-30_17957281031032809.jpg",
+            "instagram_name": "katzenwahnsinn_hoch_5",
             "title": "",
             "subtitle": ""
           }
@@ -319,9 +319,9 @@
         "fb06a857-08c9-4009-89bf-215acf420e22": {
           "type": "image",
           "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized_7955d474-3b10-43a9-ac12-08072ba356fb.jpg",
-            "instagram_name": "Instagram Name",
+            "url": "https:\/\/instagram.com\/rudi.and.the.gang",
+            "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-17908204928655342.jpg",
+            "instagram_name": "rudi.and.the.gang",
             "title": "",
             "subtitle": ""
           }
@@ -329,8 +329,9 @@
         "eed5be07-80e5-48e9-a4ec-beffbb7f090a": {
           "type": "image",
           "settings": {
-            "url": "",
-            "instagram_name": "",
+            "url": "https:\/\/instagram.com\/liorandkelly_bsh",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh_Instagram_carousel_album_2022-11-02_10-36-38_18224553133196781_1.jpg",
+            "instagram_name": "liorandkelly_bsh",
             "title": "",
             "subtitle": ""
           }
@@ -339,7 +340,38 @@
           "type": "image",
           "settings": {
             "url": "",
-            "instagram_name": "",
+            "image": "shopify:\/\/shop_images\/ragnar_und_rollo-image-1662041667479_sized.jpg",
+            "instagram_name": "ragnar_und_rollo",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "8017cd2b-9097-4dd6-81b0-045a8cc90fc4": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/maukthecat",
+            "image": "shopify:\/\/shop_images\/maukthecat-image-1669209899638.jpg",
+            "instagram_name": "maukthecat",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "e8e63bc7-bbb7-410c-8975-2c0a52024d7c": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/liorandkelly_bsh-image-1664204317375_sized.jpg",
+            "instagram_name": "liorandkelly_bsh",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "6dcf98cb-8a15-48f6-9b22-4fdd2068d801": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/rudi.and.the.gang",
+            "image": "shopify:\/\/shop_images\/rudi.and.the.gang_Instagram_image_2022-11-05_17-05-22_17942371616412113-18005024017502848.jpg",
+            "instagram_name": "rudi.and.the.gang",
             "title": "",
             "subtitle": ""
           }
@@ -349,7 +381,10 @@
         "9f43f615-fd7c-4a27-bed5-c88b9ccab51f",
         "fb06a857-08c9-4009-89bf-215acf420e22",
         "eed5be07-80e5-48e9-a4ec-beffbb7f090a",
-        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0"
+        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0",
+        "8017cd2b-9097-4dd6-81b0-045a8cc90fc4",
+        "e8e63bc7-bbb7-410c-8975-2c0a52024d7c",
+        "6dcf98cb-8a15-48f6-9b22-4fdd2068d801"
       ],
       "settings": {
         "color_scheme": "background-2",
@@ -532,7 +567,7 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-C1_4ee189bc-dcde-4f77-9edc-0257df99252f.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -542,7 +577,7 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-C2_bf16f8a9-3d55-42dd-858b-f864a7e86a61.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -552,7 +587,7 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-C3_cd723808-6d8a-4961-9628-165dee39f37c.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -596,7 +631,7 @@
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil unserer Miaubox Familie und verpasse keine Angebote mehr"
+            "heading": "Verpasse keine Miaubox Angebote mehr"
           }
         },
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2": {
@@ -611,7 +646,7 @@
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2"
       ],
       "settings": {
-        "small_text": ""
+        "small_text": "<p>Ich bin damit einverstanden, dass Fressnapf und seine <a href=\"https:\/\/fnxbox.de\/?_ab=0&_fd=0&_sc=1#\" target=\"_blank\" title=\"#\">Partner <\/a>meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den<a href=\"https:\/\/fnxbox.de\/policies\/privacy-policy\" title=\"Privacy Policy\"> Datenschutzhinweisen<\/a>.<\/p>"
       }
     }
   },

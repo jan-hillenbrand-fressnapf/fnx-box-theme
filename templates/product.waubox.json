@@ -18,14 +18,14 @@
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-0": {
           "type": "heading",
           "settings": {
-            "heading": "Deine Überraschungsbox für deinen Hund",
+            "heading": "Die Fressnapf Waubox",
             "heading_size": "h1"
           }
         },
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Spiel, Spaß, Pflege und ganz viel Belohnung - Mit eurer Waubox entdecket ihr immer neue Produkte rund um den Hund.<\/p>",
+            "text": "<p>Spiel, Spaß, Pflege und ganz viel Belohnung. Mit eurer Waubox entdeckt ihr immer neue Produkte rund um den Hund.<\/p>",
             "text_style": "body"
           }
         },
@@ -33,7 +33,7 @@
           "type": "button",
           "settings": {
             "button_label": "Jetzt zuschnappen",
-            "button_link": "shopify:\/\/pages\/appi-compliance",
+            "button_link": "#waubox",
             "button-type": "primary",
             "button_label_secondary": "",
             "button_link_secondary": "",
@@ -48,7 +48,7 @@
         "template--16525181026568__cba8b274-d3e9-4c25-ab45-6429bb8112dd-16706848744b2b5995-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Snip20221202_78.png",
+        "image": "shopify:\/\/shop_images\/Waubox_01_0.75x-8.png",
         "show_in_container": true,
         "height": "small",
         "image_mode": "image-mode-contain",
@@ -132,9 +132,9 @@
         "subheading": "Versand jeden zweiten Monat",
         "date": "2023-02-01T01:00:00.000Z",
         "button_text": "Jetzt abonnieren",
-        "button_url": "#",
+        "button_url": "#waubox",
         "link_text": "Was war in den letzten Boxen?",
-        "link_url": "#"
+        "link_url": "shopify:\/\/pages\/waubox-edition"
       }
     },
     "2efc1d25-4ca5-48c4-8af9-f7b6b2cc5908": {
@@ -185,14 +185,14 @@
           "type": "text_with_icon",
           "settings": {
             "icon": "truck",
-            "text": "<p>Nächste kostenfreie Auslieferung am 04. Oktober<\/p>"
+            "text": "<p>Nächste kostenfreie Auslieferung Anfang Februar<\/p>"
           }
         },
         "33e9d413-105c-4cc2-b164-cec7062f7901": {
           "type": "text_with_icon",
           "settings": {
             "icon": "surprise",
-            "text": "<p>Produkte im Wert von 50 € für nur 24,90 €<\/p>"
+            "text": "<p>Produkte im Wert von über 50 € für nur 24,90 €<\/p>"
           }
         },
         "80a87645-dcff-42e5-bbf9-94a6c8d0bd33": {
@@ -309,9 +309,9 @@
         "9f43f615-fd7c-4a27-bed5-c88b9ccab51f": {
           "type": "image",
           "settings": {
-            "url": "",
-            "image": "shopify:\/\/shop_images\/samweis_aragorn_the_eurasiers_Instagram_carousel_album_2022-12-03_14-56-39_17900565254697702.jpg",
-            "instagram_name": "Instagram Name",
+            "url": "https:\/\/instagram.com\/powerdackel",
+            "image": "shopify:\/\/shop_images\/powerdackel_Instagram_carousel_album_2022-12-05_08-19-40_17971654780839595.jpg",
+            "instagram_name": "powerdackel",
             "title": "",
             "subtitle": ""
           }
@@ -319,9 +319,9 @@
         "fb06a857-08c9-4009-89bf-215acf420e22": {
           "type": "image",
           "settings": {
-            "url": "",
+            "url": "https:\/\/instagram.com\/paura_dieblauedackeline",
             "image": "shopify:\/\/shop_images\/paura_dieblauedackeline-image-1662041652156_sized_7955d474-3b10-43a9-ac12-08072ba356fb.jpg",
-            "instagram_name": "Instagram Name",
+            "instagram_name": "paura_dieblauedackeline",
             "title": "",
             "subtitle": ""
           }
@@ -329,8 +329,9 @@
         "eed5be07-80e5-48e9-a4ec-beffbb7f090a": {
           "type": "image",
           "settings": {
-            "url": "",
-            "instagram_name": "",
+            "url": "https:\/\/instagram.com\/baileycherryblossom",
+            "image": "shopify:\/\/shop_images\/baileycherryblossom-image-1662041620920_sized_9266e406-5600-4944-b168-9184615c6720.jpg",
+            "instagram_name": "baileycherryblossom",
             "title": "",
             "subtitle": ""
           }
@@ -338,8 +339,49 @@
         "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0": {
           "type": "image",
           "settings": {
-            "url": "",
-            "instagram_name": "",
+            "url": "https:\/\/instagram.com\/emma_the_happy_maltipoo",
+            "image": "shopify:\/\/shop_images\/emma_the_happy_maltipoo_Instagram_image_2022-12-02_14-08-16_18240444847146383.jpg",
+            "instagram_name": "emma_the_happy_maltipoo",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "6bc8ab83-2da9-4093-a336-410744501003": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/samweis_aragorn_the_eurasiers",
+            "image": "shopify:\/\/shop_images\/samweis_aragorn_the_eurasiers_Instagram_carousel_album_2022-12-03_14-56-39_17900565254697702.jpg",
+            "instagram_name": "samweis_aragorn_the_eurasiers",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "66f4dca6-18a6-4acc-a0ab-9b3bc3eb1617": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/powerdackel",
+            "image": "shopify:\/\/shop_images\/Waubox_Oktober_22_Powerdackel.png",
+            "instagram_name": "powerdackel",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "b80f1b30-90c2-4fdd-ae1d-1a45e6f6d6e2": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/boris.thepoo",
+            "image": "shopify:\/\/shop_images\/Waubox_Boris_Sven_2_sized.png",
+            "instagram_name": "boris.thepoo",
+            "title": "",
+            "subtitle": ""
+          }
+        },
+        "213fc246-ffd3-4d10-9422-e6afe46795c7": {
+          "type": "image",
+          "settings": {
+            "url": "https:\/\/instagram.com\/yuki_the.inu",
+            "image": "shopify:\/\/shop_images\/yuki_the.inu_Instagram_image_2022-12-02_14-15-57_17951010944160556.jpg",
+            "instagram_name": "yuki_the.inu",
             "title": "",
             "subtitle": ""
           }
@@ -349,7 +391,11 @@
         "9f43f615-fd7c-4a27-bed5-c88b9ccab51f",
         "fb06a857-08c9-4009-89bf-215acf420e22",
         "eed5be07-80e5-48e9-a4ec-beffbb7f090a",
-        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0"
+        "da1b41a1-50a6-4cd5-9e83-cccf38b05cf0",
+        "6bc8ab83-2da9-4093-a336-410744501003",
+        "66f4dca6-18a6-4acc-a0ab-9b3bc3eb1617",
+        "b80f1b30-90c2-4fdd-ae1d-1a45e6f6d6e2",
+        "213fc246-ffd3-4d10-9422-e6afe46795c7"
       ],
       "settings": {
         "color_scheme": "background-2",
@@ -370,30 +416,30 @@
           "type": "column",
           "settings": {
             "icon": "surprise",
-            "title": "Überraschung garantiert",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "Link",
-            "link": "#"
+            "title": "Exklusive und innovative Artikel garantiert",
+            "text": "<p>Mit der Waubox erhältst du vor allen anderen Zugang zu exklusiven Produkten.<\/p>",
+            "link_label": "Zu den letzten Wauboxen",
+            "link": "shopify:\/\/pages\/waubox-edition"
           }
         },
         "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-1": {
           "type": "column",
           "settings": {
             "icon": "calendar",
-            "title": "Du entscheidest",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Jederzeit im Kundenprofil per Kopfdruck kündigen",
+            "text": "<p>Du hast die volle Kontrolle und kannst dein Abo jederzeit mit einem Klick kündigen.<\/p>",
+            "link_label": "Zum Kundenkonto",
+            "link": "https:\/\/fnxbox.de\/account"
           }
         },
         "template--16627924304136__5f1f8c6f-3ba4-483a-bbdb-557afbc7e630-167120601258d1e65d-2": {
           "type": "column",
           "settings": {
             "icon": "savings",
-            "title": "Spar dir die Versandkosten",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Versandkostenfrei und Zufriedenheitsgarantie",
+            "text": "<p>Du erhältst deine Box versandkostenfrei und kannst entscheiden, wie du bezahlst.<\/p>",
+            "link_label": "Jetzt bestellen",
+            "link": "#waubox"
           }
         }
       },
@@ -420,44 +466,130 @@
         "18b9569d-474b-4671-b8fa-7cd1a01134ec": {
           "type": "tab",
           "settings": {
-            "heading": "Test"
+            "heading": "Allgemeines zum Abo"
           }
         },
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "",
+            "heading": "Warum brauche ich eine Waubox?",
+            "row_content": "<p>Mit unserer Waubox hast du die Möglichkeit, dich häufiger und abwechslungsreicher mit deinem Hund zu beschäftigen. Du bekommst alle zwei Monate Zugang zu exklusiven Produkten rund um Spaß, Beschäftigung und sinnvollem Zubehör.<\/p><p>Mit einer unser Abo-Boxen hast du häufig als erstes Zugriff auf neue Produkte im Fressnapf Sortiment.<\/p>",
             "page": ""
           }
         },
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "",
+            "heading": "Warum bietet Fressnapf die Waubox nur als Abo an?",
+            "row_content": "<p>Die Waubox ist aktuell nur als Abo verfügbar, weil es uns ermöglicht, die Boxen für nur 24,90 € anzubieten. Du kannst das Abo, wenn du möchtest, auch direkt nach deinem Kauf kündigen, sodass du keine Sorge vor einer Abofallen haben musst.<\/p>",
             "page": ""
           }
         },
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "",
+            "heading": "Welche Waubox Größe ist die richtige?",
+            "row_content": "<p>Unsere Waubox ist in zwei Größen erhältlich, damit die Produkte besser zu deinem Liebling passen. Die Box für kleine Hunde eignet sich für die Hunde der Größe S, die kleine\/mittlere Waubox für die Größen M\/L. Hier findest du eine Vergleichstabelle:<\/p><p>S: Bolonka, Chihuahua, Havaneser, Malteser, Mops, Parson- und Jack Russel Terrier, Rauhaardackel, Shi Tzu, Zwergpudel.<\/p><p>M & L: Cairn Terrier, Cocker Spaniel, Französische Bulldogge, Kleinpudel, Nordfolk, Australien Shepherd, Bearded Collie, Border Collie, Fox Terrier, Golden- und Labradoodle, Golden Retriever, Irish Terrier, Mittelschnauzer.<\/p>",
+            "page": ""
+          }
+        },
+        "1c64ed54-9e09-46cc-9c04-6b29838a0f6f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich angeben, welche Unverträglichkeiten mein Hund hat, damit diese berücksichtigt werden? ",
+            "row_content": "<p>Wir versuchen, mit unseren Boxen all unsere Kund:innen glücklich zu machen. Aktuell können wir also leider noch nicht auf die einzelnen Vorlieben eurer Lieblinge eingehen.<\/p>",
+            "page": ""
+          }
+        },
+        "25f978e5-8932-490e-804d-e4ec2caca17a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ist es möglich, die Box umzutauschen?",
+            "row_content": "<p>Wie bei anderen Onlinekäufen auch hast du ein ganz normales 14-tägiges Rückgaberecht nach Erhalt deiner ersten Waubox. Alle danach folgenden Boxen im Abo können allerdings nicht mehr umgetauscht werden.<\/p>",
             "page": ""
           }
         },
         "91586c28-4143-4691-bba9-4fa3a8cf63e9": {
           "type": "tab",
           "settings": {
-            "heading": "Test 2"
+            "heading": "Lieferung & Bezahlung"
           }
         },
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "row_content": "",
+            "heading": "Wie lange dauert es, bis ich die 1. Waubox erhalte?",
+            "row_content": "<p>Das hängt vom Zeitpunkt der Bestellung ab und wird auf unserer Webseite transparent kommuniziert. Die neuen Wauboxen erscheinen alle zwei Monate (Februar, April, Juni, August, Oktober und Dezember).<\/p>",
+            "page": ""
+          }
+        },
+        "ec53a8ae-8f3d-43a9-b775-b0746b997b4e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie viel kosten Lieferung und Retoure?",
+            "row_content": "<p>Die Versandkosten deiner Box übernehmen wir für dich. Es kann natürlich vorkommen, dass dir deine Box nicht gefällt. Da es sich um eine Überraschungsbox handelt und wir alle etwas für die Umwelt tun müssen, würden wir dich bitten eine Retoure genau zu überlegen.<\/p><p>Das hat auch damit zu tun, dass wir uns aufgrund gestiegener Kosten gezwungen sehen, Kosten für Retouren an euch weiterzugeben.<\/p>",
+            "page": ""
+          }
+        },
+        "8e31e453-85fe-4247-a205-4d995d00131b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ein Produkt aus meiner Waubox ist beschädigt oder fehlt, was kann ich tun?",
+            "row_content": "<p>Sollten Produkte aus deiner Box beschädigt sein oder ganz fehlen, kontaktiere uns gerne über unseren Chatbot und wir helfen dir weiter.<\/p>",
+            "page": ""
+          }
+        },
+        "e6f7f931-c897-4860-bb01-9ff2b5a9d26d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wann wird der Betrag für die Waubox fällig?",
+            "row_content": "<p>Bei deiner ersten Bestellung wird der Betrag sofort fällig. Anschließend wird dein Konto alle zwei Monate, zwei Wochen vor Versand der nächsten Box - also am 16. des Vormonats, belastet.<\/p>",
+            "page": ""
+          }
+        },
+        "2f92d110-1644-4280-b2ce-4a25ed3cb672": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Zahlungsmethoden gibt es?",
+            "row_content": "<p>Wir bieten auf unserer Seite die Zahlung über PayPal,per Kreditkarte und Google Pay an. Rechnungskauf, Lastschrift und Apple Pay können wir aufgrund technischer Bedingungen aktuell nicht anbieten.<\/p>",
+            "page": ""
+          }
+        },
+        "62089552-d700-4771-b765-3c66f49a8403": {
+          "type": "tab",
+          "settings": {
+            "heading": "Kundenprofil"
+          }
+        },
+        "d16de6dc-3654-44ea-8fb3-29e9cedbc289": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Brauche ich ein Kundenkonto bei der Bestellung?",
+            "row_content": "<p>Du kannst deine Waubox auch ohne ein Kundenkonto bestellen. Wir empfehlen dir allerdings ein Konto anzulegen, um dein Abo ganz gemütlich selbst verwalten zu können.<\/p>",
+            "page": ""
+          }
+        },
+        "3e9e07d7-a8b0-48d1-b9aa-5f3c5a7bd268": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich meine Adresse hinterlegen oder ändern? ",
+            "row_content": "<p>Deine Adresse wird automatisch während des Bestellvorgangs hinterlegt. Solltest du deine Adresse ändern wollen, kannst du dies ganz einfach über dein persönliches Kundenkonto tun oder du schreibst uns über unseren Chatbot an.<\/p>",
+            "page": ""
+          }
+        },
+        "d7160f1c-d73a-43f7-b245-3bf089ec1c71": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich meine Mailadresse oder meinen Namen anpassen?",
+            "row_content": "<p>Möchtest du deine Mailadresse oder deinen Namen anpassen, schreib uns über unseren Chatbot an und wir helfen dir dabei. <\/p>",
+            "page": ""
+          }
+        },
+        "5f194af2-a70c-47db-a013-0f057ea89070": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie erhalte ich ein neues Passwort oder kann dies ändern?",
+            "row_content": "<p>Dein Passwort kannst du jederzeit<a href=\"https:\/\/fnxbox.de\/account\/login\" target=\"_blank\" title=\"https:\/\/fnxbox.de\/account\/login\"> hier<\/a> zurücksetzen lassen.<\/p>",
             "page": ""
           }
         }
@@ -467,12 +599,23 @@
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-0",
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-1",
         "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-2",
+        "1c64ed54-9e09-46cc-9c04-6b29838a0f6f",
+        "25f978e5-8932-490e-804d-e4ec2caca17a",
         "91586c28-4143-4691-bba9-4fa3a8cf63e9",
-        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-3"
+        "template--16627924304136__a00be145-37bc-460f-983d-ab3385746ef5-1671206238a742ea54-3",
+        "ec53a8ae-8f3d-43a9-b775-b0746b997b4e",
+        "8e31e453-85fe-4247-a205-4d995d00131b",
+        "e6f7f931-c897-4860-bb01-9ff2b5a9d26d",
+        "2f92d110-1644-4280-b2ce-4a25ed3cb672",
+        "62089552-d700-4771-b765-3c66f49a8403",
+        "d16de6dc-3654-44ea-8fb3-29e9cedbc289",
+        "3e9e07d7-a8b0-48d1-b9aa-5f3c5a7bd268",
+        "d7160f1c-d73a-43f7-b245-3bf089ec1c71",
+        "5f194af2-a70c-47db-a013-0f057ea89070"
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "Wie können wir dir weiterhelfen?",
         "heading_alignment": "center",
         "layout": "none",
         "open_first_collapsible_row": false
@@ -484,7 +627,7 @@
         "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Die Überraschungsbox für deine Katze",
+            "heading": "Wir haben auch etwas für Katzen!",
             "heading_size": "h1"
           }
         },
@@ -498,10 +641,10 @@
         "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Miaubox bestellen",
+            "button_link": "shopify:\/\/products\/deine-miau-box",
             "button-type": "primary",
-            "button_label_secondary": "Button label",
+            "button_label_secondary": "",
             "button_link_secondary": "",
             "button-type_secondary": "secondary"
           }
@@ -513,9 +656,10 @@
         "template--16627924304136__99a9b864-aa9e-462f-b822-0465fbbb1920-167120587783135c4c-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Miaubox_01_0.75x-8.png",
         "show_in_container": false,
         "height": "adapt",
-        "image_mode": "image-mode-cover",
+        "image_mode": "image-mode-contain",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
@@ -532,9 +676,9 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/How-to-H1_24d8ed2e-bfbe-4a5e-bb0a-dbd50a0acbbc.png",
+            "title": "Bestelle deine Waubox in wenigen Klicks",
+            "text": "<p>Unsere Experten stecken viel Liebe in die Auswahl von immer neuen Produkten im Wert von über 50 €.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -542,9 +686,9 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/How-to-H2_02014c07-9cef-41ba-8680-73d5e4ab4361.png",
+            "title": "Gemeinsame Vorfreude auf eure Waubox",
+            "text": "<p>Alle zwei Monate erhältst du eine Waubox mit exklusiven Inhalten, ohne eine Produktneuheit zu verpassen.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -552,9 +696,9 @@
         "template--16627924304136__8db92326-4817-40f8-bd37-8afbbc805512-1671206012e3e1322a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/How-to-H3_63e8f45a-fc5c-456d-bc11-cd12c8662316.png",
+            "title": "Überraschung mit 100 % Happy-Faktor",
+            "text": "<p>Teile unvergessliche Happy-Momente mit deiner Fellnase. Unzufrieden? Ganz einfach per Knopfdruck kündigen.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -590,13 +734,13 @@
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>15% Rabatt auf deine erste Box<\/p>"
+            "text": "<p>10 % Rabatt auf deine erste Box<\/p>"
           }
         },
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Werde Teil unserer Box Familie"
+            "heading": "Verpasse keine Waubox Angebote mehr"
           }
         },
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2": {
@@ -611,7 +755,7 @@
         "template--16627924304136__cefbe7a8-9654-43a0-85db-cbf8077f5c0e-16712058789c83a94b-2"
       ],
       "settings": {
-        "small_text": ""
+        "small_text": "<p>Ich bin damit einverstanden, dass Fressnapf und seine <a href=\"#\" target=\"_blank\" title=\"#\">Partner<\/a> meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden, sowie dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Datenschutzhinweisen<\/a>.<\/p>"
       }
     }
   },

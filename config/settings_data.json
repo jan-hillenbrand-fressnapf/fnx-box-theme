@@ -37,7 +37,7 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/fressnapf_deutschland\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/c\/fressnapf\/featured",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Waubox_Miaubox_Logo_white_lila.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/FN_Box_Logo_green_w_white_background.png",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ecf3dd",
     "checkout_input_background_color_mode": "white",
@@ -54,7 +54,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "accent-2",
-          "logo": "shopify:\/\/shop_images\/Snip20221209_136.png",
+          "logo": "shopify:\/\/shop_images\/FN_Box_Logo_Green.png",
           "logo_width": 250,
           "menu": "main-menu",
           "mobile_menu": "main-menu",
@@ -81,8 +81,8 @@
             "settings": {
               "heading": "Kontakt",
               "position_mobile": 4,
-              "text": "<p>2022 Fressnapf Tiernahrung GmbH<br\/>Westpreußenstraße 32-3<br\/>47809 Krefeld<\/p>",
-              "image": "shopify:\/\/shop_images\/Snip20221209_136.png"
+              "text": "<p>2022 Fressnapf Tiernahrung GmbH<br\/>Westpreußenstraße 32-38<br\/>47809 Krefeld<\/p>",
+              "image": "shopify:\/\/shop_images\/FN_Box_Logo_green_w_white_background.png"
             }
           },
           "a95f0c05-3391-4de2-b18d-783717daf970": {
@@ -127,9 +127,15 @@
     "blocks": {
       "12120936241911852800": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "position": "right"
+        }
+      },
+      "6143736321357441667": {
+        "type": "shopify:\/\/apps\/tidio-live-chat-chatbots\/blocks\/app-embed\/1002274d-fb18-4939-98f6-5f05a8deeadc",
+        "disabled": true,
+        "settings": {
         }
       }
     }

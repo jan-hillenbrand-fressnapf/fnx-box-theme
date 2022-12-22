@@ -3,17 +3,17 @@
     "110cd995-3643-4561-91bb-e88dfdc02785": {
       "type": "intro-section",
       "settings": {
-        "headline": "Exklusive Produkte und einzigartige Freude in einer Box",
-        "rating": "4,6",
-        "ratings_count": 37,
+        "headline": "Spiel, Spaß und Freude in deiner  Fressnapf Box",
+        "rating": "4,62",
+        "ratings_count": 45,
         "reviews_url": "shopify:\/\/pages\/kundenbewertungen",
         "box1_heading": "Team Hund",
-        "box1_image": "shopify:\/\/shop_images\/Snip20221201_70.png",
+        "box1_image": "shopify:\/\/shop_images\/Hund_gross_3_2.png",
         "box1_product": "deine-wau-box",
         "box1_button_text": "Waubox entdecken",
         "box1_button_url": "shopify:\/\/products\/deine-wau-box",
         "box2_heading": "Team Katze",
-        "box2_image": "shopify:\/\/shop_images\/Snip20221201_71.png",
+        "box2_image": "shopify:\/\/shop_images\/Katze_Grau_4_1.png",
         "box2_product": "deine-miau-box",
         "box2_button_text": "Miaubox entdecken",
         "box2_button_url": "shopify:\/\/products\/deine-miau-box"
@@ -26,7 +26,7 @@
           "type": "column",
           "settings": {
             "icon": "surprise",
-            "title": "Exklusive Überraschung garantiert",
+            "title": "Exklusive und innovative Artikel garantiert",
             "text": "<p>Mit der Box erhältst du vor allen anderen Zugang zu exklusiven Produkten.<\/p>",
             "link_label": "Zu den letzten Boxen",
             "link": ""
@@ -36,8 +36,8 @@
           "type": "column",
           "settings": {
             "icon": "calendar",
-            "title": "Jederzeit per Kopfdruck kündigen",
-            "text": "<p>Du hast die volle Kontrolle und kannst dein Abo jederzeit per Knopfdruck kündigen.<\/p>",
+            "title": "Jederzeit im Kundenprofil per Kopfdruck kündigen",
+            "text": "<p>Du hast die volle Kontrolle und kannst dein Abo jederzeit mit einem Klick kündigen.<\/p>",
             "link_label": "Zum Kundenkonto",
             "link": ""
           }
@@ -46,7 +46,7 @@
           "type": "column",
           "settings": {
             "icon": "savings",
-            "title": "Keine Versandkosten und Zufriedenheitsgarantie",
+            "title": "Versandkostenfrei und Zufriedenheitsgarantie",
             "text": "<p>Du erhältst deine Box  versandkostenfrei und kannst entscheiden, wie du bezahlst.<\/p>",
             "link_label": "Nächster Boxen-Versand",
             "link": ""
@@ -59,7 +59,7 @@
         "template--16416885604616__512621d5-9221-4d18-b907-87f8ee689e6b-166998386496cc4c31-2"
       ],
       "settings": {
-        "title": "Warum alle unsere limitierte Box lieben",
+        "title": "Warum alle unsere Fressnapf Box lieben",
         "column_alignment": "center",
         "swipe_on_mobile": false
       }
@@ -116,7 +116,7 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "headline": "Unsere vergangenen Fressnapf Boxen",
+        "headline": "Unsere letzten Fressnapf Boxen",
         "show_overlay": true
       }
     },
@@ -132,7 +132,7 @@
         "template--16416885604616__e413e2dc-45fd-46b8-9c24-f7590d46cf5d-16699792663bc9a838-0": {
           "type": "heading",
           "settings": {
-            "heading": "Überraschungsbox für deinen Hund",
+            "heading": "Was erwartet dich mit der Waubox?",
             "heading_size": "h2"
           }
         },
@@ -238,7 +238,7 @@
         "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-H1_24d8ed2e-bfbe-4a5e-bb0a-dbd50a0acbbc.png",
             "title": "Bestelle deine Box in wenigen Klicks",
             "text": "<p>Unsere Experten stecken viel Liebe in die Auswahl von immer neuen Produkten im Wert von über 50 €. <\/p>",
             "link_label": "",
@@ -248,7 +248,7 @@
         "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-C2_bf16f8a9-3d55-42dd-858b-f864a7e86a61.png",
             "title": "Gemeinsame Vorfreude auf die Box",
             "text": "<p>Alle zwei Monate erhältst du eine Box mit exklusiven Inhalten ohne eine Produktneuheit zu verpassen.<\/p>",
             "link_label": "",
@@ -258,7 +258,7 @@
         "template--16416885604616__2fd18355-a825-4f92-aba1-d13a467a6ff5-166998442524b0f65f-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snip20221202_82.png",
+            "image": "shopify:\/\/shop_images\/How-to-H3_63e8f45a-fc5c-456d-bc11-cd12c8662316.png",
             "title": "Überraschung mit 100 % Happy-Faktor",
             "text": "<p>Teile unvergessliche Happy-Momente mit deiner Fellnase. Unzufrieden? Ganz einfach per Knopfdruck kündigen.<\/p>",
             "link_label": "",
@@ -444,7 +444,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Warum benötige ich eine solche Überraschungsbox?",
-            "row_content": "<p>Mit unseren Überraschungsboxen hast du die Möglichkeit, dich häufiger und abwechslungsreicher mit deinen Lieblingen zu beschäftigen. Du bekommst alle zwei Monate Zugang zu exklusiven Produkten rund um Spaß, Beschäftigung und sinnvollem Zubehör. <\/p><p>Mit einer unser Abo-Boxen hast du häufig als erste Zugriff auf neue Produkte im Fressnapf Sortiment. <\/p>",
+            "row_content": "<p>Mit unseren Überraschungsboxen hast du die Möglichkeit, dich häufiger und abwechslungsreicher mit deinen Lieblingen zu beschäftigen. Du bekommst alle zwei Monate Zugang zu exklusiven Produkten rund um Spaß, Beschäftigung und sinnvollem Zubehör. <\/p><p>Mit einer unser Abo-Boxen hast du häufig als erstes Zugriff auf neue Produkte im Fressnapf Sortiment. <\/p>",
             "page": ""
           }
         },
@@ -501,6 +501,14 @@
           "settings": {
             "heading": "Ist es möglich, die Box umzutauschen?",
             "row_content": "<p>Wie bei anderen Onlinekäufen auch hast du ein ganz normales 14-tägiges Rückgaberecht nach Erhalt deiner ersten Box. Alle danach folgenden Boxen im Abo können allerdings nicht mehr umgetauscht werden.<\/p>",
+            "page": ""
+          }
+        },
+        "ff5c8639-8b78-4851-8d8e-92e56e5bc0eb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kundenbewertungen und -rezensionen verstehen",
+            "row_content": "<p>Kundenmeinungen in Form von Produkt- und Sternebewertungen sind dienlich für alle Kunden. Sie ermöglichen, mehr über das Produkt zu erfahren und helfen bei Kaufentscheidung. Jeder Kunde, der ein Produkt Online erworben hat, kann eine Bewertung abgeben. Für Fressnapf ist das Meinungsbild seiner Kunden wichtig, um Schwachstellen zu analysieren und die Produktqualität zu verbessern. Alle Bewertungen werden durch unseren Dienstleister Judge.me gesammelt. Es erfolgt die Veröffentlichung von positiven wie auch negativen Produktbewertungen.<\/p>",
             "page": ""
           }
         },
@@ -639,6 +647,7 @@
         "d6ff2ff8-83c4-4d01-949e-7345bcbffc1c",
         "b72d657a-80a5-4333-89cf-6efcc96a4df2",
         "2305eb2f-4cd9-4e24-be81-e8900d357047",
+        "ff5c8639-8b78-4851-8d8e-92e56e5bc0eb",
         "40cdb9cc-2072-484c-b7e9-2f8710bdfa72",
         "07f94e4a-d12a-41c2-b5b4-55ecb24b7e11",
         "af237209-7ce2-4c80-960c-f39a108caa86",
@@ -658,7 +667,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Noch Fragen?",
+        "heading": "Wie können wir dir weiterhelfen?",
         "heading_alignment": "left",
         "layout": "none",
         "open_first_collapsible_row": false
@@ -670,7 +679,7 @@
         "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-0": {
           "type": "heading",
           "settings": {
-            "heading": "Gemeinsam für Tiere in Not",
+            "heading": "Gemeinsam für Fellnasen in Not",
             "heading_size": "h1"
           }
         },
@@ -687,7 +696,7 @@
         "template--16416885604616__e5ecc905-03cc-424f-8940-56b9a5b461f3-1670066638a6d7cdbd-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/content_csr.png",
+        "image": "shopify:\/\/shop_images\/TE_Website_Gross.png",
         "show_in_container": false,
         "height": "adapt",
         "image_mode": "image-mode-contain",

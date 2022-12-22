@@ -145,7 +145,7 @@
         "image_available": "Bild {{ index }} ist nun in der Galerieansicht verfügbar"
       },
       "view_full_details": "Vollständige Details anzeigen",
-      "include_taxes": "inkl. MwSt.",
+      "include_taxes": "inkl. MwSt. und Versandkosten",
       "shipping_policy_html": "<a href=\"{{ link }}\">Versand<\/a> wird beim Checkout berechnet"
     },
     "modal": {
@@ -424,7 +424,8 @@
         "accept_marketing_checkbox_label": "Ich bin damit einverstanden, dass Fressnapf meine personenbezogenen Daten und Informationen nutzen, um mir einen individualisierten Newsletter zuzusenden sowie, dass diese in einem zentralen Nutzerprofil erfasst und zur Optimierung (Personalisierung) der Angebote von Fressnapf und seinen Partnern bis auf Widerruf verwendet werden. Weitere Einzelheiten ergeben sich aus den Datenschutzhinweisen."
       },
       "order_summary": {
-        "shipping_default_value": "Versandkostenfrei nach Deutschland"
+        "shipping_default_value": "Versandkostenfrei nach Deutschland",
+        "vat_label_html": "inkl. {{ amount }} MwSt. und Versandkosten"
       },
       "contact": {
         "address1_label": "Straße, Hausnummer ODER Packstation + Nr.",
